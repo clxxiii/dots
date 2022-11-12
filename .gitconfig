@@ -1,0 +1,7 @@
+[user]
+	name = clxxiii
+	email = clxxiii@users.noreply.github.com
+[gpg]
+	format = ssh
+[init]
+	defaultBranch = main
