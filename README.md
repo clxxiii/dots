@@ -9,6 +9,6 @@ git clone https://github.com/clxxiii/dots.git ~/.dotfiles # Before ssh setup
 
 2. Run the following command:
 ```
-./install.sh
+wget -O - https://raw.githubusercontent.com/clxxiii/dots/main/install.sh | sh
 ```
 
