@@ -1,5 +1,5 @@
-:set number
 :set autoindent
+:set number
 :set tabstop=4
 :set shiftwidth=4
 :set smarttab
@@ -11,15 +11,15 @@
 :set splitbelow
 :set splitright
 
-highlight EndOfBuffer guifg=bg
+" highlight EndOfBuffer guifg=bg
 
 call plug#begin()
 
 Plug 'goolord/alpha-nvim' " Splash screen
 Plug 'nvim-lualine/lualine.nvim' " Status Bar
 Plug 'kyazdani42/nvim-web-devicons' " Status Bar Icons
-Plug 'rafi/awesome-vim-colorschemes' " Retro Scheme
 Plug 'ryanoasis/vim-devicons' " Developer Icons
+Plug 'kvrohit/mellow.nvim' " Color Scheme
 Plug 'ap/vim-css-color' " CSS Color Preview
 Plug 'romgrk/barbar.nvim' " Tabs
 Plug 'folke/which-key.nvim' " Key Suggestions
@@ -29,14 +29,39 @@ Plug 'nvim-lua/plenary.nvim' " File Search
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' } " File Search
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Auto completion
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' } " Markdown Preview
+Plug 'rcarriga/nvim-notify'
+Plug 'xiyaowong/nvim-transparent'
 call plug#end()
 
 " Lua Block
 "
 lua << END
 
--- Start plugins without configs
-require('lualine').setup()
+-- Lualine Theme
+
+require('lualine').setup {
+	options = {
+			component_separators = { left = '', right = '' },
+            section_separators = { left = '', right = '' },
+			disabled_filetypes = { "NvimTree", "alpha", "dashboard", "Outline" }
+		},
+	sections = {
+		lualine_b = {
+			{
+				'diagnostics',
+				sources = { 'nvim_diagnostic' },
+				sections = { 'error', 'warn' },
+				symbols = {error = " ", warn = " ", info = " ", hint = " " },
+				always_visible = true
+			}
+		},
+		lualine_x = {"location", "filetype"}
+		}
+	}
+
+require('transparent').setup({
+	enable = true
+	})
 require('which-key').setup()
 require('alpha').setup(require'alpha.themes.dashboard'.config)
 
@@ -52,7 +77,7 @@ require('nvim-tree').setup()
 END
 
 " Prefered default colorscheme
-:colorscheme gruvbox
+:colorscheme mellow
 
 " ---------------
 " KEY BINDINGS
