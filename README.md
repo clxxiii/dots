@@ -1,5 +1,7 @@
 # clxxiii's Dotfiles
 
+![Desktop Screenshot](https://github.com/clxxiii/dots/blob/main/Screenshots/Desktop.png?raw=true)
+
 ## Install Instructions
 1. Clone the repository into your `~/.dotfiles` directory
 ```
