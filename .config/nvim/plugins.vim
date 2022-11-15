@@ -19,6 +19,7 @@ Plug 'ap/vim-css-color' " CSS Color Preview
 Plug 'kyazdani42/nvim-web-devicons' " Status Bar Icons
 Plug 'ryanoasis/vim-devicons' " Developer Icons
 Plug 'nvim-lua/plenary.nvim' " Telescope Dependency
+Plug 'sbdchd/neoformat' " Auto formatter
 
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -43,3 +44,5 @@ source ~/.config/nvim/plugins/telescope.vim
 source ~/.config/nvim/plugins/nvim-tree.vim
 source ~/.config/nvim/plugins/which-key.vim
 source ~/.config/nvim/plugins/cmp.vim
+source ~/.config/nvim/plugins/neoformat.vim
+
