@@ -6,6 +6,7 @@
 :set softtabstop=4
 :set mouse=a
 :set clipboard+=unnamedplus
+:set pumheight=10
 :set noshowmode
 :set cursorline
 :set splitbelow
