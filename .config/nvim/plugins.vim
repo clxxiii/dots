@@ -19,11 +19,27 @@ Plug 'ap/vim-css-color' " CSS Color Preview
 Plug 'kyazdani42/nvim-web-devicons' " Status Bar Icons
 Plug 'ryanoasis/vim-devicons' " Developer Icons
 Plug 'nvim-lua/plenary.nvim' " Telescope Dependency
+
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+
+" For vsnip users.
+" Plug 'hrsh7th/cmp-vsnip'
+" Plug 'hrsh7th/vim-vsnip'
+
+" For luasnip users.
+Plug 'L3MON4D3/LuaSnip'
+Plug 'saadparwaiz1/cmp_luasnip'
 call plug#end()
 
 " Reference additional plugin configuration
-source plugins/alpha.vim
-source plugins/lualine.vim
-source plugins/telescope.vim
-source plugins/nvim-tree.vim
-source plugins/which-key.vim
+source ~/.config/nvim/plugins/alpha.vim
+source ~/.config/nvim/plugins/lualine.vim
+source ~/.config/nvim/plugins/telescope.vim
+source ~/.config/nvim/plugins/nvim-tree.vim
+source ~/.config/nvim/plugins/which-key.vim
+source ~/.config/nvim/plugins/cmp.vim

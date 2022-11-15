@@ -1,3 +1,3 @@
-source plugins.vim
-source settings.vim
-source theme.vim
+source ~/.config/nvim/plugins.vim
+source ~/.config/nvim/settings.vim
+source ~/.config/nvim/theme.vim
