@@ -1,4 +1,4 @@
-<div class="centered">
+<div align="center">
 <h1>clxxiii's Dotfiles</h1>
 </div>
 
