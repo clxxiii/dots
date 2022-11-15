@@ -18,7 +18,7 @@ window:
     decorations: none
     dimensions:
         columns: 80
-        lines: 22
+        lines: 20
     opacity: 0.90
 
 scrolling:
