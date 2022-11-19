@@ -15,3 +15,8 @@ nnoremap <silent>    <A-7> <Cmd>BufferGoto 7<CR>
 nnoremap <silent>    <A-8> <Cmd>BufferGoto 8<CR>
 nnoremap <silent>    <A-9> <Cmd>BufferGoto 9<CR>
 nnoremap <silent>    <A-0> <Cmd>BufferLast<CR>
+
+let bufferline = get(g:, 'bufferline', {})
+
+" Configure icons on the bufferline.
+let bufferline.auto_hide = v:true

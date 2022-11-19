@@ -111,6 +111,9 @@ local kind_icons = {
   require('lspconfig')['eslint'].setup {
     capabilities = capabilities
   }
+  require('lspconfig')['quick_lint_js'].setup {
+    capabilities = capabilities
+  }
   require('lspconfig')['jsonls'].setup {
     capabilities = capabilities
   }
@@ -124,6 +127,9 @@ local kind_icons = {
     capabilities = capabilities
   }
   require('lspconfig')['rust_analyzer'].setup {
+    capabilities = capabilities
+  }
+  require('lspconfig')['clangd'].setup {
     capabilities = capabilities
   }
 EOF

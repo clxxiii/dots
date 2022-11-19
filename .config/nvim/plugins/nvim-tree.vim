@@ -10,3 +10,5 @@ vim.opt.termguicolors = true
 -- start nvimtree
 require('nvim-tree').setup()
 END
+
+nnoremap <A-t> <cmd>NvimTreeToggle<CR>

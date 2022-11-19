@@ -13,13 +13,14 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' } " Markdo
 Plug 'rcarriga/nvim-notify' " Notification Boxes
 Plug 'xiyaowong/nvim-transparent' " Transparent Background
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TsUpdate'} " 
-Plug 'ryanoasis/vim-devicons' " Developer Icons
 Plug 'wakatime/vim-wakatime' " Time Logging
 Plug 'ap/vim-css-color' " CSS Color Preview
 Plug 'kyazdani42/nvim-web-devicons' " Status Bar Icons
 Plug 'ryanoasis/vim-devicons' " Developer Icons
 Plug 'nvim-lua/plenary.nvim' " Telescope Dependency
 Plug 'sbdchd/neoformat' " Auto formatter
+Plug 'folke/trouble.nvim' " Error box
+
 
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -45,4 +46,5 @@ source ~/.config/nvim/plugins/nvim-tree.vim
 source ~/.config/nvim/plugins/which-key.vim
 source ~/.config/nvim/plugins/cmp.vim
 source ~/.config/nvim/plugins/neoformat.vim
-
+source ~/.config/nvim/plugins/barbar.vim
+source ~/.config/nvim/plugins/trouble.vim
