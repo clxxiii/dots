@@ -9,16 +9,16 @@
 
 ### Applications in use
 
-OS: [Ubuntu](https://ubuntu.com)
-DE: [GNOME](https://gnome.org)
-Noteworthy Gnome Extensions: Blur My Shell, qTile, Color Picker,
-Icons: [Papirus](https://www.gnome-look.org/p/1166289/)
-Terminal: [Alacritty](https://github.com/alacritty/alacritty)
-Editor: [Neovim](https://neovim.io)
-Resource Monitor: [bottom](https://github.com/ClementTsang/bottom)
-Git GUI: [lazygit](https://github.com/jesseduffield/lazygit)
-Visualizer: [Cava](https://github.com/karlstab/cava)
-Twitch Chat: [twitch-tui](https://github.com/Xithrius/twitch-tui)
+- OS: [Ubuntu](https://ubuntu.com)
+- DE: [GNOME](https://gnome.org)
+- Noteworthy Gnome Extensions: Blur My Shell, qTile, Color Picker,
+- Icons: [Papirus](https://www.gnome-look.org/p/1166289/)
+- Terminal: [Alacritty](https://github.com/alacritty/alacritty)
+- Editor: [Neovim](https://neovim.io)
+- Resource Monitor: [bottom](https://github.com/ClementTsang/bottom)
+- Git GUI: [lazygit](https://github.com/jesseduffield/lazygit)
+- Visualizer: [Cava](https://github.com/karlstab/cava)
+- Twitch Chat: [twitch-tui](https://github.com/Xithrius/twitch-tui)
 
 ## Install Instructions
 
