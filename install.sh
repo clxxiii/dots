@@ -11,3 +11,4 @@ ln -s ~/.dotfiles/.vimrc ~/.vimrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.alacritty.yml ~/.alacritty.yml
 ln -s ~/.dotfiles/.config/cava ~/.config/cava
+ln -s ~/.dotfiles/.config/bottom ~/.config/bottom
