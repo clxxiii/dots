@@ -19,6 +19,7 @@
 - Git GUI: [lazygit](https://github.com/jesseduffield/lazygit)
 - Visualizer: [Cava](https://github.com/karlstab/cava)
 - Twitch Chat: [twitch-tui](https://github.com/Xithrius/twitch-tui)
+- Terminal File Explorer: [ranger](https://github.com/ranger/ranger)
 
 ## Install Instructions
 
