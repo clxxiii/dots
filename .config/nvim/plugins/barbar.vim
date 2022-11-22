@@ -18,5 +18,3 @@ nnoremap <silent>    <A-0> <Cmd>BufferLast<CR>
 
 let bufferline = get(g:, 'bufferline', {})
 
-" Configure icons on the bufferline.
-let bufferline.auto_hide = v:true
