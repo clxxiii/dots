@@ -1,80 +1,80 @@
 env:
-    # TERM variable
-    #
-    # This value is used to set the `$TERM` environment variable for
-    # each instance of Alacritty. If it is not present, alacritty will
-    # check the local terminfo database and use `alacritty` if it is
-    # available, otherwise `xterm-256color` is used.
-    TERM: "xterm-256color"
+  # TERM variable
+  #
+  # This value is used to set the `$TERM` environment variable for
+  # each instance of Alacritty. If it is not present, alacritty will
+  # check the local terminfo database and use `alacritty` if it is
+  # available, otherwise `xterm-256color` is used.
+  TERM: "xterm-256color"
 
 window:
-    # Window padding (changes require restart)
-    #
-    # Blank space added around the window in pixels. This padding is scaled
-    # by DPI and the specified value is always added at both opposing sides.
-    padding:
-        x: 12
-        y: 12
-    decorations: none
-    dimensions:
-        columns: 80
-        lines: 20
-    opacity: 0.90
+  # Window padding (changes require restart)
+  #
+  # Blank space added around the window in pixels. This padding is scaled
+  # by DPI and the specified value is always added at both opposing sides.
+  padding:
+    x: 12
+    y: 12
+  decorations: none
+  dimensions:
+    columns: 80
+    lines: 20
+  opacity: 0.90
 
 scrolling:
-    # Maximum number of lines in the scrollback buffer.
-    # Specifying '0' will disable scrolling.
-    history:
-        1000
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history:
+    1000
 
-        # Scrolling distance multiplier.
-    multiplier: 3
+    # Scrolling distance multiplier.
+  multiplier: 3
 
 # Font configuration
 font:
-    # Normal (roman) font face
-    normal:
-        # Font family
-        #
-        # Default:
-        #   - (macOS) Menlo
-        #   - (Linux/BSD) monospace
-        #   - (Windows) Consolas
-        family: "JetBrainsMonoNL Nerd Font Mono"
+  # Normal (roman) font face
+  normal:
+    # Font family
+    #
+    # Default:
+    #   - (macOS) Menlo
+    #   - (Linux/BSD) monospace
+    #   - (Windows) Consolas
+    family: "JetBrainsMonoNL Nerd Font Mono"
 
-        # The `style` can be specified to pick a specific face.
-        style: Regular
+    # The `style` can be specified to pick a specific face.
+    style: Regular
 
-    # Bold font face
-    bold:
-        # Font family
-        #
-        # If the bold family is not specified, it will fall back to the
-        # value specified for the normal font.
-        family: "JetBrainsMonoNL Nerd Font Mono"
+  # Bold font face
+  bold:
+    # Font family
+    #
+    # If the bold family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: "JetBrainsMonoNL Nerd Font Mono"
 
-        # The `style` can be specified to pick a specific face.
-        style: Bold
+    # The `style` can be specified to pick a specific face.
+    style: Bold
 
-    # Italic font face
-    italic:
-        # Font family
-        #
-        # If the italic family is not specified, it will fall back to the
-        # value specified for the normal font.
-        family: "JetBrainsMonoNL Nerd Font Mono"
+  # Italic font face
+  italic:
+    # Font family
+    #
+    # If the italic family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: "JetBrainsMonoNL Nerd Font Mono"
 
-        # The `style` can be specified to pick a specific face.
-        style: Italic
+    # The `style` can be specified to pick a specific face.
+    style: Italic
 
-    # Point size
-    size: 12
+  # Point size
+  size: 10
 
-    offset:
-        y: 0
+  offset:
+    y: 0
 
-    glyph_offset:
-        y: 0
+  glyph_offset:
+    y: 0
 
 # colors:
 #   name: Brewer (dark)
@@ -104,39 +104,39 @@ font:
 #     cyan: "#80b1d3"
 #     white: "#fcfdfe"
 colors:
-    primary:
-        background: "#161617"
-        foreground: "#FFFFFF"
-    cursor:
-        text: "#0c0d0e"
-        cursor: "#b7b8b9"
-    normal:
-        black: "#222222"
-        blue: "#66A8B8"
-        cyan: "#6E868F"
-        green: "#B6CD42"
-        magenta: "#B5496B"
-        ted: "#E74E4E"
-        white: "#CACACA"
-        yellow: "#F8A13B"
-    bright:
-        black: "#2C2C2C"
-        blue: "#70B2C2"
-        cyan: "#789099"
-        green: "#C0D74C"
-        magenta: "#BF5375"
-        red: "#FF5858"
-        white: "#D4D4D4"
-        yellow: "#FFAB45"
+  primary:
+    background: "#161617"
+    foreground: "#FFFFFF"
+  cursor:
+    text: "#0c0d0e"
+    cursor: "#b7b8b9"
+  normal:
+    black: "#222222"
+    blue: "#66A8B8"
+    cyan: "#6E868F"
+    green: "#B6CD42"
+    magenta: "#B5496B"
+    ted: "#E74E4E"
+    white: "#CACACA"
+    yellow: "#F8A13B"
+  bright:
+    black: "#2C2C2C"
+    blue: "#70B2C2"
+    cyan: "#789099"
+    green: "#C0D74C"
+    magenta: "#BF5375"
+    red: "#FF5858"
+    white: "#D4D4D4"
+    yellow: "#FFAB45"
 
 cursor:
-    # Cursor style
-    #
-    # Values for `style`:
-    #   - ▇ Block
-    #   - _ Underline
-    #   - | Beam
-    style: "Beam"
+  # Cursor style
+  #
+  # Values for `style`:
+  #   - ▇ Block
+  #   - _ Underline
+  #   - | Beam
+  style: "Beam"
 
-    vi_mode_style: "Beam"
+  vi_mode_style: "Beam"
 theme: Brewer.dark
