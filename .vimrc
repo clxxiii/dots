@@ -6,7 +6,7 @@
 :set shiftwidth=4
 :set smarttab
 :set softtabstop=4
-
+:set laststatus=2
 
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -22,17 +22,16 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 " --- Import Plugins ---
 call plug#begin()
 
-Plug 'vim-airline/vim-airline' " Status Bar
-Plug 'rafi/awesome-vim-colorschemes' " Retro Themes
+Plug 'itchyny/lightline.vim' " Status Bar
+Plug 'catppuccin/vim', { 'as': 'catppuccin' } " Theme
 Plug 'ap/vim-css-color' " CSS Color Preview
 Plug 'wakatime/vim-wakatime' " Coding Time Tracker
 
 call plug#end()
 
-:colorscheme oceanic_material
+:colorscheme catppuccin_mocha
 
-" --- Status Bar Config ---
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
+
+let g:lightline = {
+      \ 'colorscheme': 'catppuccin_mocha',
+      \ }
