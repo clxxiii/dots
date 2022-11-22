@@ -1,7 +1,7 @@
 " Everything contributing to the look of my editor
 
 " Prefered default colorscheme
-:colorscheme mellow
+:colorscheme catppuccin
 
 lua << END
 require('transparent').setup({

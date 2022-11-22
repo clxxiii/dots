@@ -4,6 +4,7 @@ call plug#begin()
 Plug 'goolord/alpha-nvim' " Splash Screen
 Plug 'nvim-lualine/lualine.nvim' " Status Bar
 Plug 'kvrohit/mellow.nvim' " Color Scheme
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' } " Color Scheme
 Plug 'romgrk/barbar.nvim' " Tabs
 Plug 'folke/which-key.nvim' " Key Suggestions
 Plug 'nvim-tree/nvim-tree.lua' " File Explorer
@@ -20,8 +21,14 @@ Plug 'ryanoasis/vim-devicons' " Developer Icons
 Plug 'nvim-lua/plenary.nvim' " Telescope Dependency
 Plug 'sbdchd/neoformat' " Auto formatter
 Plug 'folke/trouble.nvim' " Error box
+Plug 'manzeloth/live-server' " Live Server
 
+" Extra Syntax Highlighting
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'evanleck/vim-svelte', { 'branch': 'main' }
 
+" Auto complete
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
