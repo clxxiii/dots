@@ -9,7 +9,6 @@ Plug 'romgrk/barbar.nvim' " Tabs
 Plug 'folke/which-key.nvim' " Key Suggestions
 Plug 'nvim-tree/nvim-tree.lua' " File Explorer
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' } " File Search
-" Plug 'neoclide/coc.nvim', {'branch': 'release'} " Auto completion
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' } " Markdown Preview
 Plug 'rcarriga/nvim-notify' " Notification Boxes
 Plug 'xiyaowong/nvim-transparent' " Transparent Background
