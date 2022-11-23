@@ -3,7 +3,7 @@
 </div>
 
 ![Workspaces](https://github.com/clxxiii/dots/blob/main/Screenshots/Workspaces.png?raw=true)
-![Desktop Screenshot](https://github.com/clxxiii/dots/blob/main/Screenshots/Desktop.png?raw=true)
+![Desktop Screenshot](https://github.com/clxxiii/dots/blob/main/Screenshots/Svelte.png?raw=true)
 ![Desktop Screenshot 2](https://github.com/clxxiii/dots/blob/main/Screenshots/Cachelab-Example.png?raw=true)
 ![Twitch](https://github.com/clxxiii/dots/blob/main/Screenshots/Twitch-2.png?raw=true)
 
