@@ -1,17 +1,23 @@
 <div align="center">
 <h1>clxxiii's Dotfiles</h1>
 </div>
+## Arch Setup
+![Arch](https://github.com/clxxiii/dots/blob/main/Screenshots/arch-default.png?raw=true)
 
+- OS: [Arch](https://archlinux.org)
+- WM: [i3](https://i3wm.org)
+
+## Ubuntu Setup
 ![Workspaces](https://github.com/clxxiii/dots/blob/main/Screenshots/Workspaces.png?raw=true)
 ![Desktop Screenshot](https://github.com/clxxiii/dots/blob/main/Screenshots/Svelte.png?raw=true)
 ![Desktop Screenshot 2](https://github.com/clxxiii/dots/blob/main/Screenshots/Cachelab-Example.png?raw=true)
 ![Twitch](https://github.com/clxxiii/dots/blob/main/Screenshots/Twitch%202.png?raw=true)
 
-### Applications in use
-
 - OS: [Ubuntu](https://ubuntu.com)
 - DE: [GNOME](https://gnome.org)
 - Noteworthy Gnome Extensions: Blur My Shell, qTile, Color Picker,
+
+### Applications
 - Icons: [Papirus](https://www.gnome-look.org/p/1166289/)
 - Terminal: [Alacritty](https://github.com/alacritty/alacritty)
 - Editor: [Neovim](https://neovim.io)
