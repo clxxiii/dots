@@ -19,7 +19,7 @@ window:
   dimensions:
     columns: 80
     lines: 20
-  opacity: 0.90
+  opacity: 1
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.
@@ -131,7 +131,7 @@ font:
 #    yellow: "#FFAB45"
 
 # -- Imported from https://github.com/catppuccin/alacritty/blob/main/catppuccin-mocha.yml
-  colors:
+colors:
     primary:
         background: "#1E1E2E" # base
         foreground: "#CDD6F4" # text
