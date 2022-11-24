@@ -2,6 +2,7 @@
 <h1>clxxiii's Dotfiles</h1>
 </div>
 ## Arch Setup
+
 ![Arch](https://github.com/clxxiii/dots/blob/main/Screenshots/arch-default.png?raw=true)
 
 - OS: [Arch](https://archlinux.org)
