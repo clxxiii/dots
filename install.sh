@@ -15,6 +15,7 @@ ln -s ~/.dotfiles/Wallpapers ~/Pictures/Wallpapers
 ln -s ~/.dotfiles/.config/ranger ~/.config/ranger
 ln -s ~/.dotfiles/.config/i3 ~/.config/i3
 ln -s ~/.dotfiles/.config/picom ~/.config/picom
+ln -s ~/.dotfiles/.config/polybar ~/.config/polybar
 
 ln -s ~/.dotfiles/.vimrc ~/.vimrc 
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig 
@@ -29,3 +30,4 @@ rm ~/Pictures/Wallpapers/Wallpapers
 rm ~/.config/ranger/ranger
 rm ~/.config/i3/i3
 rm ~/.config/picom/picom
+rm ~/.config/polybar/polybar
