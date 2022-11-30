@@ -16,5 +16,7 @@ nnoremap <silent>    <A-8> <Cmd>BufferGoto 8<CR>
 nnoremap <silent>    <A-9> <Cmd>BufferGoto 9<CR>
 nnoremap <silent>    <A-0> <Cmd>BufferLast<CR>
 
+" Close buffer
+nnoremap <silent>    <A-c> <Cmd>BufferClose<CR>
 let bufferline = get(g:, 'bufferline', {})
 
