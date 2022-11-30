@@ -18,6 +18,7 @@ ln -s ~/.dotfiles/.config/picom ~/.config/picom
 ln -s ~/.dotfiles/.config/polybar ~/.config/polybar
 ln -s ~/.dotfiles/.config/dunst ~/.config/dunst
 
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.vimrc ~/.vimrc 
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig 
 ln -s ~/.dotfiles/.alacritty.yml ~/.alacritty.yml
