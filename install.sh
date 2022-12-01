@@ -17,6 +17,7 @@ ln -s ~/.dotfiles/.config/i3 ~/.config/i3
 ln -s ~/.dotfiles/.config/picom ~/.config/picom
 ln -s ~/.dotfiles/.config/polybar ~/.config/polybar
 ln -s ~/.dotfiles/.config/dunst ~/.config/dunst
+ln -s ~/.dotfiles/.config/rofi ~/.config/rofi
 
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.vimrc ~/.vimrc 
@@ -34,4 +35,5 @@ rm ~/.config/i3/i3
 rm ~/.config/picom/picom
 rm ~/.config/polybar/polybar
 rm ~/.config/dunst/dunst
+rm ~/.config/rofi/rofi
 
