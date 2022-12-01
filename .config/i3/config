@@ -43,7 +43,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # Start Picom
-exec --no-startup-id picom -CGb
+exec --no-startup-id picom -CGb --experimental-backends
 
 # Set Wallpaper
 exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/93552201_p0_master1200.jpg 
@@ -174,7 +174,8 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+# bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "rofi -show p -modi 'p:rofi-power-menu --choices shutdown/reboot/logout' "
 
 # Screenshot Tool
 bindsym Print exec flameshot gui
