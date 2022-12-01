@@ -20,3 +20,4 @@ nnoremap <silent>    <A-0> <Cmd>BufferLast<CR>
 nnoremap <silent>    <A-c> <Cmd>BufferClose<CR>
 let bufferline = get(g:, 'bufferline', {})
 
+let bufferline.no_name_title = 'New Tab'
