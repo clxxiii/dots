@@ -1,26 +1,31 @@
 " Import All plugins
 
 call plug#begin()
+" Visual Customization
 Plug 'goolord/alpha-nvim' " Splash Screen
 Plug 'nvim-lualine/lualine.nvim' " Status Bar
 Plug 'kvrohit/mellow.nvim' " Color Scheme
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' } " Color Scheme
 Plug 'romgrk/barbar.nvim' " Tabs
-Plug 'folke/which-key.nvim' " Key Suggestions
-Plug 'nvim-tree/nvim-tree.lua' " File Explorer
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' } " File Search
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' } " Markdown Preview
-Plug 'rcarriga/nvim-notify' " Notification Boxes
 Plug 'xiyaowong/nvim-transparent' " Transparent Background
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TsUpdate'} " 
-Plug 'wakatime/vim-wakatime' " Time Logging
-Plug 'ap/vim-css-color' " CSS Color Preview
-Plug 'kyazdani42/nvim-web-devicons' " Status Bar Icons
+Plug 'rcarriga/nvim-notify' " Notification Boxes
 Plug 'ryanoasis/vim-devicons' " Developer Icons
+
+" QoL
+Plug 'folke/which-key.nvim' " Key Suggestions
+Plug 'ap/vim-css-color' " CSS Color Preview
+Plug 'nvim-tree/nvim-tree.lua' " File Explorer
 Plug 'nvim-lua/plenary.nvim' " Telescope Dependency
-Plug 'sbdchd/neoformat' " Auto formatter
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' } " File Search
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TsUpdate'} " 
+Plug 'kyazdani42/nvim-web-devicons' " Status Bar Icons
 Plug 'folke/trouble.nvim' " Error box
+
+" Tools
+Plug 'wakatime/vim-wakatime' " Time Logging
 Plug 'manzeloth/live-server' " Live Server
+Plug 'sbdchd/neoformat' " Auto formatter
+Plug 'kdheepak/lazygit.nvim' " Lazygit
 
 " Extra Syntax Highlighting
 Plug 'othree/html5.vim'
@@ -54,3 +59,4 @@ source ~/.config/nvim/plugins/cmp.vim
 source ~/.config/nvim/plugins/neoformat.vim
 source ~/.config/nvim/plugins/barbar.vim
 source ~/.config/nvim/plugins/trouble.vim
+" source ~/.config/nvim/plugins/shade.vim
