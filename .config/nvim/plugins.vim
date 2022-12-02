@@ -28,7 +28,7 @@ Plug 'wakatime/vim-wakatime' " Time Logging
 Plug 'manzeloth/live-server' " Live Server
 Plug 'sbdchd/neoformat' " Auto formatter
 Plug 'kdheepak/lazygit.nvim' " Lazygit
-
+Plug 'frabjous/knap' " Latex & Markdown Viewer
 " Extra Syntax Highlighting
 Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
@@ -62,3 +62,4 @@ source ~/.config/nvim/plugins/barbar.vim
 source ~/.config/nvim/plugins/trouble.vim
 source ~/.config/nvim/plugins/vgit.vim
 source ~/.config/nvim/plugins/toggleterm.vim
+source ~/.config/nvim/plugins/knap.vim

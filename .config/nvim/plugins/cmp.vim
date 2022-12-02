@@ -132,4 +132,7 @@ local kind_icons = {
   require('lspconfig')['clangd'].setup {
     capabilities = capabilities
   }
+  require('lspconfig')['texlab'].setup {
+    capabilities = capabilities
+  }
 EOF

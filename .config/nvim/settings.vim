@@ -30,10 +30,16 @@ nnoremap <leader>ft <CMD>Telescope live_grep<CR>
 " ToggleTerm
 nnoremap <C-\> <CMD>ToggleTerm<CR>
 nnoremap <leader>n <CMD>lua _nap_toggle()<CR>
-"
+" Markdown & Latex Preview
+nnoremap <leader>ps <CMD>lua require("knap").toggle_autopreviewing()<CR>
+nnoremap <leader>pc <CMD>lua require("knap").close_viewer()<CR>
+nnoremap <leader>pj <CMD>lua require("knap").forward_jump()<CR>
+nnoremap <leader>po <CMD>lua require("knap").process_once()<CR>
+
 " QoL Terminal Commands
 tnoremap <C-\> <C-\><C-n><CMD>ToggleTerm<CR>
 tnoremap <C-w>h <C-\><C-n><C-w>h
 tnoremap <C-w>j <C-\><C-n><C-w>j
 tnoremap <C-w>k <C-\><C-n><C-w>k
 tnoremap <C-w>l <C-\><C-n><C-w>l
+
