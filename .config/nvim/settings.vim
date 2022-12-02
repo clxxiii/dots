@@ -26,3 +26,14 @@ nnoremap <leader>ff <CMD>Telescope find_files<CR>
 nnoremap <leader>fb <CMD>Telescope keymaps<CR> 
 nnoremap <leader>fr <CMD>Telescope oldfiles<CR>
 nnoremap <leader>ft <CMD>Telescope live_grep<CR>
+
+" ToggleTerm
+nnoremap <C-\> <CMD>ToggleTerm<CR>
+nnoremap <leader>n <CMD>lua _nap_toggle()<CR>
+"
+" QoL Terminal Commands
+tnoremap <C-\> <C-\><C-n><CMD>ToggleTerm<CR>
+tnoremap <C-w>h <C-\><C-n><C-w>h
+tnoremap <C-w>j <C-\><C-n><C-w>j
+tnoremap <C-w>k <C-\><C-n><C-w>k
+tnoremap <C-w>l <C-\><C-n><C-w>l

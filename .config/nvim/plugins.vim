@@ -21,6 +21,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TsUpdate'} "
 Plug 'kyazdani42/nvim-web-devicons' " Status Bar Icons
 Plug 'folke/trouble.nvim' " Error box
 Plug 'tanvirtin/vgit.nvim' " Git changes in gutter
+Plug 'akinsho/toggleterm.nvim' " Better Built-in Terminal
 
 " Tools
 Plug 'wakatime/vim-wakatime' " Time Logging
@@ -60,3 +61,4 @@ source ~/.config/nvim/plugins/neoformat.vim
 source ~/.config/nvim/plugins/barbar.vim
 source ~/.config/nvim/plugins/trouble.vim
 source ~/.config/nvim/plugins/vgit.vim
+source ~/.config/nvim/plugins/toggleterm.vim
