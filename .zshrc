@@ -124,5 +124,7 @@ export PATH=$PATH:/home/clxxiii/.spicetify
 export PATH=$PATH:/home/clxxiii/.local/share/alacritty
 # Path to clangd
 export PATH=$PATH:/home/clxxiii/.local/share/clangd_15.0.3/bin
+# Local Binaries Directory
+export PATH=$PATH:~/.local/bin
 # Default language in nap
 export NAP_DEFAULT_LANGUAGE="js"
