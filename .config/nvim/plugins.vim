@@ -10,6 +10,7 @@ Plug 'romgrk/barbar.nvim' " Tabs
 Plug 'xiyaowong/nvim-transparent' " Transparent Background
 Plug 'rcarriga/nvim-notify' " Notification Boxes
 Plug 'ryanoasis/vim-devicons' " Developer Icons
+Plug 'declancm/cinnamon.nvim' " Smooth Scrolling
 
 " QoL
 Plug 'folke/which-key.nvim' " Key Suggestions
@@ -29,6 +30,7 @@ Plug 'manzeloth/live-server' " Live Server
 Plug 'sbdchd/neoformat' " Auto formatter
 Plug 'kdheepak/lazygit.nvim' " Lazygit
 Plug 'frabjous/knap' " Latex & Markdown Viewer
+
 " Extra Syntax Highlighting
 Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
@@ -49,6 +51,10 @@ Plug 'hrsh7th/nvim-cmp'
 " For luasnip users.
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
+
+" Fun
+Plug 'alec-gibson/nvim-tetris'
+Plug 'ThePrimeagen/vim-be-good'
 call plug#end()
 
 " Reference additional plugin configuration
@@ -63,3 +69,4 @@ source ~/.config/nvim/plugins/trouble.vim
 source ~/.config/nvim/plugins/vgit.vim
 source ~/.config/nvim/plugins/toggleterm.vim
 source ~/.config/nvim/plugins/knap.vim
+source ~/.config/nvim/plugins/cinnamon.vim
