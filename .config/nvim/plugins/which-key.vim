@@ -1,7 +1,7 @@
 lua << END
 require('which-key').setup {
     window = {
-	    border = "none",
+	    border = "single",
 		margin = { 1, 1, 1, 1 }
 	    }
 	}
