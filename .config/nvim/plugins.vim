@@ -20,6 +20,7 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' } " File Search
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TsUpdate'} " 
 Plug 'kyazdani42/nvim-web-devicons' " Status Bar Icons
 Plug 'folke/trouble.nvim' " Error box
+Plug 'tanvirtin/vgit.nvim' " Git changes in gutter
 
 " Tools
 Plug 'wakatime/vim-wakatime' " Time Logging
@@ -52,11 +53,10 @@ call plug#end()
 " Reference additional plugin configuration
 source ~/.config/nvim/plugins/alpha.vim
 source ~/.config/nvim/plugins/lualine.vim
-source ~/.config/nvim/plugins/telescope.vim
 source ~/.config/nvim/plugins/nvim-tree.vim
 source ~/.config/nvim/plugins/which-key.vim
 source ~/.config/nvim/plugins/cmp.vim
 source ~/.config/nvim/plugins/neoformat.vim
 source ~/.config/nvim/plugins/barbar.vim
 source ~/.config/nvim/plugins/trouble.vim
-" source ~/.config/nvim/plugins/shade.vim
+source ~/.config/nvim/plugins/vgit.vim
