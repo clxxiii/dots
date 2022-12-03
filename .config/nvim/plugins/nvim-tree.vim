@@ -8,7 +8,11 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 -- start nvimtree
-require('nvim-tree').setup()
+require('nvim-tree').setup({
+    filters = {
+        dotfiles = true
+    }
+})
 END
 
 nnoremap <A-t> <cmd>NvimTreeToggle<CR>

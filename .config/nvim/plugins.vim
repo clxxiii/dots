@@ -23,6 +23,8 @@ Plug 'kyazdani42/nvim-web-devicons' " Status Bar Icons
 Plug 'folke/trouble.nvim' " Error box
 Plug 'tanvirtin/vgit.nvim' " Git changes in gutter
 Plug 'akinsho/toggleterm.nvim' " Better Built-in Terminal
+Plug 'numToStr/Comment.nvim' " Comment Key
+Plug 'ahmedkhalf/project.nvim' " Project Saving
 
 " Tools
 Plug 'wakatime/vim-wakatime' " Time Logging
@@ -30,6 +32,12 @@ Plug 'manzeloth/live-server' " Live Server
 Plug 'sbdchd/neoformat' " Auto formatter
 Plug 'kdheepak/lazygit.nvim' " Lazygit
 Plug 'frabjous/knap' " Latex & Markdown Viewer
+Plug 'stevearc/dressing.nvim' " Icon Picker Dep
+Plug 'ziontee113/icon-picker.nvim' " Icon Picker
+Plug 'preservim/tagbar' " Tagbar for code navigation
+Plug 'andweeb/presence.nvim' " Discord RPC
+Plug 'samodostal/image.nvim' " Image Viewer
+Plug 'm00qek/baleia.nvim', { 'tag': 'v1.2.0' }
 
 " Extra Syntax Highlighting
 Plug 'othree/html5.vim'
@@ -70,3 +78,9 @@ source ~/.config/nvim/plugins/vgit.vim
 source ~/.config/nvim/plugins/toggleterm.vim
 source ~/.config/nvim/plugins/knap.vim
 source ~/.config/nvim/plugins/cinnamon.vim
+source ~/.config/nvim/plugins/Comment.vim
+source ~/.config/nvim/plugins/project.vim
+source ~/.config/nvim/plugins/telescope.vim
+source ~/.config/nvim/plugins/icon-picker.vim
+source ~/.config/nvim/plugins/presence.vim
+source ~/.config/nvim/plugins/image.vim

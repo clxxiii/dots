@@ -26,10 +26,15 @@ nnoremap <leader>ff <CMD>Telescope find_files<CR>
 nnoremap <leader>fb <CMD>Telescope keymaps<CR> 
 nnoremap <leader>fr <CMD>Telescope oldfiles<CR>
 nnoremap <leader>ft <CMD>Telescope live_grep<CR>
+nnoremap <leader>fp <CMD>Telescope projects<CR>
 
 " ToggleTerm
 nnoremap <C-\> <CMD>ToggleTerm<CR>
 nnoremap <leader>n <CMD>lua _nap_toggle()<CR>
+
+" Icon Picker
+nnoremap <leader>i <CMD>IconPickerNormal<CR>
+
 " Markdown & Latex Preview
 nnoremap <leader>ps <CMD>lua require("knap").toggle_autopreviewing()<CR>
 nnoremap <leader>pc <CMD>lua require("knap").close_viewer()<CR>
