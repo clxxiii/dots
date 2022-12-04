@@ -1,12 +1,12 @@
 " --- Basic Configuration ---
-:set number
-:set mouse=a
-:set autoindent
-:set tabstop=4
-:set shiftwidth=4
-:set smarttab
-:set softtabstop=4
-:set laststatus=2
+set number
+set mouse=a
+set autoindent
+set tabstop=2
+set shiftwidth=2
+set smarttab
+set softtabstop=4
+set laststatus=2
 
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -29,7 +29,8 @@ Plug 'wakatime/vim-wakatime' " Coding Time Tracker
 
 call plug#end()
 
-:colorscheme catppuccin_mocha
+set termguicolors
+colorscheme catppuccin_mocha
 
 
 let g:lightline = {
