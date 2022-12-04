@@ -13,8 +13,8 @@
 
 let mapleader = "\<Space>"
 " Move lines around 
-nnoremap <m-j> <CMD>m .-2<CR>
-nnoremap <m-k> <CMD>m .+1<CR>
+nnoremap <m-j> <CMD>m .+1<CR>
+nnoremap <m-k> <CMD>m .-2<CR>
 vnoremap <m-j> :m '>+1<CR>gv=gv
 vnoremap <m-k> :m '<-2<CR>gv=gv
 
