@@ -42,7 +42,7 @@ nnoremap <leader>pj <CMD>lua require("knap").forward_jump()<CR>
 nnoremap <leader>po <CMD>lua require("knap").process_once()<CR>
 
 " QoL Terminal Commands
-tnoremap <ESC> <C-\><C-n>
+tnoremap <C-n> <C-\><C-n>
 tnoremap <C-\> <C-\><C-n><CMD>ToggleTerm<CR>
 tnoremap <C-w>h <C-\><C-n><C-w>h
 tnoremap <C-w>j <C-\><C-n><C-w>j
