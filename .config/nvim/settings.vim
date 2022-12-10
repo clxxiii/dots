@@ -12,6 +12,7 @@
 :set splitright
 
 let mapleader = "\<Space>"
+
 " Move lines around 
 nnoremap <m-j> <CMD>m .+1<CR>
 nnoremap <m-k> <CMD>m .-2<CR>
@@ -34,6 +35,9 @@ nnoremap <leader>n <CMD>lua _nap_toggle()<CR>
 
 " Icon Picker
 nnoremap <leader>i <CMD>IconPickerNormal<CR>
+
+" Ranger
+nnoremap <leader>r <CMD>Ranger<CR>
 
 " Markdown & Latex Preview
 nnoremap <leader>ps <CMD>lua require("knap").toggle_autopreviewing()<CR>

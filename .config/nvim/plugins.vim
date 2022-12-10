@@ -38,6 +38,8 @@ Plug 'preservim/tagbar' " Tagbar for code navigation
 Plug 'andweeb/presence.nvim' " Discord RPC
 Plug 'samodostal/image.nvim' " Image Viewer
 Plug 'm00qek/baleia.nvim', { 'tag': 'v1.2.0' }
+Plug 'francoiscabrol/ranger.vim' " File Explorer    
+Plug 'rbgrouleff/bclose.vim' " Ranger Dependency
 
 " Extra Syntax Highlighting
 Plug 'othree/html5.vim'
