@@ -7,4 +7,9 @@ lua << END
 require('transparent').setup({
 	enable = false,
 	})
+
+require('catppuccin').setup({
+  flavour = 'mocha',
+  term_colors = true
+})
 END
