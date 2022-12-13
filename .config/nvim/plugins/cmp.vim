@@ -135,4 +135,10 @@ local kind_icons = {
   require('lspconfig')['texlab'].setup {
     capabilities = capabilities
   }
+  require('lspconfig')['svelte'].setup {
+    capabilities = capabilities
+  }
+  require('lspconfig')['emmet_ls'].setup {
+    capabilities = capabilities
+  }
 EOF
