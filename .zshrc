@@ -118,13 +118,13 @@ export NVM_DIR="$HOME/.nvm"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # Path to Haskell config
 [ -f "/home/clxxiii/.ghcup/env" ] && source "/home/clxxiii/.ghcup/env" # ghcup-env
-# # Path to spicetify
-# export PATH=$PATH:/home/clxxiii/.spicetify
-# # Path to terminal
-# export PATH=$PATH:/home/clxxiii/.local/share/alacritty
-# # Path to clangd
-# export PATH=$PATH:/home/clxxiii/.local/share/clangd_15.0.3/bin
-# # Local Binaries Directory
-# export PATH=$PATH:~/.local/bin
+# Path to spicetify
+export PATH=$PATH:/home/clxxiii/.spicetify
+# Path to terminal
+export PATH=$PATH:/home/clxxiii/.local/share/alacritty
+# Path to clangd
+export PATH=$PATH:/home/clxxiii/.local/share/clangd_15.0.3/bin
+# Local Binaries Directory
+export PATH=$PATH:~/.local/bin
 # Default language in nap
 export NAP_DEFAULT_LANGUAGE="js"
