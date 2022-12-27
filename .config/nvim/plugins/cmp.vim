@@ -108,37 +108,26 @@ local kind_icons = {
   -- Set up lspconfig.
   local capabilities = require('cmp_nvim_lsp').default_capabilities()
   -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-  require('lspconfig')['eslint'].setup {
+  local lspservers = {
+      'eslint',
+      'quick_lint_js',
+      'jsonls',
+      'tsserver',
+      'sumneko_lua',
+      'hls',
+      'rust_analyzer',
+      'clangd',
+      'texlab',
+      'svelte',
+      'emmet_ls',
+      'vimls'
+  }
+
+for i=1,#lspservers do
+  local server = lspservers[i]
+
+  require('lspconfig')[server].setup {
     capabilities = capabilities
   }
-  require('lspconfig')['quick_lint_js'].setup {
-    capabilities = capabilities
-  }
-  require('lspconfig')['jsonls'].setup {
-    capabilities = capabilities
-  }
-  require('lspconfig')['tsserver'].setup {
-    capabilities = capabilities
-  }
-  require('lspconfig')['sumneko_lua'].setup {
-    capabilities = capabilities
-  }
-  require('lspconfig')['hls'].setup {
-    capabilities = capabilities
-  }
-  require('lspconfig')['rust_analyzer'].setup {
-    capabilities = capabilities
-  }
-  require('lspconfig')['clangd'].setup {
-    capabilities = capabilities
-  }
-  require('lspconfig')['texlab'].setup {
-    capabilities = capabilities
-  }
-  require('lspconfig')['svelte'].setup {
-    capabilities = capabilities
-  }
-  require('lspconfig')['emmet_ls'].setup {
-    capabilities = capabilities
-  }
+end
 EOF
