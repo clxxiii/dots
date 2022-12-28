@@ -38,8 +38,10 @@ Plug 'rbgrouleff/bclose.vim' " Ranger Dependency
 Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'evanleck/vim-svelte', { 'branch': 'main' }
+Plug 'pantharshit00/vim-prisma'
 
 " Auto complete
+Plug 'williamboman/mason.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'

@@ -30,6 +30,8 @@ local kind_icons = {
   TypeParameter = "",
 }
 
+require('mason').setup()
+
 -- Set up nvim-cmp.
   local cmp = require'cmp'
 
@@ -120,7 +122,8 @@ local kind_icons = {
       'texlab',
       'svelte',
       'emmet_ls',
-      'vimls'
+      'vimls',
+      'prismals'
   }
 
 for i=1,#lspservers do
