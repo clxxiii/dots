@@ -109,6 +109,7 @@ source $ZSH/oh-my-zsh.sh
 alias cl="clear"
 alias md="mkdir"
 alias clip="xclip -selection clipboard"
+alias lg="lazygit"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
