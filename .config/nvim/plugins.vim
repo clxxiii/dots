@@ -21,7 +21,7 @@ Plug 'tanvirtin/vgit.nvim' " Git changes in gutter
 Plug 'akinsho/toggleterm.nvim' " Better Built-in Terminal
 Plug 'numToStr/Comment.nvim' " Comment Key
 Plug 'ahmedkhalf/project.nvim' " Project Saving
-Plug 'rstacruz/vim-closer' " Auto Brackets
+Plug 'm4xshen/autoclose.nvim' " Auto brackets
 
 " Tools
 Plug 'wakatime/vim-wakatime' " Time Logging
