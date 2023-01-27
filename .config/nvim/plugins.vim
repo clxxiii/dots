@@ -25,10 +25,10 @@ Plug 'rstacruz/vim-closer' " Auto Brackets
 
 " Tools
 Plug 'wakatime/vim-wakatime' " Time Logging
-Plug 'manzeloth/live-server' " Live Server
+" Plug 'manzeloth/live-server' " Live Server
 Plug 'sbdchd/neoformat' " Auto formatter
 Plug 'kdheepak/lazygit.nvim' " Lazygit
-Plug 'frabjous/knap' " Latex & Markdown Viewer
+" Plug 'frabjous/knap' " Latex & Markdown Viewer
 Plug 'stevearc/dressing.nvim' " Icon Picker Dep
 Plug 'ziontee113/icon-picker.nvim' " Icon Picker
 Plug 'andweeb/presence.nvim' " Discord RPC
@@ -70,7 +70,7 @@ source ~/.config/nvim/plugins/barbar.vim
 source ~/.config/nvim/plugins/trouble.vim
 source ~/.config/nvim/plugins/vgit.vim
 source ~/.config/nvim/plugins/toggleterm.vim
-source ~/.config/nvim/plugins/knap.vim
+" source ~/.config/nvim/plugins/knap.vim
 source ~/.config/nvim/plugins/Comment.vim
 source ~/.config/nvim/plugins/project.vim
 source ~/.config/nvim/plugins/telescope.vim
