@@ -9,10 +9,11 @@
 - WM: [i3](https://i3wm.org)
 
 ## GNOME Setup
+
 ![Workspaces](https://github.com/clxxiii/dots/blob/main/Screenshots/Workspaces.png?raw=true)
-![Desktop Screenshot](https://github.com/clxxiii/dots/blob/main/Screenshots/Svelte.png?raw=true)
-![Desktop Screenshot 2](https://github.com/clxxiii/dots/blob/main/Screenshots/Cachelab-Example.png?raw=true)
-![Twitch](https://github.com/clxxiii/dots/blob/main/Screenshots/Twitch%202.png?raw=true)
+![Desktop Screenshot](https://github.com/clxxiii/dots/blob/main/Screenshots/Neovim.png?raw=true)
+![Desktop Screenshot 2](https://github.com/clxxiii/dots/blob/main/Screenshots/Lazygit.png?raw=true)
+![Twitch](https://github.com/clxxiii/dots/blob/main/Screenshots/Twitch.png?raw=true)
 
 - OS: [Ubuntu](https://ubuntu.com)/[Arch](https://archlinux.org)
 - DE: [GNOME](https://gnome.org)
@@ -27,6 +28,7 @@
   - Tray Icons: Reloaded
 
 ### Applications
+
 - Icons: [Papirus](https://www.gnome-look.org/p/1166289/)
 - Terminal: [Alacritty](https://github.com/alacritty/alacritty)
 - Editor: [Neovim](https://neovim.io)
