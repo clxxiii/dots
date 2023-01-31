@@ -70,6 +70,7 @@ source ~/.config/nvim/plugins/barbar.vim
 source ~/.config/nvim/plugins/trouble.vim
 source ~/.config/nvim/plugins/vgit.vim
 source ~/.config/nvim/plugins/toggleterm.vim
+source ~/.config/nvim/plugins/autoclose.vim
 " source ~/.config/nvim/plugins/knap.vim
 source ~/.config/nvim/plugins/Comment.vim
 source ~/.config/nvim/plugins/project.vim
