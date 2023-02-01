@@ -19,6 +19,7 @@ ln -s ~/.dotfiles/.config/polybar ~/.config/polybar
 ln -s ~/.dotfiles/.config/dunst ~/.config/dunst
 ln -s ~/.dotfiles/.config/rofi ~/.config/rofi
 ln -s ~/.dotfiles/.config/bashtop ~/.config/bashtop
+ln -s ~/.dotfiles/.nap ~/.nap
 
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.zshenv ~/.zshenv
@@ -29,6 +30,7 @@ ln -s ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
 
 # Remove double symlinks
 rm ~/.config/nvim/nvim
+rm ~/.nap/.nap
 rm ~/.config/cava/cava
 rm ~/.config/bottom/bottom
 rm ~/Pictures/Wallpapers/Wallpapers

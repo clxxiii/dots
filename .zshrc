@@ -128,5 +128,7 @@ export PATH=$PATH:~/.local/share/alacritty
 export PATH=$PATH:~/.local/share/clangd_15.0.3/bin
 # Local Binaries Directory
 export PATH=$PATH:~/.local/bin
-# Default language in nap
-export NAP_DEFAULT_LANGUAGE="js"
+# nap settings
+#
+export NAP_HOME=~/.nap
+export NAP_CONFIG=~/.nap/config.yaml

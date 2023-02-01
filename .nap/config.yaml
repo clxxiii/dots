@@ -1,0 +1,17 @@
+# Configuration
+home: ~/.nap
+default_language: js
+theme: nord
+
+# Colors
+background: "0"
+foreground: "7"
+primary_color: "#AFBEE1"
+primary_color_subdued: "#64708D"
+green: "#527251"
+bright_green: "#BCE1AF"
+bright_red: "#E49393"
+red: "#A46060"
+black: "#373B41"
+gray: "240"
+white: "#FFFFFF"
