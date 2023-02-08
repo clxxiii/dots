@@ -12,6 +12,16 @@ local nap = Terminal:new({
     close_on_exit = true
 })
 
+local ld = Terminal:new({
+    cmd = 'lazydocker',
+    direction = 'float',
+    close_on_exit = true
+})
+
+function _ld_toggle()
+    ld:toggle()
+end
+
 function _nap_toggle()
     nap:toggle()
 end

@@ -20,8 +20,9 @@ nnoremap <m-k> <CMD>m .-2<CR>
 vnoremap <m-j> :m '>+1<CR>gv=gv
 vnoremap <m-k> :m '<-2<CR>gv=gv
 
-" Lazygit keybind
+" Lazy keybinds
 nnoremap <leader>lg <CMD>LazyGit<CR>
+nnoremap <leader>ld <CMD>lua _ld_toggle()<CR>
 
 " Telescope bindings
 nnoremap <leader>ff <CMD>Telescope find_files<CR>
