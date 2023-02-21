@@ -112,6 +112,7 @@ require('mason').setup()
   -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
   local lspservers = {
       'eslint',
+      'cssls',
       'quick_lint_js',
       'jsonls',
       'tsserver',

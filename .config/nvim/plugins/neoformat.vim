@@ -6,6 +6,7 @@ autocmd BufWritePre *.rs Neoformat
 autocmd BufWritePre *.md Neoformat
 autocmd BufWritePre *.yml Neoformat
 autocmd BufWritePre *.json Neoformat
+autocmd BufWritePre *.svelte Neoformat
 autocmd BufWritePre *.py Neoformat
 autocmd BufWritePre *.go Neoformat
 autocmd BufWritePre *.ts Neoformat

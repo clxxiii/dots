@@ -7,6 +7,7 @@ Plug 'nvim-lualine/lualine.nvim' " Status Bar
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' } " Color Scheme
 Plug 'romgrk/barbar.nvim' " Tabs
 Plug 'ryanoasis/vim-devicons' " Developer Icons
+Plug 'kyazdani42/nvim-web-devicons' " Status Bar Icons
 
 " QoL
 Plug 'folke/which-key.nvim' " Key Suggestions
@@ -15,7 +16,6 @@ Plug 'nvim-tree/nvim-tree.lua' " File Explorer
 Plug 'nvim-lua/plenary.nvim' " Telescope Dependency
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' } " File Search
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TsUpdate'} " 
-Plug 'kyazdani42/nvim-web-devicons' " Status Bar Icons
 Plug 'folke/trouble.nvim' " Error box
 Plug 'tanvirtin/vgit.nvim' " Git changes in gutter
 Plug 'akinsho/toggleterm.nvim' " Better Built-in Terminal
@@ -25,7 +25,7 @@ Plug 'm4xshen/autoclose.nvim' " Auto brackets
 
 " Tools
 Plug 'wakatime/vim-wakatime' " Time Logging
-" Plug 'manzeloth/live-server' " Live Server
+Plug 'manzeloth/live-server' " Live Server
 Plug 'sbdchd/neoformat' " Auto formatter
 Plug 'kdheepak/lazygit.nvim' " Lazygit
 " Plug 'frabjous/knap' " Latex & Markdown Viewer
@@ -49,10 +49,6 @@ Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
-
-" For vsnip users.
-" Plug 'hrsh7th/cmp-vsnip'
-" Plug 'hrsh7th/vim-vsnip'
 
 " For luasnip users.
 Plug 'L3MON4D3/LuaSnip'
