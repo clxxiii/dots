@@ -112,10 +112,6 @@ alias clip="xclip -selection clipboard"
 alias lg="lazygit"
 alias ld="lazydocker"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # Path to Haskell config
@@ -126,8 +122,6 @@ export PATH=$PATH:~/.spicetify
 export PATH=$PATH:~/.local/share/alacritty
 # Path to clangd
 export PATH=$PATH:~/.local/share/clangd_15.0.3/bin
-# Local Binaries Directory
-export PATH=$PATH:~/.local/bin
 # nap settings
 #
 export NAP_HOME=~/.nap

@@ -27,6 +27,8 @@ ln -s ~/.dotfiles/.vimrc ~/.vimrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig 
 ln -s ~/.dotfiles/.alacritty.yml ~/.alacritty.yml
 ln -s ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
+ln -s ~/.dotfiles/.paths ~/.paths
+ln -s ~/.dotfiles/.profile ~/.profile
 
 # Remove double symlinks
 rm ~/.config/nvim/nvim
