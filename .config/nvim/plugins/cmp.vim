@@ -124,7 +124,8 @@ require('mason').setup()
       'svelte',
       'emmet_ls',
       'vimls',
-      'prismals'
+      'prismals',
+      'jdtls'
   }
 
 for i=1,#lspservers do
