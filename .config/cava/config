@@ -14,8 +14,8 @@ gradient_color_8 = '#f38ba8'
 channels = mono
 
 [smoothing]
-noise_reduction = 1
-monstercat = 0
+noise_reduction = 0.2
+monstercat = 1
 waves = 0
 
 [eq]
