@@ -8,6 +8,7 @@ Plug 'catppuccin/nvim', { 'as': 'catppuccin' } " Color Scheme
 Plug 'romgrk/barbar.nvim' " Tabs
 Plug 'ryanoasis/vim-devicons' " Developer Icons
 Plug 'kyazdani42/nvim-web-devicons' " Status Bar Icons
+Plug 'nathanaelkane/vim-indent-guides' " Indent Guides
 
 " QoL
 Plug 'folke/which-key.nvim' " Key Suggestions

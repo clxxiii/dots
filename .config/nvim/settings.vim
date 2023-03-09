@@ -36,7 +36,7 @@ nnoremap <C-\> <CMD>ToggleTerm<CR>
 nnoremap <leader>n <CMD>lua _nap_toggle()<CR>
 
 " Icon Picker
-nnoremap <leader>i <CMD>IconPickerNormal<CR>
+nnoremap <leader>ic <CMD>IconPickerNormal<CR>
 
 " Ranger
 nnoremap <leader>r <CMD>Ranger<CR>
