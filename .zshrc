@@ -118,14 +118,15 @@ alias ld="lazydocker"
 [ -f "/home/clxxiii/.ghcup/env" ] && source "/home/clxxiii/.ghcup/env" # ghcup-env
 # Path to spicetify
 export PATH=$PATH:~/.spicetify
-# Path to terminal
-export PATH=$PATH:~/.local/share/alacritty
 # Path to clangd
 export PATH=$PATH:~/.local/share/clangd_15.0.3/bin
 # nap settings
 #
 export NAP_HOME=~/.nap
 export NAP_CONFIG=~/.nap/config.yaml
+
+alias keylogup="touch /tmp/keylogger.log && sudo logkeys --start --output /tmp/keylogger.log --no-timestamps"
+alias keylogdown="sudo logkeys --kill && sudo rm /tmp/keylogger.log"
 
 PATH="/home/clxxiii/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/home/clxxiii/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
