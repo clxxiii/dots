@@ -116,7 +116,6 @@ require('mason').setup()
       'quick_lint_js',
       'jsonls',
       'tsserver',
-      'sumneko_lua',
       'hls',
       'rust_analyzer',
       'clangd',
