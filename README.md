@@ -27,6 +27,11 @@
 
 <details>
   <summary><h2>📱 Phone Wallpaper Credit</h2></summary>
+  
+  | Wallpaper | Credit |
+  | :-------: | ------ |
+  | ![Wallpaper](https://raw.githubusercontent.com/clxxiii/dots/main/Wallpapers/phone/crystal%20peaks.webp) | [u/CometShine](https://www.reddit.com/r/HollowKnight/comments/amzqrx/crystal_peak/) |
+  | ![Wallpaper](https://raw.githubusercontent.com/clxxiii/dots/main/Wallpapers/phone/path%20of%20pain.webp) | [u/CometShine](https://www.reddit.com/r/HollowKnight/comments/9kd9c8/path_of_pain/?st=JRQL4MVH&sh=decd4e69) |
 </details>
 
 
