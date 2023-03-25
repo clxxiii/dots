@@ -20,6 +20,7 @@ ln -s ~/.dotfiles/.config/dunst ~/.config/dunst
 ln -s ~/.dotfiles/.config/rofi ~/.config/rofi
 ln -s ~/.dotfiles/.config/bashtop ~/.config/bashtop
 ln -s ~/.dotfiles/.nap ~/.nap
+ln -s ~/.dotfiles/.config/neofetch ~/.config/neofetch
 
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.zshenv ~/.zshenv
@@ -43,4 +44,5 @@ rm ~/.config/polybar/polybar
 rm ~/.config/dunst/dunst
 rm ~/.config/rofi/rofi
 rm ~/.config/bashtop/bashtop
+rm ~/.config/neofetch/neofetch
 
