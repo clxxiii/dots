@@ -1,223 +1,99 @@
+colors:
+  bright:
+    black: "#585B70"
+    blue: "#89B4FA"
+    cyan: "#94E2D5"
+    green: "#A6E3A1"
+    magenta: "#F5C2E7"
+    red: "#F38BA8"
+    white: "#A6ADC8"
+    yellow: "#F9E2AF"
+  cursor:
+    cursor: "#F5E0DC"
+    text: "#1E1E2E"
+  dim:
+    black: "#45475A"
+    blue: "#89B4FA"
+    cyan: "#94E2D5"
+    green: "#A6E3A1"
+    magenta: "#F5C2E7"
+    red: "#F38BA8"
+    white: "#BAC2DE"
+    yellow: "#F9E2AF"
+  hints:
+    end:
+      background: "#A6ADC8"
+      foreground: "#1E1E2E"
+    start:
+      background: "#F9E2AF"
+      foreground: "#1E1E2E"
+  indexed_colors:
+    - color: "#FAB387"
+      index: 16
+    - color: "#F5E0DC"
+      index: 17
+  normal:
+    black: "#45475A"
+    blue: "#89B4FA"
+    cyan: "#94E2D5"
+    green: "#A6E3A1"
+    magenta: "#F5C2E7"
+    red: "#F38BA8"
+    white: "#BAC2DE"
+    yellow: "#F9E2AF"
+  primary:
+    background: "#1E1E2E"
+    bright_foreground: "#CDD6F4"
+    dim_foreground: "#CDD6F4"
+    foreground: "#CDD6F4"
+  search:
+    focused_match:
+      background: "#A6E3A1"
+      foreground: "#1E1E2E"
+    footer_bar:
+      background: "#A6ADC8"
+      foreground: "#1E1E2E"
+    matches:
+      background: "#A6ADC8"
+      foreground: "#1E1E2E"
+  selection:
+    background: "#F5E0DC"
+    text: "#1E1E2E"
+  vi_mode_cursor:
+    cursor: "#B4BEFE"
+    text: "#1E1E2E"
+cursor:
+  style: Beam
+  vi_mode_style: Beam
 env:
-  # TERM variable
-  #
-  # This value is used to set the `$TERM` environment variable for
-  # each instance of Alacritty. If it is not present, alacritty will
-  # check the local terminfo database and use `alacritty` if it is
-  # available, otherwise `xterm-256color` is used.
-  TERM: "xterm-256color"
-
+  TERM: xterm-256color
+font:
+  bold:
+    family: JetBrainsMonoNL Nerd Font Mono
+    style: Bold
+  glyph_offset:
+    y: 0
+  italic:
+    family: JetBrainsMonoNL Nerd Font Mono
+    style: Italic
+  normal:
+    family: JetBrainsMonoNL Nerd Font Mono
+    style: Regular
+  offset:
+    y: 0
+  size: 10
+scrolling:
+  history: 1000
+  multiplier: 3
+shell:
+  program: /bin/zsh
+theme: Soothing
 window:
-  # Window padding (changes require restart)
-  #
-  # Blank space added around the window in pixels. This padding is scaled
-  # by DPI and the specified value is always added at both opposing sides.
-  padding:
-    x: 12
-    y: 12
   decorations: none
   dimensions:
     columns: 80
     lines: 24
   opacity: 1
-
-scrolling:
-  # Maximum number of lines in the scrollback buffer.
-  # Specifying '0' will disable scrolling.
-  history:
-    1000
-
-    # Scrolling distance multiplier.
-  multiplier: 3
-
-# Font configuration
-font:
-  # Normal (roman) font face
-  normal:
-    # Font family
-    #
-    # Default:
-    #   - (macOS) Menlo
-    #   - (Linux/BSD) monospace
-    #   - (Windows) Consolas
-    family: "JetBrainsMonoNL Nerd Font Mono"
-
-    # The `style` can be specified to pick a specific face.
-    style: Regular
-
-  # Bold font face
-  bold:
-    # Font family
-    #
-    # If the bold family is not specified, it will fall back to the
-    # value specified for the normal font.
-    family: "JetBrainsMonoNL Nerd Font Mono"
-
-    # The `style` can be specified to pick a specific face.
-    style: Bold
-
-  # Italic font face
-  italic:
-    # Font family
-    #
-    # If the italic family is not specified, it will fall back to the
-    # value specified for the normal font.
-    family: "JetBrainsMonoNL Nerd Font Mono"
-
-    # The `style` can be specified to pick a specific face.
-    style: Italic
-
-  # Point size
-  size: 10
-
-  offset:
-    y: 0
-
-  glyph_offset:
-    y: 0
-
-# colors:
-#   name: Brewer (dark)
-#   author: Chris Kempson
-#   primary:
-#     background: "#0a0b11"
-#     foreground: "#b7b8b9"
-#   cursor:
-#     text: "#0c0d0e"
-#     cursor: "#b7b8b9"
-#   normal:
-#     black: "#0c0d0e"
-#     red: "#e31a1c"
-#     green: "#31a354"
-#     yellow: "#dca060"
-#     blue: "#3182bd"
-#     magenta: "#756bb1"
-#     cyan: "#80b1d3"
-#     white: "#b7b8b9"
-#   bright:
-#     black: "#737475"
-#     red: "#e31a1c"
-#     green: "#31a354"
-#     yellow: "#dca060"
-#     blue: "#3182bd"
-#     magenta: "#756bb1"
-#     cyan: "#80b1d3"
-#     white: "#fcfdfe"
-# colors:
-# name: Soothing
-#   primary:
-#     background: "#161617"
-#     foreground: "#FFFFFF"
-#   cursor:
-#     text: "#0c0d0e"
-#     cursor: "#b7b8b9"
-#   normal:
-#     black: "#222222"
-#     blue: "#66A8B8"
-#     cyan: "#6E868F"
-#     green: "#B6CD42"
-#     magenta: "#B5496B"
-#     red: "#E74E4E"
-#     white: "#CACACA"
-#     yellow: "#F8A13B"
-#   bright:
-#     black: "#2C2C2C"
-#     blue: "#70B2C2"
-#     cyan: "#789099"
-#     green: "#C0D74C"
-#     magenta: "#BF5375"
-#     red: "#FF5858"
-#     white: "#D4D4D4"
-#     yellow: "#FFAB45"
-
-# -- Imported from https://github.com/catppuccin/alacritty/blob/main/catppuccin-mocha.yml
-colors:
-  primary:
-    background: "#1E1E2E" # base
-    foreground: "#CDD6F4" # text
-    # Bright and dim foreground colors
-    dim_foreground: "#CDD6F4" # text
-    bright_foreground: "#CDD6F4" # text
-
-  # Cursor colors
-  cursor:
-    text: "#1E1E2E" # base
-    cursor: "#F5E0DC" # rosewater
-  vi_mode_cursor:
-    text: "#1E1E2E" # base
-    cursor: "#B4BEFE" # lavender
-
-  # Search colors
-  search:
-    matches:
-      foreground: "#1E1E2E" # base
-      background: "#A6ADC8" # subtext0
-    focused_match:
-      foreground: "#1E1E2E" # base
-      background: "#A6E3A1" # green
-    footer_bar:
-      foreground: "#1E1E2E" # base
-      background: "#A6ADC8" # subtext0
-
-  # Keyboard regex hints
-  hints:
-    start:
-      foreground: "#1E1E2E" # base
-      background: "#F9E2AF" # yellow
-    end:
-      foreground: "#1E1E2E" # base
-      background: "#A6ADC8" # subtext0
-
-  # Selection colors
-  selection:
-    text: "#1E1E2E" # base
-    background: "#F5E0DC" # rosewater
-
-  # Normal colors
-  normal:
-    black: "#45475A" # surface1
-    red: "#F38BA8" # red
-    green: "#A6E3A1" # green
-    yellow: "#F9E2AF" # yellow
-    blue: "#89B4FA" # blue
-    magenta: "#F5C2E7" # pink
-    cyan: "#94E2D5" # teal
-    white: "#BAC2DE" # subtext1
-
-  # Bright colors
-  bright:
-    black: "#585B70" # surface2
-    red: "#F38BA8" # red
-    green: "#A6E3A1" # green
-    yellow: "#F9E2AF" # yellow
-    blue: "#89B4FA" # blue
-    magenta: "#F5C2E7" # pink
-    cyan: "#94E2D5" # teal
-    white: "#A6ADC8" # subtext0
-
-  # Dim colors
-  dim:
-    black: "#45475A" # surface1
-    red: "#F38BA8" # red
-    green: "#A6E3A1" # green
-    yellow: "#F9E2AF" # yellow
-    blue: "#89B4FA" # blue
-    magenta: "#F5C2E7" # pink
-    cyan: "#94E2D5" # teal
-    white: "#BAC2DE" # subtext1
-
-  indexed_colors:
-    - { index: 16, color: "#FAB387" }
-    - { index: 17, color: "#F5E0DC" }
-
-cursor:
-  # Cursor style
-  #
-  # Values for `style`:
-  #   - ▇ Block
-  #   - _ Underline
-  #   - | Beam
-  style: "Beam"
-
-  vi_mode_style: "Beam"
-theme: Soothing
+  padding:
+    x: 12
+    y: 12
