@@ -6,6 +6,7 @@
 lua << END
 require('catppuccin').setup({
   flavour = 'mocha',
-  term_colors = true
+  term_colors = true,
+  transparent_background = true
 })
 END
