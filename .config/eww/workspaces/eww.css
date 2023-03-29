@@ -1,0 +1,15 @@
+.workspaces button {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0px;
+  font-weight: bold;
+  font-size: 18px;
+  min-width: 35px;
+  transition: 0.4s ease;
+}
+
+.workspaces button.active {
+}
+
+.time {
+  font-size: 24px;
+}

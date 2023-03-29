@@ -42,6 +42,7 @@ Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'evanleck/vim-svelte', { 'branch': 'main' }
 Plug 'pantharshit00/vim-prisma'
+Plug 'elkowar/yuck.vim' " Eww autocompletion & highlighting
 
 " Auto complete
 Plug 'williamboman/mason.nvim'

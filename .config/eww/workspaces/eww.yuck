@@ -1,0 +1,34 @@
+(defwindow workspaces
+  :monitor 0
+  :geometry (geometry :x "6px"
+                      :y "6px"
+                      :width "180px"
+                      :height "40px"
+                      :anchor "top left")
+  :stacking "fg"
+  :reserve (struts :distance "40px" :side "top")
+  :windowtype "dock"
+  :focusable false
+  :wm-ignore true
+  (box
+      :class {binding_state.name}
+      (workspaces)
+    )
+  )
+
+(defvar shown_workspaces '["1", "2", "3", "4", "5"]')
+
+
+(defwidget workspaces []
+  (box :class "workspaces"
+       :orientation "h"
+       :halign "start"
+    (for ws in shown_workspaces
+      (button 
+        :class {ws == workspaces.current.num ? "active" : ""}
+        :onclick "i3-msg workspace ${ws}" 
+        {ws == workspaces.current.num ? '' : '󰝦'}
+      )
+    )
+  )
+)

@@ -1,0 +1,13 @@
+--2023-03-28 19:17:40--  https://i.scdn.co/image/ab67616d0000b27336977e237a8f70ec6c990636
+Loaded CA certificate '/etc/ssl/certs/ca-certificates.crt'
+Resolving i.scdn.co (i.scdn.co)... 199.232.38.248, 2a04:4e42:46::760
+Connecting to i.scdn.co (i.scdn.co)|199.232.38.248|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 69971 (68K) [image/jpeg]
+Saving to: ‘ab67616d0000b27336977e237a8f70ec6c990636.1’
+
+     0K .......... .......... .......... .......... .......... 73% 5.93M 0s
+    50K .......... ........                                   100% 76.0M=0.008s
+
+2023-03-28 19:17:40 (7.88 MB/s) - ‘ab67616d0000b27336977e237a8f70ec6c990636.1’ saved [69971/69971]
+

@@ -1,0 +1,37 @@
+(include 'workspaces/eww.yuck')
+(include 'center/eww.yuck')
+
+; Placeholder widget for centerboxes
+(defwidget empty []
+  '')
+
+; =======================================
+;   ALL LISTENING AND POLLING FUNCTIONS
+; =======================================
+
+(deflisten workspaces
+  :interval "0.2s"
+  :initial '{"current": {"num": 1}}'
+  `i3-msg -t subscribe -m '["workspace"]'`)
+
+(deflisten binding_state
+  :initial "hi"
+  `i3-msg -t subscribe -m '["mode"]'`)
+
+(deflisten window
+  :initial "hi"
+  `i3-msg -t subscribe -m '["window"]'`)
+
+
+(defpoll time :interval "1s" :inital "hello"
+  `date '+%I:%M %p'`
+  )
+
+(defpoll date :interval "1s" :inital "hello"
+  `date +%D`
+  )
+
+
+(deflisten music :initial ""
+  "playerctl --follow metadata --format '{{ artist }} - {{ title }}' || true")
+

@@ -1,0 +1,14 @@
+@import "workspaces/eww.css";
+@import "center/eww.css";
+
+* {
+  all: unset;
+}
+
+window {
+  background-color: rgba(30, 30, 46, 0.8);
+}
+
+.resize {
+  background-color: rgba(90, 30, 46, 0.8);
+}

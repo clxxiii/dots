@@ -1,0 +1,49 @@
+(defwindow center
+  :monitor 0
+  :geometry (geometry :x "0%"
+                      :y "6px"
+                      :width "50%"
+                      :height "40px"
+                      :anchor "top center")
+  :stacking "fg"
+  :reserve (struts :distance "40px" :side "top")
+  :windowtype "dock"
+  :focusable false
+  :wm-ignore true
+    (centerbox
+      :class {binding_state.change}
+      :orientation 'h'
+      (music)
+      (window)
+      (datetime)
+  )
+)
+
+(defwidget music []
+  (box
+    :style 'padding-left: 6px'
+    :halign 'start'
+     {music}
+    )
+  )
+
+(defwidget window []
+  (box
+    :class "title"
+    {window.container.name}
+    )
+  )
+
+(defwidget datetime []
+  (box
+    :orientation 'v'
+    :class "time"
+    :valign 'center'
+    :halign 'end'
+    :space-evenly true
+    :style 'padding-right: 6px'
+  {time}
+  {date}
+    )
+  )
+

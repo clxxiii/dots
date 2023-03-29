@@ -1,0 +1,13 @@
+.time {
+  font-family: "Jetbrains Mono";
+  font-size: 12px;
+}
+
+.title {
+  font-weight: bold;
+  color: #888888;
+}
+
+.music {
+  font-family: "Product Sans", "Jetbrains Mono NF";
+}
