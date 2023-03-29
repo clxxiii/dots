@@ -50,6 +50,12 @@ exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/wallpaper
 # # Start Polybar
 # exec --no-startup-id ~/.config/polybar/start.sh
 
+# Start Top Bar services
+exec --no-startup-id eww
+exec eww open workspaces
+exec eww open center
+exec eww open right-bat
+
 # Start notification server
 exec --no-startup-id /usr/bin/dunst
 

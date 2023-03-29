@@ -30,3 +30,4 @@ fi
 
 
 export GTK_THEME=Catppuccin-Mocha-Standard-Sky-Dark
+. "$HOME/.cargo/env"

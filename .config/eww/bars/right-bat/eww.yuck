@@ -1,0 +1,33 @@
+(defwindow right-bat
+  :monitor 0
+  :geometry (geometry :x "-6px"
+                      :y "6px"
+                      :width "60px"
+                      :height "40px"
+                      :anchor "top right")
+  :stacking "fg"
+  :reserve (struts :distance "40px" :side "top")
+  :windowtype "dock"
+  :focusable false
+  :wm-ignore true
+    (box
+      :class 'bar ${binding_state?.change}'
+      :orientation 'h'
+      (bat)
+  )
+)
+
+
+(defwidget bat []
+  (box
+    :halign "center"
+  {battery_icon}
+  {battery_per}
+  )
+)
+
+(defwidget wifi []
+	(box		:orientation "h"  
+				:tooltip wifi-name
+	(button		:onclick "scripts/popup wifi" 
+				:class "wifi-icon" wifi-icon)))

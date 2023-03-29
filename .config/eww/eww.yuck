@@ -1,5 +1,7 @@
-(include 'workspaces/eww.yuck')
-(include 'center/eww.yuck')
+(include 'bars/workspaces/eww.yuck')
+(include 'bars/center/eww.yuck')
+(include 'bars/right-bat/eww.yuck')
+(include 'blocks/music/eww.yuck')
 
 ; Placeholder widget for centerboxes
 (defwidget empty []
@@ -9,19 +11,20 @@
 ;   ALL LISTENING AND POLLING FUNCTIONS
 ; =======================================
 
-(deflisten workspaces
+(defpoll workspaces
   :interval "0.2s"
-  :initial '{"current": {"num": 1}}'
-  `i3-msg -t subscribe -m '["workspace"]'`)
+  `i3-msg -t get_outputs`)
 
 (deflisten binding_state
-  :initial "hi"
+  :initial '{"change": "default"}'
   `i3-msg -t subscribe -m '["mode"]'`)
 
 (deflisten window
   :initial "hi"
   `i3-msg -t subscribe -m '["window"]'`)
 
+(defpoll wifi-icon :interval "1s" "scripts/wifi icon")
+(defpoll wifi-name :interval "1s" "scripts/wifi name")
 
 (defpoll time :interval "1s" :inital "hello"
   `date '+%I:%M %p'`
@@ -30,8 +33,22 @@
 (defpoll date :interval "1s" :inital "hello"
   `date +%D`
   )
+(defpoll battery_icon
+    :interval "1s"
+    "scripts/battery.sh icon")
 
+(defpoll battery_per
+    :interval "1s"
+    "scripts/battery.sh percent")
+(defpoll volume
+    :interval "0.1s"
+    "scripts/getvolume.sh" )
 
 (deflisten music :initial ""
   "playerctl --follow metadata --format '{{ artist }} - {{ title }}' || true")
 
+(defpoll art		:interval "5s"  "scripts/music.sh coverloc")
+(defpoll title		:interval "5s"  "scripts/music.sh title")
+(defpoll artist		:interval "5s"  "scripts/music.sh artist")
+;; (defpoll playpause	:interval "5s"  "scripts/music.sh statusicon")
+;; (defpoll songtime 	:interval "1s"  "scripts/getSongDuration")

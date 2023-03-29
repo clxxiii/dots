@@ -11,21 +11,41 @@
   :focusable false
   :wm-ignore true
     (centerbox
-      :class {binding_state.change}
+      :class 'bar ${binding_state.change}'
       :orientation 'h'
-      (music)
+      (audio)
       (window)
       (datetime)
   )
 )
 
-(defwidget music []
-  (box
-    :style 'padding-left: 6px'
-    :halign 'start'
-     {music}
-    )
+(defwidget audio []
+    (box
+      :orientation 'h'
+      :halign 'start'
+      (volume)
+    (label :text {music} )
+      )
+
   )
+
+(defwidget volume []
+  (eventbox
+    :halign "start"
+    :width 40
+    :onscroll "scripts/set-volume.sh {} 0.5"
+    (overlay 
+      (circular-progress
+        :value {volume > 100 ? 100 : volume}
+        :width 20
+        :height 20
+        :thickness 4
+        :style 'margin: 0.2em'
+        )
+      {volume}
+      )
+    )
+)
 
 (defwidget window []
   (box

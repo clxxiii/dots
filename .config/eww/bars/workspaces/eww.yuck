@@ -11,7 +11,7 @@
   :focusable false
   :wm-ignore true
   (box
-      :class {binding_state.name}
+      :class 'bar ${binding_state.change}'
       (workspaces)
     )
   )
@@ -25,9 +25,9 @@
        :halign "start"
     (for ws in shown_workspaces
       (button 
-        :class {ws == workspaces.current.num ? "active" : ""}
+        :class {ws == workspaces[0].current_workspace ? "active" : ""}
         :onclick "i3-msg workspace ${ws}" 
-        {ws == workspaces.current.num ? '' : '󰝦'}
+        {ws == workspaces[0].current_workspace ? '' : '󰝦'}
       )
     )
   )
