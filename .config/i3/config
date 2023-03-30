@@ -93,8 +93,8 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec "rofi -modi drun,run -show drun"
 
 # Brightness keys
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
+bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/volume_brightness.sh brightness_up
+bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/volume_brightness.sh brightness_down
 
 # media keys
 bindsym XF86AudioPlay exec playerctl play-pause
