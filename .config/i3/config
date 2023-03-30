@@ -54,7 +54,7 @@ exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/wallpaper
 exec --no-startup-id eww
 exec eww open workspaces
 exec eww open center
-exec eww open right-bat
+# exec eww open right-bat
 
 # Start notification server
 exec --no-startup-id /usr/bin/dunst
@@ -74,6 +74,7 @@ floating_modifier $mod
 
 # Set windows floating by default
 for_window [class="[.]*"] floating enable
+for_window [class="brave"] floating disable
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
@@ -188,7 +189,7 @@ bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
 # bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-bindsym $mod+Shift+e exec "rofi -show p -modi 'p:~/.config/rofi/rofi-power-menu --choices shutdown/reboot/logout' "
+bindsym $mod+Shift+e exec "rofi -show p -modi 'p:~/.config/rofi/rofi-power-menu --choices shutdown/reboot/suspend/logout' "
 
 # Screenshot Tool
 bindsym Print exec flameshot gui
