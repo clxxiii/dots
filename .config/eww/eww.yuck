@@ -1,7 +1,6 @@
 (include 'bars/workspaces/eww.yuck')
 (include 'bars/center/eww.yuck')
 (include 'bars/right-bat/eww.yuck')
-(include 'blocks/music/eww.yuck')
 
 ; Placeholder widget for centerboxes
 (defwidget empty []
