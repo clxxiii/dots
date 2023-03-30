@@ -215,10 +215,10 @@ mode "resize" {
         bindsym l resize grow width 10 px or 10 ppt
 
         # Shift + direction will increase the speed
-        bindsym H resize shrink width 50 px or 50 ppt
-        bindsym J resize grow height 50 px or 50 ppt
-        bindsym K resize shrink height 50 px or 50 ppt
-        bindsym L resize grow width 50 px or 50 ppt
+        bindsym Shift+h resize shrink width 50 px or 50 ppt
+        bindsym Shift+j resize grow height 50 px or 50 ppt
+        bindsym Shift+k resize shrink height 50 px or 50 ppt
+        bindsym Shift+l resize grow width 50 px or 50 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
