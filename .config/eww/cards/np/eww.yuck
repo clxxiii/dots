@@ -1,0 +1,16 @@
+(defwindow np
+  :monitor 0
+  :geometry (geometry :x "-6px"
+                      :y "-6px"
+                      :width "100px"
+                      :height "100px"
+                      :anchor "bottom right")
+  :stacking "bg"
+  :windowtype "normal"
+  :wm-ignore false
+  (box
+    :class "bar"
+    :style "background: #2e2e2e"
+  (empty)
+    )
+  )

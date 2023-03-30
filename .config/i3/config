@@ -25,6 +25,10 @@ gaps inner 6
 gaps outer 0
 gaps top 46
 
+client.background #1e1e2e
+client.focused #1e1e2e #1e1e2e #ffffff
+client.unfocused #181825 #181825 #ffffff
+
 
 # # Start XDG autostart .desktop files using dex. See also
 # # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -54,7 +58,7 @@ exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/wallpaper
 exec --no-startup-id eww
 exec eww open workspaces
 exec eww open center
-exec eww open right-bat
+# exec eww open right-bat
 
 # Start notification server
 exec --no-startup-id /usr/bin/dunst
@@ -64,9 +68,9 @@ exec --no-startup-id /usr/bin/dunst
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/volume_brightness.sh volume_up
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/volume_brightness.sh volume_down
+bindsym XF86AudioMute exec --no-startup-id ~/.config/i3/volume_brightness.sh volume_mute
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -192,7 +196,7 @@ bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
 # bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-bindsym $mod+Shift+e exec "rofi -show p -modi 'p:~/.config/rofi/rofi-power-menu --choices shutdown/reboot/logout' "
+bindsym $mod+Shift+e exec "rofi -show p -modi 'p:~/.config/rofi/rofi-power-menu --choices shutdown/reboot/suspend/logout' "
 
 # Screenshot Tool
 bindsym Print exec flameshot gui
@@ -209,6 +213,12 @@ mode "resize" {
         bindsym j resize grow height 10 px or 10 ppt
         bindsym k resize shrink height 10 px or 10 ppt
         bindsym l resize grow width 10 px or 10 ppt
+
+        # Shift + direction will increase the speed
+        bindsym H resize shrink width 50 px or 50 ppt
+        bindsym J resize grow height 50 px or 50 ppt
+        bindsym K resize shrink height 50 px or 50 ppt
+        bindsym L resize grow width 50 px or 50 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt

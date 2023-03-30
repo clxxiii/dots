@@ -24,7 +24,7 @@
       :orientation 'h'
       :halign 'start'
       (volume)
-    (label :text {music} )
+    ; (label :text {music} )
       )
 
   )
