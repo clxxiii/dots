@@ -25,6 +25,10 @@ gaps inner 6
 gaps outer 0
 gaps top 46
 
+client.background #1e1e2e
+client.focused #1e1e2e #1e1e2e #ffffff
+client.unfocused #181825 #181825 #ffffff
+
 
 # # Start XDG autostart .desktop files using dex. See also
 # # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -74,7 +78,6 @@ floating_modifier $mod
 
 # Set windows floating by default
 for_window [class="[.]*"] floating enable
-for_window [class="brave"] floating disable
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
