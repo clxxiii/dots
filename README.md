@@ -37,9 +37,10 @@
 
 ## i3 Setup
 
-![Arch](https://github.com/clxxiii/dots/blob/main/Screenshots/arch-default.png?raw=true)
+![i3](https://github.com/clxxiii/dots/blob/main/Screenshots/i3.png?raw=true)
 
 - WM: [i3](https://i3wm.org)
+- Bar: [eww](https://github.com/elkowar/eww)
 
 ## GNOME Setup
 
@@ -48,7 +49,7 @@
 ![Desktop Screenshot 2](https://github.com/clxxiii/dots/blob/main/Screenshots/Lazygit.png?raw=true)
 ![Twitch](https://github.com/clxxiii/dots/blob/main/Screenshots/Twitch.png?raw=true)
 
-- OS: [Ubuntu](https://ubuntu.com)/[Arch](https://archlinux.org)
+- OS: [Endeavor](https://endeavouros.com)/[Arch](https://archlinux.org)
 - DE: [GNOME](https://gnome.org)
 - Noteworthy Gnome Extensions:
   - Blur My Shell
