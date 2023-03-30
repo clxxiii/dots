@@ -88,6 +88,10 @@ bindsym $mod+Shift+q kill
 # Rofi
 bindsym $mod+d exec "rofi -modi drun,run -show drun"
 
+# Brightness keys
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +10%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
+
 # media keys
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioPause exec playerctl play-pause
