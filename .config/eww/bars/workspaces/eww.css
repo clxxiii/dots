@@ -2,12 +2,8 @@
   background-color: rgba(0, 0, 0, 0);
   border-radius: 0px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.4rem;
   min-width: 35px;
-  transition: 0.4s ease;
-}
-
-.workspaces button.active {
 }
 
 .time {
