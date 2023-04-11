@@ -8,6 +8,9 @@
   min-width: 40px;
   min-height: 30px
 }
+.h-time {
+  min-width: 75px;
+}
 .h-workspaces button {
   background-color: rgba(0, 0, 0, 0);
   font-weight: bold;
@@ -49,7 +52,6 @@ progressbar trough progress {
 }
 .bright {
   color: #f9e2af;
-  font-size: 2rem;
 }
 .vol {
   color: #74c7ec;

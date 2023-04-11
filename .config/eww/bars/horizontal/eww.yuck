@@ -2,7 +2,7 @@
   :monitor 0
   :geometry (geometry :x "6px"
                       :y "6px"
-                      :width "99.5%"
+                      :width "99.4%"
                       :height "40px"
                       :anchor "top left")
   :stacking "fg"
@@ -77,7 +77,7 @@
     :valign "center"
     :spacing 5
     :space-evenly "false"
-  (label :text {battery_icon} )
+    {battery_icon}
   (progress
     :value {battery_per}
     :orientation "h"
@@ -107,7 +107,7 @@
   :orientation "h"
   :spacing 5
   :space-evenly "false"
-    (label :text "")
+    (label :text "")
     (scale
       :class "volbar"
       :value {brightness}
@@ -127,7 +127,7 @@
   :spacing 5
   :orientation "h"
   :space-evenly "false"
-    (label :text "奄")
+    (label :text "")
     (scale
       :class "vol scale"
       :value {volume}
@@ -138,8 +138,6 @@
       )
     )
   )
-
-(defvar h-volume false)
 
 (defwidget h-power []
   (button
