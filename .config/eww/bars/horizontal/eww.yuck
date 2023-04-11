@@ -14,6 +14,7 @@
   (centerbox
     :class 'opaque bar ${binding_state.change}'
     :space-evenly "false"
+    :visible {window.container.fullscreen_mode == 0}
     :orientation 'h'
   (h-workspaces)
   (empty)

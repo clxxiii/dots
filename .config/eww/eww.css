@@ -19,11 +19,11 @@
 }
 
 .resize {
-  background-color: rgba(243, 139, 168, 0.8)
+  background-color: rgba(137, 220, 235, 0.8)
 }
 
 .bar.opaque.resize {
-  background-color: rgba(243, 139, 168, 1)
+  background-color: rgba(137, 220, 235, 1)
 }
 
 .volume {
