@@ -1,0 +1,84 @@
+.h-workspaces {
+  margin-left: 5px;
+}
+.h-workspaces,
+.h-time {
+  border-radius: 7px;
+  background-color: #313244;
+  min-width: 40px;
+  min-height: 30px
+}
+.h-workspaces button {
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: bold;
+  border-radius: 100px;
+  /* font-size: 2.1rem; */
+  margin: 10px;
+  border: solid 2px #89dceb;
+  min-width: 6px;
+  min-height: 6px;
+  transition: 0.2s ease;
+}
+.h-widgets {
+  padding: 0px 5px;
+  min-height: 30px;
+}
+
+progressbar trough,
+scale trough {
+  background-color: #313244;
+  min-height: 10px;
+  border-radius: 100px;
+  min-width: 90px;
+}
+scale trough highlight,
+progressbar trough progress {
+  border-radius: 10px;
+  min-height: 10px;
+}
+
+.widget {
+  font-size: 1.5rem;
+  font-family: 'Material Icons';
+}
+.wifi {
+  color: #fab387;
+}
+.bat {
+  color: #a6e3a1;
+}
+.bright {
+  color: #f9e2af;
+  font-size: 2rem;
+}
+.vol {
+  color: #74c7ec;
+}
+.vol scale trough highlight {
+  background-color: #74c7ec;
+}
+scale {
+  font-size: 1rem;
+}
+.bright scale trough highlight {
+  background-color: #f9e2af;
+}
+.bat progressbar trough progress {
+  background-color: #a6e3a1;
+}
+
+.h-time {
+  margin-right: 5px;
+  font-family: 'Jetbrains Mono';
+  font-weight: 800;
+  min-height: 30px;
+  border-radius: 7px;
+}
+
+.h-workspaces button:hover {
+  background-color: rgba(137, 220, 235, 0.5)
+}
+
+.h-workspaces button.active {
+  background-color: #89dceb;
+}

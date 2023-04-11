@@ -1,11 +1,16 @@
 (include 'bars/workspaces/eww.yuck')
 (include 'bars/center/eww.yuck')
 (include 'bars/right-bat/eww.yuck')
+(include 'bars/vertical/eww.yuck')
+(include 'bars/horizontal/eww.yuck')
 (include 'cards/np/eww.yuck')
 
 ; Placeholder widget for centerboxes
 (defwidget empty []
   '')
+
+; Eww executable
+(defvar eww "$HOME/.local/bin/eww")
 
 ; =======================================
 ;   ALL LISTENING AND POLLING FUNCTIONS
@@ -23,16 +28,34 @@
   :initial "hi"
   `i3-msg -t subscribe -m '["window"]'`)
 
-(defpoll wifi-icon :interval "1s" "scripts/wifi icon")
-(defpoll wifi-name :interval "1s" "scripts/wifi name")
+(defpoll wifi-icon :interval "1s" "scripts/wifi.sh icon")
+(defpoll wifi-name :interval "1s" "scripts/wifi.sh name")
+
+(defpoll brightness :inital 0 :interval "0.1s"
+      `brightnessctl | grep -Po '[0-9]{1,3}(?=%)' | head -1`
+)
+
+(defpoll date :interval "1s" :inital "hello"
+  `date '+%B %e, %Y'`
+  )
 
 (defpoll time :interval "1s" :inital "hello"
   `date '+%I:%M %p'`
   )
 
-(defpoll date :interval "1s" :inital "hello"
-  `date +%D`
+(defpoll hour :interval "1s" :inital "hello"
+  `date '+%H'`
   )
+
+(defpoll minute :interval "1s" :inital "hello"
+  `date '+%M'`
+  )
+
+(defpoll second :interval "1s" :inital "hello"
+  `date '+%S'`
+  )
+
+
 (defpoll battery_icon
     :interval "1s"
     "scripts/battery.sh icon")
@@ -42,7 +65,7 @@
     "scripts/battery.sh percent")
 (defpoll volume
     :interval "0.1s"
-    "scripts/getvolume.sh" )
+    "pactl get-sink-volume @DEFAULT_SINK@ | grep -E -o '[1234567890]{1,3}%' | tr -d '%' | head -1" )
 
 (deflisten music :initial ""
   "playerctl --follow metadata --format '{{ artist }} - {{ title }}' || true")

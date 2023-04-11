@@ -1,0 +1,146 @@
+(defwindow horizontal
+  :monitor 0
+  :geometry (geometry :x "6px"
+                      :y "6px"
+                      :width "99.5%"
+                      :height "40px"
+                      :anchor "top left")
+  :stacking "fg"
+  :reserve (struts :distance "40px" :side "top")
+  :windowtype "dock"
+  :focusable false
+  :wm-ignore true
+  :hexpand false
+  (centerbox
+    :class 'opaque bar ${binding_state.change}'
+    :space-evenly "false"
+    :orientation 'h'
+  (h-workspaces)
+  (empty)
+  (h-bottom)
+    )
+)
+
+(defwidget h-bottom []
+  (box 
+
+    :orientation "h"
+    :halign "center"
+    :spacing 5
+    :space-evenly "false"
+    :halign "end"
+    (h-widgets)
+    (h-times)
+    ))
+
+(defwidget h-workspaces []
+  (box :class "h-workspaces"
+       :orientation "h"
+       :valign "center"
+       :halign "start"
+    (for ws in shown_workspaces
+      (button 
+        :class {ws == workspaces[0].current_workspace ? "active" : ""}
+        :onclick "i3-msg workspace ${ws}"
+      )
+    )
+  )
+)
+
+(defwidget h-widgets []
+  (box :class "h-widgets"
+       :orientation "h"
+       :valign "center"
+       :spacing 20
+       :halign "start"
+       :space-evenly "false"
+    (h-volume)
+    (h-brightness)
+    (h-bat)
+    (h-wifi)
+    ))
+
+(defwidget h-wifi []
+  (box
+    :class "wifi widget"
+    :halign "center"
+    :tooltip `${wifi-name}`
+    `${wifi-icon}`
+  )
+)
+
+(defwidget h-bat []
+  (box
+    :class "bat widget"
+    :tooltip `Battery: ${battery_per}%`
+    :valign "center"
+    :spacing 5
+    :space-evenly "false"
+  (label :text {battery_icon} )
+  (progress
+    :value {battery_per}
+    :orientation "h"
+    :valign "center"
+    )
+  )
+)
+
+
+(defwidget h-times []
+  (box :class "h-time"
+       :orientation "h"
+       :valign "center"
+       :spacing 2
+       :halign "end"
+       :tooltip {date}
+    (label :text {hour})
+    (label :text {minute})
+    (label :text {second})
+  )
+)
+
+
+(defwidget h-brightness []
+  (box
+  :class "bright widget"
+  :orientation "h"
+  :spacing 5
+  :space-evenly "false"
+    (label :text "")
+    (scale
+      :class "volbar"
+      :value {brightness}
+      :orientation "h"
+      :min 0
+      :max 101
+      :onchange "brightnessctl set {}%"
+      )
+   )
+)
+
+
+
+(defwidget h-volume []
+  (box
+  :class "vol widget"
+  :spacing 5
+  :orientation "h"
+  :space-evenly "false"
+    (label :text "奄")
+    (scale
+      :class "vol scale"
+      :value {volume}
+      :orientation "h"
+      :min 0
+      :max 101
+      :onchange "pactl set-sink-volume @DEFAULT_SINK@ {}%"
+      )
+    )
+  )
+
+(defvar h-volume false)
+
+(defwidget h-power []
+  (button
+    :onclick "rofi -show p -modi 'p:~/.config/rofi/rofi-power-menu --choices shutdown/reboot/suspend/logout' "
+    (label :text "")))

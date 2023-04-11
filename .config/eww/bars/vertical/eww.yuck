@@ -1,0 +1,154 @@
+(defwindow vertical
+  :monitor 0
+  :geometry (geometry :x "6px"
+                      :y "6px"
+                      :width "60px"
+                      :height "50%"
+                      :anchor "center left")
+  :stacking "fg"
+  :reserve (struts :distance "40px" :side "top")
+  :windowtype "dock"
+  :focusable false
+  :wm-ignore true
+  (centerbox
+    :class 'opaque bar ${binding_state.change}'
+    :orientation 'v'
+  (v-workspaces)
+  (empty)
+  (v-bottom)
+    )
+)
+
+(defwidget v-bottom []
+  (box 
+
+    :orientation "v"
+    :halign "center"
+    :spacing 5
+    :space-evenly "false"
+    :valign "end"
+    (v-widgets)
+    (v-times)
+    ))
+
+(defwidget v-workspaces []
+  (box :class "v-workspaces"
+       :orientation "v"
+       :halign "center"
+       :valign "start"
+    (for ws in shown_workspaces
+      (button 
+        :class {ws == workspaces[0].current_workspace ? "active" : ""}
+        :onclick "i3-msg workspace ${ws}"
+      )
+    )
+  )
+)
+
+(defwidget v-widgets []
+  (box :class "v-widgets"
+       :orientation "v"
+       :halign "center"
+       :valign "start"
+       :space-evenly "false"
+    (v-wifi)
+    (v-volume)
+    (v-brightness)
+    (v-bat)
+    ))
+
+(defwidget v-wifi []
+  (box
+    :class "wifi widget"
+    :halign "center"
+    :tooltip `${wifi-name}`
+    `${wifi-icon}`
+  )
+)
+
+(defwidget v-bat []
+  (box
+    :class "bat widget"
+    :halign "center"
+    :tooltip `Battery: ${battery_per}%`
+  {battery_icon}
+  )
+)
+
+
+(defwidget v-times []
+  (box :class "v-time"
+       :orientation "v"
+       :halign "center"
+       :valign "end"
+       :tooltip {date}
+    (label :text {hour})
+    (label :text {minute})
+  )
+)
+
+
+(defwidget v-brightness []
+  (eventbox
+    :onhover `${eww} update v-brightness=true`
+    :onhoverlost `${eww} update v-brightness=false`
+  (box
+  :class "bright widget"
+  :orientation "v"
+  :space-evenly "false"
+  (revealer
+    :reveal v-brightness
+    :transition "slideup"
+    :duration "550ms"
+    (scale
+      :class "volbar"
+      :value {brightness}
+      :draw-value true
+      :flipped true
+      :orientation "v"
+      :min 0
+      :max 101
+      :onchange "brightnessctl set {}%"
+      )
+    )
+  (label :text "")
+    )
+  )
+)
+
+(defvar v-brightness false)
+
+
+(defwidget v-volume []
+  (eventbox
+    :onhover `${eww} update v-volume=true`
+    :onhoverlost `${eww} update v-volume=false`
+  (box
+  :class "vol widget"
+  :orientation "v"
+  :space-evenly "false"
+  (revealer
+    :reveal v-volume
+    :transition "slideup"
+    :duration "550ms"
+    (scale
+      :class "vol scale"
+      :draw-value true
+      :value {volume}
+      :flipped true
+      :orientation "v"
+      :min 0
+      :max 101
+      :onchange "pactl set-sink-volume @DEFAULT_SINK@ {}%"
+      )
+    )
+  (label :text "奄")
+    )
+  )
+)
+(defvar v-volume false)
+
+(defwidget v-power []
+  (button
+    :onclick "rofi -show p -modi 'p:~/.config/rofi/rofi-power-menu --choices shutdown/reboot/suspend/logout' "
+    (label :text "")))

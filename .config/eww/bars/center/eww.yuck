@@ -11,7 +11,7 @@
   :focusable false
   :wm-ignore true
     (centerbox
-      :class 'bar ${binding_state.change}'
+      :class 'opaque bar ${binding_state.change}'
       :orientation 'h'
       (audio)
       (window)
@@ -46,7 +46,6 @@
       )
     )
 )
-
 (defwidget window []
   (box
     :class "title"

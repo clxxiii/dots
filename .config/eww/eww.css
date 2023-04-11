@@ -1,5 +1,8 @@
 @import "bars/workspaces/eww.css";
 @import "bars/center/eww.css";
+@import "bars/vertical/eww.css";
+@import "bars/horizontal/eww.css";
+/* @import "catppuccin.css"; */
 
 * {
   all: unset;
@@ -7,10 +10,20 @@
 
 .bar {
   background-color: rgba(30, 30, 46, 0.8);
+  transition: background-color 0.2s ease;
+}
+
+.bar.opaque {
+  background-color: rgba(30, 30, 46, 1);
+  transition: background-color 0.2s ease;
 }
 
 .resize {
-  background-color: rgba(90, 30, 46, 0.8);
+  background-color: rgba(243, 139, 168, 0.8)
+}
+
+.bar.opaque.resize {
+  background-color: rgba(243, 139, 168, 1)
 }
 
 .volume {
