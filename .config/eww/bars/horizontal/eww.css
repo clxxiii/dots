@@ -27,6 +27,25 @@
   min-height: 30px;
 }
 
+.circle {
+  background-color: #313244;
+}
+
+.ram {
+  color: #cba6f7;
+  font-size: 1.75rem;
+}
+
+.cpu {
+  color: #74c7ec;
+  font-size: 1.75rem;
+}
+
+.disk {
+  color: #a6e3a1;
+  font-size: 1.75rem;
+}
+
 progressbar trough,
 scale trough {
   background-color: #313244;

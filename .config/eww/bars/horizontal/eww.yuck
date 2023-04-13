@@ -16,8 +16,8 @@
     :space-evenly "false"
     :visible {window.container.fullscreen_mode == 0}
     :orientation 'h'
-  (h-workspaces)
-  (empty)
+  (h-top)
+  (debug)
   (h-bottom)
     )
 )
@@ -33,6 +33,40 @@
     (h-widgets)
     (h-times)
     ))
+
+(defwidget h-top []
+  (box
+    :space-evenly "false"
+    :spacing 10
+    (h-workspaces)
+    (h-circles)
+    )
+  )
+
+(defwidget h-circles []
+  (box
+    :orientation "h"
+    :spacing 10
+    (circle-widget 
+      :value {EWW_RAM.used_mem_perc}
+      :class "ram"
+      :name "RAM"
+      :icon "󰘚")
+    (circle-widget 
+      :value {EWW_CPU.avg}
+      :class "cpu"
+      :name "CPU"
+      :icon "󰻠"
+      )
+    (circle-widget 
+      :value {EWW_DISK["/"].used_perc}
+      :class "disk"
+      :name "Disk"
+      :icon "󰋊"
+      )
+  )
+)
+
 
 (defwidget h-workspaces []
   (box :class "h-workspaces"
@@ -119,8 +153,6 @@
    )
 )
 
-
-
 (defwidget h-volume []
   (box
   :class "vol widget"
@@ -139,7 +171,25 @@
     )
   )
 
-(defwidget h-power []
-  (button
-    :onclick "rofi -show p -modi 'p:~/.config/rofi/rofi-power-menu --choices shutdown/reboot/suspend/logout' "
-    (label :text "")))
+(defwidget circle-widget [value class name icon]
+    (overlay
+        :class {class}
+        :tooltip `${name} Usage: ${round(value,1)}%`
+      (circular-progress
+        :value {value}
+        :class "circle"
+        :thickness 4
+        :start-at 25
+        :height 30
+        :width 30
+        )
+      (label :text {icon})
+      )
+  )
+
+
+(defwidget debug [] 
+  (box
+    (label :text ``)
+    )
+  )
