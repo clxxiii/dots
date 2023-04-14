@@ -31,7 +31,7 @@
 (defpoll wifi-icon :interval "1s" "scripts/wifi.sh icon")
 (defpoll wifi-name :interval "1s" "scripts/wifi.sh name")
 
-(defpoll brightness :inital 0 :interval "0.1s"
+(defpoll brightness :inital 0 :interval "0.5s"
       `brightnessctl | grep -Po '[0-9]{1,3}(?=%)' | head -1`
 )
 
@@ -64,7 +64,7 @@
     :interval "1s"
     "scripts/battery.sh percent")
 (defpoll volume
-    :interval "0.1s"
+    :interval "0.5s"
     "pactl get-sink-volume @DEFAULT_SINK@ | grep -E -o '[1234567890]{1,3}%' | tr -d '%' | head -1" )
 
 (deflisten music :initial ""
