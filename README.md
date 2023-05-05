@@ -19,6 +19,7 @@
   | ![Wallpaper](https://github.com/clxxiii/dots/blob/main/Wallpapers/cat.jpeg?raw=true) | [Max Asabin](https://twitter.com/AsabinArt/status/1623658705580445696) |
   | ![Wallpaper](https://raw.githubusercontent.com/clxxiii/dots/main/Wallpapers/endeavour-black-4k.png) | [Catppuccin Wallpapers](https://github.com/catppuccin/wallpapers) |
   | ![Wallpaper](https://raw.githubusercontent.com/clxxiii/dots/main/Wallpapers/hollow%20knight.jpeg?raw=true) | I'm struggling to find the original artist, [here](https://www.pxfuel.com/en/desktop-wallpaper-qvyhi) is the post that's led me the closest to finding it. |
+  | ![Wallpaper](https://raw.githubusercontent.com/clxxiii/dots/main/Wallpapers/Rancho_Mac.png?raw=true) | [BasicAppleGuy](https://basicappleguy.com/haberdashery/macos-rancho-cucamonga)|
   | ![Wallpaper](https://raw.githubusercontent.com/clxxiii/dots/main/Wallpapers/ubuntu-linux-minimal-4k-on.jpg?raw=true) | Also struggling to find the artist on this one. [Here's my best guess as to who it is](https://www.reddit.com/r/Ubuntu/comments/sozh71/i_made_some_4k_coloured_ubuntu_logo_wallpapers/). |
   | ![Wallpaper](https://raw.githubusercontent.com/clxxiii/dots/main/Wallpapers/ubuntu-magenta-blue-1920x1080.png?raw=true) | [Catppuccin Wallpapers](https://github.com/catppuccin/wallpapers) |
   | ![Wallpaper](https://raw.githubusercontent.com/clxxiii/dots/main/Wallpapers/wallpaper-red-gradient.png?raw=true) | [vinceliuice](https://github.com/vinceliuice/Fluent-gtk-theme) |
@@ -33,7 +34,6 @@
   | ![Wallpaper](https://raw.githubusercontent.com/clxxiii/dots/main/Wallpapers/phone/crystal%20peaks.webp) | [u/CometShine](https://www.reddit.com/r/HollowKnight/comments/amzqrx/crystal_peak/) |
   | ![Wallpaper](https://raw.githubusercontent.com/clxxiii/dots/main/Wallpapers/phone/path%20of%20pain.webp) | [u/CometShine](https://www.reddit.com/r/HollowKnight/comments/9kd9c8/path_of_pain/?st=JRQL4MVH&sh=decd4e69) |
 </details>
-
 
 ## i3 Setup
 
