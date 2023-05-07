@@ -115,6 +115,8 @@ alias clip="xclip -selection clipboard"
 alias lg="lazygit"
 alias ld="lazydocker"
 
+function zsh-stats() { fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl | head -n25 }
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # Path to Haskell config
