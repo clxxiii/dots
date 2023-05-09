@@ -115,6 +115,7 @@ floating_modifier $mod
 # Set windows floating by default
 for_window [class="Alacritty"] floating enable
 for_window [class="Blueman-manager"] floating enable
+for_window [class="chatterino"] sticky enable
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
