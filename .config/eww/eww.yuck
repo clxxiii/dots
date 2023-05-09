@@ -75,3 +75,6 @@
 (defpoll artist		:interval "5s"  "scripts/music.sh artist")
 ;; (defpoll playpause	:interval "5s"  "scripts/music.sh statusicon")
 ;; (defpoll songtime 	:interval "1s"  "scripts/getSongDuration")
+
+
+(defpoll tomato-time :interval "1s" "tomato -t")

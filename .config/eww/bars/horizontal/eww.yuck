@@ -40,6 +40,7 @@
     :spacing 10
     (h-workspaces)
     (h-circles)
+    (tomato)
     )
   )
 
@@ -67,6 +68,12 @@
   )
 )
 
+(defwidget tomato []
+  (box
+    :class "tomato"
+  {tomato-time}
+    )
+  )
 
 (defwidget h-workspaces []
   (box :class "h-workspaces"
