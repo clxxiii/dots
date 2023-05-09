@@ -1,6 +1,6 @@
 configuration{
     modi: "run,drun,window";
-    icon-theme: "Oranchelo";
+    icon-theme: "Tela-circle-dracula-dark";
     show-icons: true;
     terminal: "alacritty";
     drun-display-format: "{icon} {name}";
