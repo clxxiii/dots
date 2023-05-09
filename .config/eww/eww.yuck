@@ -29,50 +29,49 @@
   `i3-msg -t subscribe -m '["window"]'`)
 
 (defpoll wifi-icon :interval "1s" "scripts/wifi.sh icon")
-(defpoll wifi-name :interval "1s" "scripts/wifi.sh name")
+(defpoll wifi-name :interval "3s" "scripts/wifi.sh name")
 
-(defpoll brightness :inital 0 :interval "0.5s"
+(defpoll brightness :inital 0 :interval "1s"
       `brightnessctl | grep -Po '[0-9]{1,3}(?=%)' | head -1`
 )
 
-(defpoll date :interval "1s" :inital "hello"
+(defpoll date :interval "1s" :inital ""
   `date '+%B %e, %Y'`
   )
 
-(defpoll time :interval "1s" :inital "hello"
+(defpoll time :interval "1s" :inital ""
   `date '+%I:%M %p'`
   )
 
-(defpoll hour :interval "1s" :inital "hello"
+(defpoll hour :interval "1s" :inital ""
   `date '+%H'`
   )
 
-(defpoll minute :interval "1s" :inital "hello"
+(defpoll minute :interval "1s" :inital ""
   `date '+%M'`
   )
 
-(defpoll second :interval "1s" :inital "hello"
+(defpoll second :interval "1s" :inital ""
   `date '+%S'`
   )
 
 
 (defpoll battery_icon
-    :interval "1s"
+    :interval "5s"
     "scripts/battery.sh icon")
 
 (defpoll battery_per
-    :interval "1s"
+    :interval "10s"
     "scripts/battery.sh percent")
 (defpoll volume
-    :interval "0.5s"
+    :interval "1s"
     "pactl get-sink-volume @DEFAULT_SINK@ | grep -E -o '[1234567890]{1,3}%' | tr -d '%' | head -1" )
 
-(deflisten music :initial ""
-  "playerctl --follow metadata --format '{{ artist }} - {{ title }}' || true")
+(deflisten spotifyd-music :initial ""
+  "playerctl --player=spotifyd --follow metadata --format '{{ artist }} - {{ title }}' || true")
 
-(defpoll art		:interval "5s"  "scripts/music.sh coverloc")
-(defpoll title		:interval "5s"  "scripts/music.sh title")
-(defpoll artist		:interval "5s"  "scripts/music.sh artist")
+(defpoll spotifyd-playing		:interval "3s"  "scripts/music.sh status")
+
 ;; (defpoll playpause	:interval "5s"  "scripts/music.sh statusicon")
 ;; (defpoll songtime 	:interval "1s"  "scripts/getSongDuration")
 

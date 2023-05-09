@@ -1,6 +1,9 @@
 .h-workspaces {
   margin-left: 5px;
 }
+.tomato {
+  font-size: 1.2em;
+}
 .h-workspaces,
 .h-time {
   border-radius: 7px;
