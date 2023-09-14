@@ -1,8 +1,5 @@
 " Everything contributing to the look of my editor
 
-" Prefered default colorscheme
-:colorscheme catppuccin
-
 lua << END
   if vim.g.neovide then
     require('catppuccin').setup({
@@ -18,3 +15,6 @@ lua << END
     })
   end
 END
+
+" Prefered default colorscheme
+:colorscheme catppuccin

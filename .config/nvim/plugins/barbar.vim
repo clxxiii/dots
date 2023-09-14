@@ -18,6 +18,13 @@ nnoremap <silent>    <A-0> <Cmd>BufferLast<CR>
 
 " Close buffer
 nnoremap <silent>    <A-c> <Cmd>BufferClose<CR>
-let bufferline = get(g:, 'bufferline', {})
+" let bufferline = get(g:, 'bufferline', {})
 
-let bufferline.no_name_title = 'New Tab'
+lua << END
+  require("barbar").setup {
+    bufferline = true,
+    no_name_title = 'New Tab'
+  }
+END
+
+" let bufferline.no_name_title = 'New Tab'
