@@ -11,7 +11,7 @@ if [ "$per" -gt "15" ]; then
 	icon=""
 elif [ "$per" -gt "10" ]; then
 	icon=""
-	notify-send -u critical "Battery Low" "Connect Charger"
+	# notify-send -u critical "Battery Low" "Connect Charger"
 else
         echo  && exit
 fi
