@@ -16,7 +16,7 @@ Plug 'folke/which-key.nvim' " Key Suggestions
 Plug 'ap/vim-css-color' " CSS Color Preview
 Plug 'nvim-tree/nvim-tree.lua' " File Explorer
 Plug 'nvim-lua/plenary.nvim' " Telescope Dependency
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' } " File Search
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.4' } " File Search
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TsUpdate'} " 
 Plug 'folke/trouble.nvim' " Error box
 Plug 'tanvirtin/vgit.nvim' " Git changes in gutter
