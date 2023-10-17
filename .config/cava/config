@@ -10,11 +10,16 @@ gradient_color_6 = '#f5c2e7'
 gradient_color_7 = '#eba0ac'
 gradient_color_8 = '#f38ba8'
 
+[input]
+method = pipewire
+source = auto
+
 [output]
 channels = mono
 
 [smoothing]
-noise_reduction = 0.2
+gravity = 100
+noise_reduction = 4
 monstercat = 1
 waves = 0
 
