@@ -4,4 +4,5 @@ return {
 	"evanleck/vim-svelte",
 	"pantharshit00/vim-prisma",
 	"elkowar/yuck.vim",
+	"kovetskiy/sxhkd-vim",
 }

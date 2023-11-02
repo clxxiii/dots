@@ -25,6 +25,7 @@
   "presence.nvim": { "branch": "main", "commit": "87c857a56b7703f976d3a5ef15967d80508df6e6" },
   "project.nvim": { "branch": "main", "commit": "8c6bad7d22eef1b71144b401c9f74ed01526a4fb" },
   "ranger.vim": { "branch": "master", "commit": "91e82debdf566dfaf47df3aef0a5fd823cedf41c" },
+  "sxhkd-vim": { "branch": "master", "commit": "7b7937ff5c220fbef3bdd883d567513246516e06" },
   "telescope.nvim": { "branch": "master", "commit": "7011eaae0ac1afe036e30c95cf80200b8dc3f21a" },
   "toggleterm.nvim": { "branch": "main", "commit": "c80844fd52ba76f48fabf83e2b9f9b93273f418d" },
   "vim-css-color": { "branch": "master", "commit": "6cc65734bc7105d9677ca54e2255fcbc953ba6bf" },

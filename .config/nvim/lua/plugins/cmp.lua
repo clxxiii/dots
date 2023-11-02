@@ -106,6 +106,7 @@ return {
 			"vimls",
 			"prismals",
 			"jdtls",
+			"tailwindcss",
 		}
 
 		for i = 1, #lspservers do
