@@ -1,0 +1,11 @@
+if [ "$XDG_SESSION_DESKTOP" == "bspwm" ]; then
+  bspc quit
+fi
+
+if [ "$XDG_SESSION_DESKTOP" == "i3" ]; then
+  i3-msg exit
+fi
+
+if [ "$XDG_SESSION_DESKTOP" == "i3-gnome" ]; then
+  i3-msg exit
+fi

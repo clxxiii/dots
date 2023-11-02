@@ -40,7 +40,7 @@ icons[cancel]="\u00d7"
 declare -A actions
 actions[lockscreen]="loginctl lock-session ${XDG_SESSION_ID-}"
 #actions[switchuser]="???"
-actions[logout]="i3-msg exit"
+actions[logout]="/home/eli/.config/rofi/logout"
 actions[suspend]="systemctl suspend"
 actions[hibernate]="systemctl hibernate"
 actions[reboot]="systemctl reboot"
