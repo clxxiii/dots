@@ -1,0 +1,36 @@
+.card {
+  background-color: #1e1e2e;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.album {
+  border-radius: 8px;
+}
+.duration {
+  font-family: "Jetbrains Mono NFM";
+}
+
+scale.songduration trough {
+  background-color: #313244;
+  min-height: 10px;
+  border-radius: 100px;
+  min-width: 400px;
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 16;
+}
+.artist {
+  color: white;
+  font-size: 16;
+}
+
+.play,
+.prev,
+.next {
+  color: #cdd6f4;
+  font-size: 24px;
+}

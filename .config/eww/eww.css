@@ -2,6 +2,8 @@
 @import "bars/center/eww.css";
 @import "bars/vertical/eww.css";
 @import "bars/horizontal/eww.css";
+@import "bars/wayland/eww.css";
+@import "cards/eww.css";
 /* @import "catppuccin.css"; */
 
 * {
@@ -9,8 +11,9 @@
 }
 
 .bar {
-  background-color: rgba(30, 30, 46, 0.8);
+  background-color: rgba(30, 30, 46, 0.7);
   transition: background-color 0.2s ease;
+  border-radius: 6px;
 }
 
 .bar.opaque {
@@ -19,13 +22,13 @@
 }
 
 .resize {
-  background-color: rgba(137, 220, 235, 0.8)
+  background-color: rgba(137, 220, 235, 0.8);
 }
 
 .bar.opaque.resize {
-  background-color: rgba(137, 220, 235, 1)
+  background-color: rgba(137, 220, 235, 1);
 }
 
 .volume {
-  padding: 20px
+  padding: 20px;
 }

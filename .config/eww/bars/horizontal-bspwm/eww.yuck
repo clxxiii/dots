@@ -1,4 +1,4 @@
-(defwindow horizontal
+(defwindow horizontal-bspwm
   :monitor 0
   :geometry (geometry :x "6px"
                       :y "6px"
@@ -7,9 +7,8 @@
                       :anchor "top left")
   :stacking "fg"
   :reserve (struts :distance "46px" :side "top")
-  :windowtype "dock"
-	:wm-ignore true
-  :focusable false
+  :windowtype "normal"
+  :focusable true
   :hexpand false
   (centerbox
     :class 'opaque bar ${binding_state.change}'
@@ -21,6 +20,10 @@
   (h-bottom)
     )
 )
+
+(defpoll current-desktop
+  :interval "0.2s"
+  `bspc query -T --desktop`)
 
 (defwidget h-bottom []
   (box 
@@ -84,8 +87,8 @@
        :halign "start"
     (for ws in shown_workspaces
       (button 
-        :class {ws == workspaces[0].current_workspace ? "active" : ""}
-        :onclick "i3-msg workspace ${ws}"
+        :class {ws == current-desktop.name ? "active" : ""}
+        :onclick "bspc desktop -f ${ws}"
       )
     )
   )

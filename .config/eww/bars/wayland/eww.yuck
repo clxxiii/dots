@@ -1,0 +1,114 @@
+(defpoll hyprmonitor :interval "0.2s" "hyprctl -j monitors")
+(defpoll hyprclients :interval "0.3s" "hyprctl -j clients")
+
+(defwindow wayland
+  :monitor 0
+  :geometry (geometry :x "0px"
+                      :y "6px"
+                      :width "99.4%"
+                      :height "40px"
+                      :anchor "top center")
+  :stacking "fg"
+  :exclusive true
+  :focusable false
+  :hexpand false
+  (centerbox
+    :class 'opaque bar ${binding_state.change}'
+    :space-evenly "false"
+    :visible {window.container.fullscreen_mode == 0}
+    :orientation 'h'
+  (hyprtop)
+  (empty)
+  (hyprbottom)
+    )
+)
+
+(defwidget hyprtop [] (box
+                     :halign "start"
+                     :space-evenly "false"
+                     :spacing 10
+                     (h-workspaces)
+                     (h-circles)
+  )
+)
+(defwidget hyprbottom [] (box
+                           :space-evenly "false"
+                           :spacing 10
+                           :halign "end"
+                           (h-volume)
+                           (h-brightness)
+                           (h-bat)
+                           (h-wifi)
+                           (h-times)
+                           )
+  )
+(defwidget clients [] (box
+    (box
+      (for data in hyprclients
+        (client :data data) 
+      )
+    )
+  )
+)
+
+(defwidget client [data] (box
+                           :visible "${data.monitor == 0}"
+                           :height 40
+                           :width 40
+                           :class ""
+                           "${data.class}"))
+
+
+(defwidget h-workspaces []
+  (box :class "h-workspaces"
+       :orientation "h"
+       :valign "center"
+       :halign "start"
+    (for ws in shown_workspaces
+      (button 
+        :class {ws == hyprmonitor[0].activeWorkspace.id ? "active" : ""}
+        :onclick "hyprctl dispatch workspace ${ws}"
+      )
+    )
+  )
+)
+
+(defwidget hyprcircles []
+  (box
+    :orientation "h"
+    :spacing 10
+    (hyprcircle 
+      :value {EWW_CPU.avg}
+      :class "cpu"
+      :name "CPU"
+      :icon "󰻠"
+      )
+    (hyprcircle 
+      :value {EWW_RAM.used_mem_perc}
+      :class "ram"
+      :name "RAM"
+      :icon "󰘚")
+    (hyprcircle 
+      :value {EWW_DISK["/"].used_perc}
+      :class "disk"
+      :name "Disk"
+      :icon "󰋊"
+      )
+  )
+)
+
+(defwidget hyprcircle [value class name icon]
+    (overlay
+        :class {class}
+        :tooltip `${name} Usage: ${round(value,1)}%`
+      (circular-progress
+        :value {value}
+        :class "circle"
+        :thickness 4
+        :start-at 25
+        :height 10
+        :width 10
+        )
+      (label :text {icon})
+      )
+  )

@@ -14,6 +14,7 @@
 }
 .h-time {
   min-width: 75px;
+  font-size: 14px;
 }
 .h-workspaces button {
   background-color: rgba(0, 0, 0, 0);
@@ -78,6 +79,10 @@ progressbar trough progress {
 }
 .vol {
   color: #74c7ec;
+}
+
+scale trough highlight {
+  background-color: #74c7ec;
 }
 .vol scale trough highlight {
   background-color: #74c7ec;

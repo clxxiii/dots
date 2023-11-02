@@ -1,16 +1,103 @@
 (defwindow np
   :monitor 0
-  :geometry (geometry :x "-6px"
-                      :y "-6px"
-                      :width "100px"
-                      :height "100px"
-                      :anchor "bottom right")
+  :geometry (geometry :x "0px"
+                      :y "6px"
+                      :anchor "center top")
   :stacking "bg"
-  :windowtype "normal"
-  :wm-ignore false
+  :focusable false
+  :hexpand false
   (box
-    :class "bar"
-    :style "background: #2e2e2e"
-  (empty)
+    :width 550
+    :height 150
+    :valign "center"
+    :hexpand false
+    :space-evenly false
+    :class "card"
+    (box
+      :width 530
+      :visible {playerstatus == "Stopped"}
+      (label :xalign 0.5 :text "Nothing is playing" )
+      )
+    (box 
+      :space-evenly false
+      :spacing 10
+      :visible {playerstatus != "Stopped"}
+      (controls)
+      (box
+      :space-evenly false
+      :spacing 15
+      :orientation "v"
+      (data)
+      (playerprogress)
+        )
+      )
+  )
+)
+
+(defwidget controls []
+  (box
+    :orientation "v"
+    (button 
+      :onclick "playerctl previous"
+      (label :class "prev" :text "")
+      )
+    (button 
+      :onclick "playerctl play-pause"
+      (label :class "play" :text {playerstatus == "Playing" ? "" : ""})
+      )
+    (button 
+      :onclick "playerctl next"
+      (label :class "next" :text "")
+      )
     )
   )
+; 
+
+(defwidget data []
+  (box
+    :space-evenly false
+    :hexpand false
+    :orientation "h"
+    :spacing 10
+    (image
+      :image-width 100
+      :image-height 100
+      :class "album"
+      :path "${albumart}"
+      )
+    (box
+      :space-evenly false
+      :valign "center"
+      :halign "center"
+      :hexpand false
+      :orientation "v"
+      (label :limit-width 50 :xalign 0 :class "title" :text {title})
+      (label :xalign 0 :class "artist" :text {artist})
+      )
+    )
+  )
+(defwidget playerprogress [] 
+  (box
+    :space-evenly false
+    :spacing 10
+    :class "duration"
+  "${durposition}"
+  (scale
+    :min 0
+    :class "songduration"
+    :value {position / 1000000}
+    :max {length / 1000000}
+    :onchange "playerctl position {}"
+    )
+  "${durlength}"
+  )
+)
+
+(deflisten albumart :initial "" "scripts/art.sh")
+(deflisten playerstatus :initial "Stopped" "playerctl --follow status" )
+(deflisten artist :initial "Artist" "playerctl --follow metadata --format '{{artist}}'" )
+(deflisten title :initial "Title" "playerctl --follow metadata --format '{{title}}'" )
+(deflisten length :initial "" "playerctl --follow metadata --format '{{mpris:length}}'" )
+(deflisten position :initial "" "playerctl --follow position --format '{{position}}'" )
+(deflisten durlength :initial "0:00" "playerctl --follow metadata --format '{{duration(mpris:length)}}'" )
+(deflisten durposition :initial "0:00" "playerctl --follow position --format '{{duration(position)}}'" )

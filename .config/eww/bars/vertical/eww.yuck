@@ -6,10 +6,9 @@
                       :height "50%"
                       :anchor "center left")
   :stacking "fg"
-  :reserve (struts :distance "40px" :side "top")
+  :reserve (struts :distance "40px" :side "left")
   :windowtype "dock"
   :focusable false
-  :wm-ignore true
   (centerbox
     :class 'opaque bar ${binding_state.change}'
     :orientation 'v'

@@ -3,7 +3,9 @@
 (include 'bars/right-bat/eww.yuck')
 (include 'bars/vertical/eww.yuck')
 (include 'bars/horizontal/eww.yuck')
-(include 'cards/np/eww.yuck')
+(include 'bars/horizontal-bspwm/eww.yuck')
+(include 'bars/wayland/eww.yuck')
+(include 'cards/eww.yuck')
 
 ; Placeholder widget for centerboxes
 (defwidget empty []
@@ -70,10 +72,8 @@
 (deflisten spotifyd-music :initial ""
   "playerctl --player=spotifyd --follow metadata --format '{{ artist }} - {{ title }}' || true")
 
-(defpoll spotifyd-playing		:interval "3s"  "scripts/music.sh status")
 
 ;; (defpoll playpause	:interval "5s"  "scripts/music.sh statusicon")
 ;; (defpoll songtime 	:interval "1s"  "scripts/getSongDuration")
-
 
 (defpoll tomato-time :interval "1s" "tomato -t")
