@@ -30,6 +30,7 @@ link() {
   ln -s $DOTFILES_DIR/.nap ~/.nap
   ln -s $DOTFILES_DIR/neofetch ~/.config/neofetch
   ln -s $DOTFILES_DIR/eww ~/.config/eww
+  ln -s $DOTFILES_DIR/hypr ~/.config/hypr
 
   ln -s ~/.dotfiles/.zshrc ~/.zshrc
   ln -s ~/.dotfiles/.zshenv ~/.zshenv
@@ -57,6 +58,7 @@ unlink() {
   rm -rf ~/.nap
   rm -rf ~/.config/neofetch
   rm -rf ~/.config/eww
+  rm -rf ~/.config/hypr
 
   rm -f ~/.zshrc
   rm -f ~/.zshenv
