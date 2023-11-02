@@ -94,7 +94,7 @@ font:
     style: Regular
   offset:
     y: 0
-  size: 10
+  size: 11
 
 scrolling:
   history: 1000
