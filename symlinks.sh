@@ -17,19 +17,19 @@ fi
 # Add symlinks for each folder
 link() {
   ln -s $DOTFILES_DIR/nvim ~/.config/nvim
-  ln -s $DOTFILES_DIR/.config/bottom ~/.config/bottom
-  ln -s $DOTFILES_DIR/.config/cava ~/.config/cava
+  ln -s $DOTFILES_DIR/bottom ~/.config/bottom
+  ln -s $DOTFILES_DIR/cava ~/.config/cava
   ln -s $DOTFILES_DIR/Wallpapers ~/Pictures/Wallpapers
-  ln -s $DOTFILES_DIR/.config/ranger ~/.config/ranger
-  ln -s $DOTFILES_DIR/.config/i3 ~/.config/i3
-  ln -s $DOTFILES_DIR/.config/picom ~/.config/picom
-  ln -s $DOTFILES_DIR/.config/polybar ~/.config/polybar
-  ln -s $DOTFILES_DIR/.config/dunst ~/.config/dunst
-  ln -s $DOTFILES_DIR/.config/rofi ~/.config/rofi
-  ln -s $DOTFILES_DIR/.config/bashtop ~/.config/bashtop
+  ln -s $DOTFILES_DIR/ranger ~/.config/ranger
+  ln -s $DOTFILES_DIR/i3 ~/.config/i3
+  ln -s $DOTFILES_DIR/picom ~/.config/picom
+  ln -s $DOTFILES_DIR/polybar ~/.config/polybar
+  ln -s $DOTFILES_DIR/dunst ~/.config/dunst
+  ln -s $DOTFILES_DIR/rofi ~/.config/rofi
+  ln -s $DOTFILES_DIR/bashtop ~/.config/bashtop
   ln -s $DOTFILES_DIR/.nap ~/.nap
-  ln -s $DOTFILES_DIR/.config/neofetch ~/.config/neofetch
-  ln -s $DOTFILES_DIR/.config/eww ~/.config/eww
+  ln -s $DOTFILES_DIR/neofetch ~/.config/neofetch
+  ln -s $DOTFILES_DIR/eww ~/.config/eww
 
   ln -s ~/.dotfiles/.zshrc ~/.zshrc
   ln -s ~/.dotfiles/.zshenv ~/.zshenv
