@@ -18,6 +18,7 @@
   | ![Wallpaper](https://raw.githubusercontent.com/clxxiii/dots/main/Wallpapers/binarymine-dribbble-01.webp) | [Catppuccin Wallpapers](https://github.com/catppuccin/wallpapers) |
   | ![Wallpaper](https://github.com/clxxiii/dots/blob/main/Wallpapers/cat.jpeg?raw=true) | [Max Asabin](https://twitter.com/AsabinArt/status/1623658705580445696) |
   | ![Wallpaper](https://raw.githubusercontent.com/clxxiii/dots/main/Wallpapers/endeavour-black-4k.png) | [Catppuccin Wallpapers](https://github.com/catppuccin/wallpapers) |
+  | ![Wallpaper](https://raw.githubusercontent.com/clxxiii/dots/main/Wallpapers/forest.png) | [Catppuccin Wallpapers](https://github.com/catppuccin/wallpapers) |
   | ![Wallpaper](https://raw.githubusercontent.com/clxxiii/dots/main/Wallpapers/hollow%20knight.jpeg?raw=true) | I'm struggling to find the original artist, [here](https://www.pxfuel.com/en/desktop-wallpaper-qvyhi) is the post that's led me the closest to finding it. |
   | ![Wallpaper](https://raw.githubusercontent.com/clxxiii/dots/main/Wallpapers/Rancho_Mac.png?raw=true) | [BasicAppleGuy](https://basicappleguy.com/haberdashery/macos-rancho-cucamonga)|
   | ![Wallpaper](https://raw.githubusercontent.com/clxxiii/dots/main/Wallpapers/ubuntu-linux-minimal-4k-on.jpg?raw=true) | Also struggling to find the artist on this one. [Here's my best guess as to who it is](https://www.reddit.com/r/Ubuntu/comments/sozh71/i_made_some_4k_coloured_ubuntu_logo_wallpapers/). |
