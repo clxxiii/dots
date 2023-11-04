@@ -1,20 +1,20 @@
 (defwindow np
   :monitor 0
-  :geometry (geometry :x "0px"
-                      :y "6px"
-                      :anchor "center top")
+  :geometry (geometry :x "${320 + 62 * 6}px"
+                      :y "${140 + 0 * 6}px"
+                      :anchor "top left")
   :stacking "bg"
   :focusable false
   :hexpand false
   (box
-    :width 550
-    :height 150
+    :width {92 * 6}
+    :height {25 * 6}
     :valign "center"
     :hexpand false
     :space-evenly false
     :class "card"
     (box
-      :width 530
+      :width {88 * 6}
       :visible {playerstatus == "Stopped"}
       (label :xalign 0.5 :text "Nothing is playing" )
       )
@@ -23,9 +23,11 @@
       :spacing 10
       :visible {playerstatus != "Stopped"}
       (controls)
+      (album)
       (box
       :space-evenly false
       :spacing 15
+      :valign "center"
       :orientation "v"
       (data)
       (playerprogress)
@@ -51,30 +53,26 @@
       )
     )
   )
-; 
 
-(defwidget data []
-  (box
-    :space-evenly false
-    :hexpand false
-    :orientation "h"
-    :spacing 10
+(defwidget album [] 
     (image
-      :image-width 100
-      :image-height 100
+      :image-width {17 * 6}
+      :image-height {17 * 6}
       :class "album"
       :path "${albumart}"
       )
+  )
+
+(defwidget data []
     (box
       :space-evenly false
       :valign "center"
-      :halign "center"
+      :halign "start"
       :hexpand false
       :orientation "v"
       (label :limit-width 50 :xalign 0 :class "title" :text {title})
       (label :xalign 0 :class "artist" :text {artist})
       )
-    )
   )
 (defwidget playerprogress [] 
   (box

@@ -1,0 +1,97 @@
+(defvar cpuhover false)
+(defvar ramhover false)
+(defvar diskhover false)
+(defvar bathover false)
+
+(defwindow system
+  :monitor 0
+  :geometry (geometry :x "${320 + 133 * 6}px"
+                      :y "${140 + 26 * 6}px"
+                      :anchor "top left")
+  :stacking "bg"
+  :focusable false
+  :hexpand false
+  (box
+    :class "card"
+    :width {46 * 6}
+    :height {46 * 6}
+    (box
+      :orientation "v"
+      :halign "center"
+      :valign "center"
+      :space-evenly false
+      :spacing {2 * 6}
+      (box
+        :space-evenly false
+        :halign "center"
+        :valign "center"
+        :spacing {2 * 6}
+        (bigcircle 
+          :color "#74c7ec"
+          :value {EWW_CPU.avg}
+          :class "cpu"
+          :name "CPU"
+          :icon "󰻠"
+          :hover cpuhover
+          :hovername "cpuhover"
+          )
+        (bigcircle 
+          :color "#cba6f7"
+          :value {EWW_RAM.used_mem_perc}
+          :class "ram"
+          :name "RAM"
+          :icon "󰘚"
+          :hover ramhover
+          :hovername "ramhover"
+          )
+        )
+      (box
+        :space-evenly false
+        :halign "center"
+        :valign "center"
+        :spacing {2 * 6}
+        (bigcircle 
+	        :color "#eba0ac"
+          :value {EWW_DISK["/"].used_perc}
+          :class "disk"
+          :name "Disk"
+          :icon "󰋊"
+          :hover diskhover
+          :hovername "diskhover"
+          )
+        (bigcircle 
+          :value {battery_per}
+          :color "#a6e3a1"
+          :class "cpu"
+          :name "CPU"
+          :icon "${battery_icon}"
+          :hover bathover
+          :hovername "bathover"
+          )
+        )
+      )
+    )
+  )
+
+(defwidget bigcircle [value class name icon ?color ?hover ?hovername]
+  (eventbox
+    :class "bigcircle"
+    :onhover "${EWW_CMD} update ${hovername}=true"
+    :onhoverlost "${EWW_CMD} update ${hovername}=false"
+    (overlay
+        :class {class}
+        :style "color: ${color}"
+      (circular-progress
+        :value {value}
+        :class "circle"
+        :thickness 15
+        :start-at 25
+        :height {20 * 6}
+        :width {20 * 6}
+        )
+        (label :visible {!hover} :class "icon" :text {icon})
+        (label :visible {hover} :class "usage" :text {round(value,1)}
+      )
+    )
+  )
+)

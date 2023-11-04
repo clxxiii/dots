@@ -147,42 +147,6 @@
 )
 
 
-(defwidget h-brightness []
-  (box
-  :class "bright widget"
-  :orientation "h"
-  :spacing 5
-  :space-evenly "false"
-    (label :text "")
-    (scale
-      :class "volbar"
-      :value {brightness}
-      :orientation "h"
-      :min 0
-      :max 101
-      :onchange "brightnessctl set {}%"
-      )
-   )
-)
-
-(defwidget h-volume []
-  (box
-  :class "vol widget"
-  :spacing 5
-  :orientation "h"
-  :space-evenly "false"
-    (label :text "")
-    (scale
-      :class "vol scale"
-      :value {volume}
-      :orientation "h"
-      :min 0
-      :max 101
-      :onchange "pactl set-sink-volume @DEFAULT_SINK@ {}%"
-      )
-    )
-  )
-
 (defwidget circle-widget [value class name icon]
     (overlay
         :class {class}

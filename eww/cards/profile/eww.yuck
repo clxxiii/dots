@@ -1,0 +1,33 @@
+(defwindow profile
+  :monitor 0
+  :geometry (geometry :x "${320 + 11 * 6}px"
+                      :y "${140 + 0 * 6}px"
+                      :anchor "left top")
+  :stacking "bg"
+  :focusable false
+  :hexpand false
+  (box
+    :class "card"
+    :space-evenly false
+    :spacing 10
+    :width {50 * 6}
+    :height {60 * 6}
+    :orientation "v"
+    (box
+      :orientation "h"
+      :halign "center"
+      (pfp)
+    )
+    (label :text "Hello, ${username}" :class "username" )
+  )
+)
+
+(defpoll username :initial "" :interval 600 "whoami")
+
+(defwidget pfp [] 
+    (box
+      :width 200
+      :height 215
+      :class "pfp"
+      :style "background-image: url('/var/lib/AccountsService/icons/${username}')")
+  )

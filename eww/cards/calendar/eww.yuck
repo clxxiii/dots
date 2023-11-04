@@ -1,0 +1,14 @@
+(defwindow calendar 
+  :monitor 0
+  :geometry (geometry :x "${320 + 11 * 6}px"
+                      :y "${140 + 61 * 6}px"
+                      :anchor "top left")
+  :stacking "bg"
+  :focusable false
+  :hexpand false
+  (box
+    :class "card"
+    :width {10 * 6}
+    :height {10 * 6}
+    )
+  )

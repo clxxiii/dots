@@ -1,0 +1,57 @@
+
+(defwindow youtube 
+  :monitor 0
+  :geometry (geometry :x "${320 + 167 * 6}px"
+                      :y "${140 + 73 * 6}px"
+                      :anchor "top left")
+  :stacking "bg"
+  :focusable false
+  :hexpand false
+  (webshortcut :icon "󰗃" :link "https://youtube.com" :color "#FF0000")
+  )
+
+(defwindow github 
+  :monitor 0
+  :geometry (geometry :x "${320 + 167 * 6}px"
+                      :y "${140 + 97 * 6}px"
+                      :anchor "top left")
+  :stacking "bg"
+  :focusable false
+  :hexpand false
+  (webshortcut :icon "" :link "https://github.com" :color "#181717")
+  )
+
+(defwindow twitch
+  :monitor 0
+  :geometry (geometry :x "${320 + 191 * 6}px"
+                      :y "${140 + 97 * 6}px"
+                      :anchor "top left")
+  :stacking "bg"
+  :focusable false
+  :hexpand false
+  (webshortcut :icon "󰕃" :link "https://twitch.tv" :color "#9146FF")
+  )
+
+(defwindow brightspace
+  :monitor 0
+  :geometry (geometry :x "${320 + 191 * 6}px"
+                      :y "${140 + 73 * 6}px"
+                      :anchor "top left")
+  :stacking "bg"
+  :focusable false
+  :hexpand false
+    (webshortcut :icon "" :link "https://www.oswego.edu/mylearning" :color "#444444")
+  )
+
+(defwidget webshortcut [icon color link] 
+  (box
+    :class "card weblink"
+    :width {23 * 6}
+    :style "background-color: ${color}"
+    :height {23 * 6}
+    (button 
+      :onclick "$BROWSER ${link}"
+      (label :class "icon" :text icon)
+      )
+    )
+  )

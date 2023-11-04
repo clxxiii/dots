@@ -1,5 +1,7 @@
-.config/ranger/plugins/__pycache__
-.config/cava/shaders
+ranger/plugins/__pycache__
+ranger/plugins/ranger_devicons
+cava/shaders
 Wallpapers/wallpaper
-.config/ranger/plugins/ranger_devicons
-.config/bashtop/error.log
+bashtop/error.log
+openweatherkey
+album.png

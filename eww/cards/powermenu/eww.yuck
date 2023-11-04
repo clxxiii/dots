@@ -1,0 +1,19 @@
+(defwindow powermenu
+  :monitor 0
+  :geometry (geometry :x "${320 + 0 * 6}px"
+                      :y "${140 + 91 * 6}px"
+                      :anchor "top left")
+  :stacking "bg"
+  :focusable false
+  :hexpand false
+  (box
+    :class "card"
+    :orientation "v"
+    :width {10 * 6}
+    :height {29 * 6}
+    (button :onclick "${EWW_CMD} update poweroperation=poweroff" (label :class "poweroff" :text "󰤆"))
+    (button :onclick "${EWW_CMD} update poweroperation=restart" (label :class "restart" :text "󰜉"))
+    (button :onclick "${EWW_CMD} update poweroperation=logout" (label :class "logout" :text "󰍃"))
+
+    )
+  )

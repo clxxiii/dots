@@ -1,0 +1,33 @@
+(defvar poweroperation "")
+
+(defwindow confirmation 
+  :monitor 0
+  :geometry (geometry :x "${320 + 9 * 6}px"
+                      :y "${140 + 91 * 6}px"
+                      :anchor "top left")
+  :stacking "bg"
+  :focusable false
+  :hexpand false
+
+  (revealer
+    :reveal {poweroperation != ""}
+    :transition "slideleft"
+    (box 
+      :class "popupl"
+      :orientation "v"
+      :valign "center"
+      :space-evenly false
+      :spacing 10
+      :width {50 * 6}
+      :height {29 * 6}
+      (label :class "powerwarning" :text "Really ${poweroperation}?")
+      (box
+        :halign "center"
+        :space-evenly false
+        :spacing 10
+        (button :class "powerno" :onclick "${EWW_CMD} update poweroperation=''" "No")
+        (button :class "poweryes" :onclick "scripts/power.sh ${poweroperation}" "Yes")
+        )
+      )
+    )
+)

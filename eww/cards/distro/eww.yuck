@@ -1,0 +1,18 @@
+(defwindow distro 
+  :monitor 0
+  :geometry (geometry :x "${320 + 0 * 6}px"
+                      :y "${140 + 0 * 6}px"
+                      :anchor "top left")
+  :stacking "bg"
+  :focusable false
+  :hexpand false
+  (box
+    :class "card"
+    :width {10 * 6}
+    :height {10 * 6}
+    (image 
+      :path "images/eos.png"
+      :image-width {6 * 6}
+      )
+    )
+  )

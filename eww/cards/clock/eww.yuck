@@ -1,0 +1,29 @@
+(defpoll weekday :interval "1s" :inital ""
+  `date '+%A'`
+  )
+
+(defwindow clock 
+  :monitor 0
+  :geometry (geometry :x "${320 + 155 * 6}px"
+                      :y "${140 + 0 * 6}px"
+                      :anchor "top left")
+  :stacking "bg"
+  :focusable false
+  :hexpand false
+  (box
+    :class "card"
+    :width {59 * 6}
+    :height {25 * 6}
+    (clock)
+    )
+  )
+
+(defwidget clock [] 
+  (box 
+    :orientation "v"
+    :space-evenly false
+    (label :class "bigtime" :text "${hour}:${minute}:${second}")
+    (label :class "weekday" :text weekday)
+    (label :class "date" :text date)
+    )
+  )

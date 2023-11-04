@@ -1,0 +1,34 @@
+(defwindow quickapps 
+  :monitor 0
+  :geometry (geometry :x "${320 + 0 * 6}px"
+                      :y "${140 + 11 * 6}px"
+                      :anchor "top left")
+  :stacking "bg"
+  :focusable false
+  :hexpand false
+  (box
+    :class "card"
+    :width {10 * 6}
+    :orientation "v"
+    :height {79 * 6}
+    (shortcut :text "LibreWolf" :icon "󰈹" :path "librewolf &")
+    (shortcut :text "Alacritty" :icon "" :path "alacritty &")
+    (shortcut :text "Spotify" :icon "" :path "spotify-launcher &")
+    (shortcut :text "Obsidian" :icon "󰠮" :path "obsidian &")
+    (shortcut :text "Code" :icon "󰨞" :path "code &")
+    (shortcut :text "Discord" :icon "󰙯" :path "discord &")
+    (shortcut :text "Vim" :icon "" :path "alacritty -e nvim &")
+    )
+  )
+
+(defwidget shortcut [icon path ?text] 
+  (eventbox
+    :cursor "pointer"
+    (button 
+      :class "shortcut"
+      :tooltip "${text}"
+      :onclick "${path}"
+      "${icon}"
+      )
+    )
+  )

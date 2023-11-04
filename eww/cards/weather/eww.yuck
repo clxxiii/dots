@@ -1,0 +1,32 @@
+(defpoll wicon :interval 60 "scripts/weather.sh --icon")
+(defpoll wtemp :interval 60 "scripts/weather.sh --temp")
+(defpoll whex :interval 60 "scripts/weather.sh --hex")
+(defpoll wstat :interval 60 "scripts/weather.sh --stat")
+(defpoll wquote :interval 60 "scripts/weather.sh --quote")
+(defpoll wquote2 :interval 60 "scripts/weather.sh --quote2")
+
+(defwindow weather 
+  :monitor 0
+  :geometry (geometry :x "${320 + 62 * 6}px"
+                      :y "${140 + 26 * 6}px"
+                      :anchor "top left")
+  :stacking "bg"
+  :focusable false
+  :hexpand false
+  (box
+    :class "card"
+    :width {70 * 6}
+    :height {34 * 6}
+    :orientation "v"
+    :valign "end"
+    :space-evenly false
+		(box :orientation "v" :spacing 10 :space-evenly "false" :vexpand "false" :hexpand "false" 
+			(box :orientation "h" :vexpand "false" :hexpand "false" 
+				(label :class "wicon" :halign "start" :style "color: ${whex};" :text wicon)
+				(label :class "wtemp" :halign "end" :text wtemp))
+			(box :orientation "v" :spacing 10 :halign "start" :space-evenly "false" :vexpand "false" :hexpand "false" 
+				(label :xalign 0 :class "wstat" :text wstat :style "color: ${whex}")
+				(label :xalign 0 :class "quote1" :text wquote)
+				(label :xalign 0 :class "quote2" :text wquote2))))
+)
+

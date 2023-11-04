@@ -37,7 +37,6 @@
                            :halign "end"
                            (h-volume)
                            (h-brightness)
-                           (h-bat)
                            (h-wifi)
                            (h-times)
                            )

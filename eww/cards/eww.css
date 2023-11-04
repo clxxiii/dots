@@ -1,12 +1,33 @@
 .card {
   background-color: #1e1e2e;
   border-radius: 8px;
+  padding: 12px;
+}
+.popupl {
+  background-color: #313244;
+  padding: 12px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.powerwarning {
+  font-weight: bold;
+  font-size: 24px;
+}
+.poweryes,
+.powerno {
+  border-radius: 8px;
+  color: #1e1e2e;
   padding: 10px;
+  background-color: #a6e3a1;
+}
+.powerno {
+  background-color: #f38ba8;
 }
 
 .album {
   border-radius: 8px;
 }
+
 .duration {
   font-family: "Jetbrains Mono NFM";
 }
@@ -15,16 +36,28 @@ scale.songduration trough {
   background-color: #313244;
   min-height: 10px;
   border-radius: 100px;
-  min-width: 400px;
+
+  min-width: 270px;
+}
+
+.pfp {
+  margin-top: 20px;
+  border-radius: 999px;
+  background-size: cover;
+}
+.username {
+  font-family: "Damion", "Product Sans", sans-serif;
+  color: #cdd6f4;
+  font-size: 36px;
 }
 
 .title {
-  color: white;
+  color: #cdd6f4;
   font-weight: bold;
   font-size: 16;
 }
 .artist {
-  color: white;
+  color: #cdd6f4;
   font-size: 16;
 }
 
@@ -33,4 +66,113 @@ scale.songduration trough {
 .next {
   color: #cdd6f4;
   font-size: 24px;
+}
+
+.poweroff,
+.restart,
+.logout {
+  font-size: 36px;
+}
+.weblink .icon {
+  font-size: 128px;
+  margin-top: -40px;
+  margin-bottom: -40px;
+}
+
+scale.songduration trough highlight {
+  background-color: #74c7ec;
+}
+
+.poweroff {
+  color: #f38ba8;
+}
+.restart {
+  color: #89b4fa;
+}
+.logout {
+  color: #f9e2af;
+}
+
+.wicon {
+  font-size: 128px;
+  margin: -55px 0px -60px 5px;
+}
+.shortcut {
+  font-family: "Jetbrains Mono NFM";
+  font-size: 36px;
+  color: #6c7086;
+}
+.shortcut:hover {
+  color: #cdd6f4;
+}
+.wtemp {
+  font-family: "Jetbrains Mono NFM";
+  font-size: 48px;
+  color: #cdd6f4;
+}
+.wstat {
+  font-family: "Damion", "Product Sans", sans-serif;
+  font-size: 40px;
+}
+.quote1 {
+  font-weight: bold;
+}
+.quote1,
+.quote2 {
+  margin: -5px 0px -5px 0px;
+  font-family: "Product Sans", sans-serif;
+  color: #cdd6f4;
+  font-style: italic;
+  font-size: 17px;
+}
+.bigtime {
+  font-family: "Jetbrains Mono NFM";
+  font-size: 48px;
+  color: #f9e2af;
+  margin-bottom: -10px;
+}
+.weekday {
+  font-family: "Damion", "Product Sans", sans-serif;
+  font-size: 30px;
+  color: #a6e3a1;
+}
+.date {
+  font-family: "Product Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #cdd6f4;
+}
+.bigcircle .usage {
+  font-family: "Jetbrains Mono NFM";
+  font-size: 32px;
+}
+.bigcircle .icon {
+  font-family: "Jetbrains Mono NFM";
+  font-size: 100px;
+  margin-top: -7px;
+}
+scale.system-slider trough {
+  min-height: 200px;
+  border-radius: 8px;
+  min-width: 40px;
+}
+
+.b-slider {
+  font-family: "Material Icons";
+  font-size: 30px;
+  color: #f9e2af;
+}
+
+.b-slider scale trough highlight {
+  background-color: #f9e2af;
+}
+
+.v-slider {
+  font-family: "Material Icons";
+  font-size: 30px;
+  color: #74c7ec;
+}
+
+.v-slider scale trough highlight {
+  background-color: #74c7ec;
 }

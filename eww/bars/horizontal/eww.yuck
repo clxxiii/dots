@@ -170,7 +170,7 @@
   :space-evenly "false"
     (label :text "")
     (scale
-      :class "vol scale"
+      :class "volbar"
       :value {volume}
       :orientation "h"
       :min 0

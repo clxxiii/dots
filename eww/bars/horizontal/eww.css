@@ -50,15 +50,19 @@
   color: #a6e3a1;
   font-size: 1.75rem;
 }
-
 progressbar trough,
 scale trough {
+  background-color: #313244;
+}
+
+progressbar.volbar trough,
+scale.volbar trough {
   background-color: #313244;
   min-height: 10px;
   border-radius: 100px;
   min-width: 90px;
 }
-scale trough highlight,
+scale.volbar trough highlight,
 progressbar trough progress {
   border-radius: 10px;
   min-height: 10px;
@@ -81,14 +85,11 @@ progressbar trough progress {
   color: #74c7ec;
 }
 
-scale trough highlight {
-  background-color: #74c7ec;
-}
-.vol scale trough highlight {
-  background-color: #74c7ec;
-}
-scale {
+scale.volbar {
   font-size: 1rem;
+}
+scale.volbar trough highlight {
+  background-color: #74c7ec;
 }
 .bright scale trough highlight {
   background-color: #f9e2af;

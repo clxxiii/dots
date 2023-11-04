@@ -1,0 +1,15 @@
+(defwindow frame
+  :monitor 0
+  :geometry (geometry :x "${320 + 0 * 6}px"
+                      :y "${140 + 0 * 6}px"
+                      :anchor "top left")
+  :stacking "bg"
+  :focusable false
+  :hexpand false
+  (box
+    :width 1284
+    :height 720
+    :style "background-color: #aaaaaa"
+    (empty)
+    )
+  )
