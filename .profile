@@ -30,4 +30,9 @@ fi
 
 
 export GTK_THEME=Catppuccin-Mocha-Standard-Sky-Dark
+
+# Set defaults
+export BROWSER=librewolf
+export EDITOR=nvim
+
 . "$HOME/.cargo/env"
