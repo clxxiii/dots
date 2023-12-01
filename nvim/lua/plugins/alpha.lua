@@ -39,7 +39,7 @@ return {
 		}
 		dashboard.section.buttons.val = {
 			dashboard.button("n", " New file", ":ene <BAR> startinsert <CR>"),
-			dashboard.button("o", " Open file", ":Telescope old_files"),
+			dashboard.button("o", " Open file", ":Telescope oldfiles<CR>"),
 			dashboard.button("s", " Settings", ":e ~/.config/nvim<CR>"),
 			dashboard.button("q", " Quit", ":qa<CR>"),
 		}
