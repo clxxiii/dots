@@ -9,6 +9,7 @@
   (box
     :class "card"
     :space-evenly false
+    :visible {cardsvisible}
     :spacing 10
     :width {50 * 6}
     :height {60 * 6}

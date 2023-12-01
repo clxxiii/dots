@@ -9,6 +9,7 @@
   (box
     :width {92 * 6}
     :height {25 * 6}
+    :visible {cardsvisible}
     :valign "center"
     :hexpand false
     :space-evenly false
@@ -70,7 +71,7 @@
       :halign "start"
       :hexpand false
       :orientation "v"
-      (label :limit-width 50 :xalign 0 :class "title" :text {title})
+      (label :limit-width 48 :xalign 0 :class "title" :text {title})
       (label :xalign 0 :class "artist" :text {artist})
       )
   )

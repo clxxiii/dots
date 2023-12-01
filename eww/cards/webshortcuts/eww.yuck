@@ -44,14 +44,18 @@
   )
 
 (defwidget webshortcut [icon color link] 
-  (box
-    :class "card weblink"
-    :width {23 * 6}
-    :style "background-color: ${color}"
-    :height {23 * 6}
-    (button 
-      :onclick "$BROWSER ${link}"
-      (label :class "icon" :text icon)
+  (eventbox
+    :cursor "pointer"
+    :visible {cardsvisible}
+    (box
+      :class "card weblink"
+      :width {23 * 6}
+      :style "background-color: ${color}"
+      :height {23 * 6}
+      (button 
+        :onclick "$BROWSER ${link}"
+        (label :class "icon" :text icon)
+        )
       )
     )
   )

@@ -16,6 +16,7 @@
   (box
     :class "card"
     :width {70 * 6}
+    :visible {cardsvisible}
     :height {34 * 6}
     :orientation "v"
     :valign "end"

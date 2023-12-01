@@ -9,9 +9,13 @@
 (include "cards/system/eww.yuck")
 (include "cards/sliders/eww.yuck")
 (include "cards/webshortcuts/eww.yuck")
-(include "cards/calendar/eww.yuck")
+(include "cards/todoist/eww.yuck")
+(include "cards/sysfetch/eww.yuck")
+(include "cards/wifi/eww.yuck")
 
 (include "cards/frame.yuck")
+
+(defvar cardsvisible true)
 
 ; Each card is an element that shows up on the bottom of the desktop
 ; The full dashboard is scaled to be around 1280x720, centered on the screen

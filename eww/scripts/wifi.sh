@@ -6,7 +6,7 @@ echo 
 }
 
 name() {
-nmcli | grep "^wlan0" | sed 's/\ connected\ to\ /Connected to /g' | cut -d ':' -f2
+nmcli | grep "^wlan0" | sed 's/\ connected\ to\ //g' | cut -d ':' -f2
 }
 
 [ "$1" = "icon" ] && symbol && exit

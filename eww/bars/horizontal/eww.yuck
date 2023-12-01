@@ -100,7 +100,6 @@
        :space-evenly "false"
     (h-volume)
     (h-brightness)
-    (h-bat)
     (h-wifi)
     ))
 

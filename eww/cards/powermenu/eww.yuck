@@ -9,6 +9,7 @@
   (box
     :class "card"
     :orientation "v"
+    :visible {cardsvisible}
     :width {10 * 6}
     :height {29 * 6}
     (button :onclick "${EWW_CMD} update poweroperation=poweroff" (label :class "poweroff" :text "󰤆"))

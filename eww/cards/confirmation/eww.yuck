@@ -11,6 +11,7 @@
 
   (revealer
     :reveal {poweroperation != ""}
+    :visible {cardsvisible}
     :transition "slideleft"
     (box 
       :class "popupl"

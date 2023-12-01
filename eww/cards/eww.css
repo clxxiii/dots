@@ -123,7 +123,7 @@ scale.songduration trough highlight {
   font-family: "Product Sans", sans-serif;
   color: #cdd6f4;
   font-style: italic;
-  font-size: 17px;
+  font-size: 16px;
 }
 .bigtime {
   font-family: "Jetbrains Mono NFM";
@@ -175,4 +175,40 @@ scale.system-slider trough {
 
 .v-slider scale trough highlight {
   background-color: #74c7ec;
+}
+.task {
+  background-color: #313244;
+  padding: 4px;
+  border-radius: 6px;
+}
+.task .content {
+  font-size: 16px;
+}
+.complete-button {
+  border-radius: 30px;
+  border: 2px solid white;
+}
+.complete-button.priority-1 {
+  border-color: #a9a9a9;
+  background-color: #575757;
+}
+.complete-button.priority-2 {
+  border-color: #5297ff;
+  background-color: #345079;
+}
+.complete-button.priority-3 {
+  border-color: #ff9a13;
+  background-color: #79511b;
+}
+.complete-button.priority-4 {
+  border-color: #ff7066;
+  background-color: #79403c;
+}
+
+.wifi.card {
+  font-size: 18px;
+  font-weight: bold;
+}
+.wifi.card .icon {
+  font-size: 28px;
 }

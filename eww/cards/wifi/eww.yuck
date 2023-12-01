@@ -1,0 +1,21 @@
+(defwindow wifi
+  :monitor 0
+  :geometry (geometry :x "${320 + 84 * 6}px"
+                      :y "${140 + 61 * 6}px"
+                      :anchor "top left")
+  :stacking "bg"
+  :focusable false
+  :hexpand false
+  (box
+    :class "wifi card"
+    :space-evenly false
+    :halign "center"
+    :valign "center"
+    :spacing 10
+    :width {48 * 6}
+    :visible {cardsvisible}
+    :height {11 * 6}
+    (label :text {wifi-icon} :class "icon" )
+    (label :text {wifi-name})
+    )
+  )
