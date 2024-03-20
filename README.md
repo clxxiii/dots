@@ -5,7 +5,7 @@
 </div>
 
 <details>
-  <summary><h2>:framed_picture: Wallpaper Credit</h2></summary>
+  <summary>:framed_picture: Wallpaper Credit</summary>
   
   | Wallpaper | Credit |
   | :-------: | ------ |
@@ -30,7 +30,7 @@
 </details>
 
 <details>
-  <summary><h2>📱 Phone Wallpaper Credit</h2></summary>
+  <summary>📱 Phone Wallpaper Credit</summary>
   
   | Wallpaper | Credit |
   | :-------: | ------ |
@@ -38,6 +38,8 @@
   | ![Wallpaper](https://raw.githubusercontent.com/clxxiii/dots/main/Wallpapers/phone/path%20of%20pain.webp) | [u/CometShine](https://www.reddit.com/r/HollowKnight/comments/9kd9c8/path_of_pain/?st=JRQL4MVH&sh=decd4e69) |
 </details>
 
+<details>
+<summary>Old Screenshots</summary>
 ## i3 Setup
 
 ![i3](https://github.com/clxxiii/dots/blob/main/Screenshots/i3.png?raw=true)
@@ -65,6 +67,10 @@
   - Media Controls
   - OpenWeather
   - Tray Icons: Reloaded
+</details>
+
+- OS: [Endeavor](https://endeavouros.com)
+- WM: [Hyprland](https://hyprland.org)
 
 ### Applications
 
