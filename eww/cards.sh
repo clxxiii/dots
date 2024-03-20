@@ -2,7 +2,7 @@
 #
 # Opens all the eww cards
 
-EWW="eww"
+EWW="/home/eli/.local/bin/eww"
 CARD_NAMES=(np profile distro quickapps powermenu weather confirmation clock system sliders github youtube brightspace twitch todoist wifi sysfetch)
 
 open() {

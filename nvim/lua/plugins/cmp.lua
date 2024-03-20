@@ -22,7 +22,6 @@ return {
 		"hrsh7th/cmp-cmdline",
 	},
 	config = function()
-		local kind_icons = {}
 
 		require("mason").setup()
 
@@ -107,6 +106,7 @@ return {
 			"prismals",
 			"jdtls",
 			"tailwindcss",
+      "bashls",
 		}
 
 		for i = 1, #lspservers do

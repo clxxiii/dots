@@ -34,3 +34,8 @@ vim.cmd([[
     let g:neovide_transparency = 0.8
   endif
 ]])
+
+-- NEOVIDE SETTINGS
+if vim.g.neovide then
+  require("config.neovide")
+end

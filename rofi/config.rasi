@@ -1,5 +1,5 @@
 configuration{
-    modi: "run,drun,window";
+    modi: "run,drun,window,emoji";
     icon-theme: "Tela-circle-dracula-dark";
     show-icons: true;
     terminal: "alacritty";
@@ -9,7 +9,7 @@ configuration{
     hide-scrollbar: true;
     display-drun: "   Apps ";
     display-run: "   Run ";
-    display-window: " 﩯  Window";
+    display-window: "   Window";
     display-Network: " 󰤨  Network";
     sidebar-mode: true;
 }
