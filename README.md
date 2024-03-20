@@ -1,4 +1,5 @@
 <div align="center">
+![current](https://github.com/clxxiii/dots/blob/main/Screenshots/current.png?raw=true)
 <h1>clxxiii's Dotfiles</h1>
 </div>
 
