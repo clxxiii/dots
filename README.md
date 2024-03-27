@@ -92,8 +92,9 @@ git clone git@github.com:/clxxiii/dots.git ~/.dotfiles # If ssh is setup
 git clone https://github.com/clxxiii/dots.git ~/.dotfiles # Before ssh setup
 ```
 
-2. Run the following command:
+2. Run the symlink shell script to make all the links.
 
 ```bash
-wget -O - https://raw.githubusercontent.com/clxxiii/dots/main/install.sh | sh
+cd ~/.dotfiles
+./symlinks.sh
 ```
