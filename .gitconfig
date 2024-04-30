@@ -1,9 +1,12 @@
 [user]
 	name = clxxiii
-	email = clxxiii@users.noreply.github.com
-[gpg]
-	format = ssh
+  email = clxxiii@users.noreply.github.com
+	signingkey = /home/eli/.ssh/id_rsa.pub
 [init]
 	defaultBranch = main
 [pull]
 	rebase = false
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
