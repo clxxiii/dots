@@ -31,6 +31,7 @@ link() {
   ln -s $DOTFILES_DIR/neofetch ~/.config/neofetch
   ln -s $DOTFILES_DIR/eww ~/.config/eww
   ln -s $DOTFILES_DIR/hypr ~/.config/hypr
+  ln -s $DOTFILES_DIR/bat ~/.config/bat
 
   ln -s ~/.dotfiles/.zshrc ~/.zshrc
   ln -s ~/.dotfiles/.zshenv ~/.zshenv
@@ -59,6 +60,7 @@ unlink() {
   rm -rf ~/.config/neofetch
   rm -rf ~/.config/eww
   rm -rf ~/.config/hypr
+  rm -rf ~/.config/bat
 
   rm -f ~/.zshrc
   rm -f ~/.zshenv

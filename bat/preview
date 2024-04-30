@@ -1,0 +1,8 @@
+#! /usr/bin/bash
+
+if [ -d $1 ]; then
+	exa --color=always --icons -l $1
+else
+	bat --color=always $1 --theme="Catppuccin Mocha" --plain
+fi
+
