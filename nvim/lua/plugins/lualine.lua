@@ -6,6 +6,7 @@ return {
 			component_separators = { left = "", right = "" },
 			section_separators = { left = "", right = "" },
 			disabled_filetypes = { "NvimTree", "alpha", "dashboard", "Outline" },
+      theme = "catppuccin",
 		},
 		sections = {
 			lualine_b = {
@@ -20,8 +21,5 @@ return {
       lualine_c = {},
 			lualine_x = { "lsp_status" },
 		},
-    winbar = {
-      lualine_c = { "filename" }
-    }
 	},
 }

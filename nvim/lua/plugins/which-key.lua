@@ -1,13 +1,19 @@
 return {
 	"folke/which-key.nvim",
-	init = function()
-		vim.o.timeout = true
-		vim.o.timeoutlen = 300
-	end,
+  event = "VeryLazy",
 	opts = {
 		win = {
 			border = "rounded",
-			margin = { 1, 1, 1, 1 },
+			padding = { 1, 1, 1, 1 },
 		},
 	},
+  keys = {
+    {
+      "<leader>?",
+      function ()
+        require("which-key").show({ global = false })
+      end,
+      desc = "Buffer Local Keymaps (which-key)",
+    },
+  },
 }
