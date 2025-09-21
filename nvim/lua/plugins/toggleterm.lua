@@ -7,15 +7,14 @@ return {
 			},
 		})
 
-		vim.cmd([[
-      nnoremap <C-\> <CMD>ToggleTerm<CR>
-      tnoremap <C-\> <C-\><C-n><CMD>ToggleTerm<CR>
-
-      tnoremap <C-n> <C-\><C-n>
-      tnoremap <C-w>h <C-\><C-n><C-w>h
-      tnoremap <C-w>j <C-\><C-n><C-w>j
-      tnoremap <C-w>k <C-\><C-n><C-w>k
-      tnoremap <C-w>l <C-\><C-n><C-w>l
-    ]])
 	end,
+	keys = {
+		{ "<C-\\>", "<Cmd>ToggleTerm<CR>", desc = "Toggle Terminal", mode = { "n" } },
+    { "<C-\\>", "<C-\\> <C-\\><C-n><CMD>ToggleTerm<CR>",  desc = "Toggle Terminal", mode = { "t" } },
+    { "<C-n>", "<C-\\> <C-n>",  desc = "Normal Mode", mode = { "t" } },
+    { "<C-w>h", "<C-\\><C-n><C-w>h",  desc = "Focus Left", mode = { "t" } },
+    { "<C-w>l", "<C-\\><C-n><C-w>l",  desc = "Focus Right", mode = { "t" } },
+    { "<C-w>k", "<C-\\><C-n><C-w>k",  desc = "Focus Up", mode = { "t" } },
+    { "<C-w>l", "<C-\\><C-n><C-w>l",  desc = "Focus Down", mode = { "t" } }
+  }
 }
