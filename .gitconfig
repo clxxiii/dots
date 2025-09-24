@@ -1,12 +1,12 @@
 [user]
 	name = clxxiii
   email = clxxiii@users.noreply.github.com
-	signingkey = /home/eli/.ssh/id_rsa.pub
+  # signingkey = /home/eli/.ssh/id_ed25519_sk_rk_yubi-sunset.pub
 [init]
 	defaultBranch = main
 [pull]
 	rebase = false
-[gpg]
-	format = ssh
-[commit]
-	gpgsign = true
+# [gpg]
+  # format = ssh
+# [commit]
+  # gpgsign = true
