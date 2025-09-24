@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#! /usr/bin/bash
 #
 #
 #
@@ -32,15 +32,16 @@ link() {
   ln -s $DOTFILES_DIR/eww ~/.config/eww
   ln -s $DOTFILES_DIR/hypr ~/.config/hypr
   ln -s $DOTFILES_DIR/bat ~/.config/bat
+  ln -s $DOTFILES_DIR/alacritty ~/.config/alacritty
 
-  ln -s ~/.dotfiles/.zshrc ~/.zshrc
-  ln -s ~/.dotfiles/.zshenv ~/.zshenv
-  ln -s ~/.dotfiles/.vimrc ~/.vimrc
-  ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
-  ln -s ~/.dotfiles/.alacritty.yml ~/.alacritty.yml
-  ln -s ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
-  ln -s ~/.dotfiles/.paths ~/.paths
-  ln -s ~/.dotfiles/.profile ~/.profile
+  ln -s $DOTFILES_DIR/.zshrc ~/.zshrc
+  ln -s $DOTFILES_DIR/.tmux.conf ~/.tmux.conf
+  ln -s $DOTFILES_DIR/.zshenv ~/.zshenv
+  ln -s $DOTFILES_DIR/.vimrc ~/.vimrc
+  ln -s $DOTFILES_DIR/.gitconfig ~/.gitconfig
+  ln -s $DOTFILES_DIR/.p10k.zsh ~/.p10k.zsh
+  ln -s $DOTFILES_DIR/.paths ~/.paths
+  ln -s $DOTFILES_DIR/.profile ~/.profile
 }
 
 
@@ -66,6 +67,7 @@ unlink() {
   rm -f ~/.zshenv
   rm -f ~/.vimrc
   rm -f ~/.gitconfig
+  rm -f ~/.tmux.conf
   rm -f ~/.alacritty.yml
   rm -f ~/.p10k.zsh
   rm -f ~/.paths
