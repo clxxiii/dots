@@ -1,34 +1,7 @@
-@import "bars/workspaces/eww.css";
-@import "bars/center/eww.css";
-@import "bars/vertical/eww.css";
-@import "bars/horizontal/eww.css";
-@import "bars/wayland/eww.css";
-@import "cards/eww.css";
+/* @import "bars/i3/eww.css"; */
+/* @import "cards/eww.css"; */
 /* @import "catppuccin.css"; */
 
 * {
   all: unset;
-}
-
-.bar {
-  background-color: rgba(30, 30, 46, 0.7);
-  transition: background-color 0.2s ease;
-  border-radius: 6px;
-}
-
-.bar.opaque {
-  background-color: rgba(30, 30, 46, 1);
-  transition: background-color 0.2s ease;
-}
-
-.resize {
-  background-color: rgba(137, 220, 235, 0.8);
-}
-
-.bar.opaque.resize {
-  background-color: rgba(137, 220, 235, 1);
-}
-
-.volume {
-  padding: 20px;
 }

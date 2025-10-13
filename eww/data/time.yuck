@@ -1,0 +1,19 @@
+(defpoll date :interval "1s" :inital ""
+  `date '+%B %e, %Y'`
+  )
+
+(defpoll time :interval "1s" :inital ""
+  `date '+%I:%M %p'`
+  )
+
+(defpoll hour :interval "1s" :inital ""
+  `date '+%H'`
+  )
+
+(defpoll minute :interval "1s" :inital ""
+  `date '+%M'`
+  )
+
+(defpoll second :interval "1s" :inital ""
+  `date '+%S'`
+  )

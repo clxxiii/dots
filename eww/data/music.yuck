@@ -1,0 +1,5 @@
+(deflisten spotifyd-music :initial ""
+  "playerctl --player=spotifyd --follow metadata --format '{{ artist }} - {{ title }}' || true")
+
+(defpoll playpause	:interval "5s"  "scripts/music.sh statusicon")
+(defpoll songtime 	:interval "1s"  "scripts/getSongDuration")

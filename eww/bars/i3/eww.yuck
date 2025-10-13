@@ -1,0 +1,20 @@
+(include 'bars/i3/vertical/eww.yuck')
+(include 'bars/i3/horizontal/eww.yuck')
+(include 'bars/i3/separated/eww.yuck')
+
+; =======================================
+;                 i3 data
+; =======================================
+
+(defpoll i3-workspaces
+  :interval "0.2s"
+  `i3-msg -t get_outputs`)
+
+(deflisten i3-binding_state
+  :initial '{"change": "default"}'
+  `i3-msg -t subscribe -m '["mode"]'`)
+
+(deflisten i3-window
+  :initial "hi"
+  `i3-msg -t subscribe -m '["window"]'`)
+

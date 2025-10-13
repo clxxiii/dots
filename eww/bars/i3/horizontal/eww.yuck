@@ -1,3 +1,6 @@
+; Get data from i3
+(include 'data/i3.yuck')
+
 (defwindow horizontal
   :monitor 0
   :geometry (geometry :x "6px"
@@ -12,9 +15,9 @@
   :focusable false
   :hexpand false
   (centerbox
-    :class 'opaque bar ${binding_state.change}'
+    :class 'opaque bar ${i3-binding_state.change}'
     :space-evenly "false"
-    :visible {window.container.fullscreen_mode == 0}
+    :visible {i3-window.container.fullscreen_mode == 0}
     :orientation 'h'
   (h-top)
   (empty)
@@ -67,6 +70,8 @@
       )
   )
 )
+
+(defpoll tomato-time :interval "1s" "tomato -t")
 
 (defwidget tomato []
   (box

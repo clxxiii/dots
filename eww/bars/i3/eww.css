@@ -1,0 +1,28 @@
+@import "vertical/eww.css";
+@import "horizontal/eww.css";
+
+@import "separated/workspaces/eww.css";
+@import "separated/center/eww.css";
+
+.bar {
+  background-color: rgba(30, 30, 46, 0.7);
+  transition: background-color 0.2s ease;
+  border-radius: 6px;
+}
+
+.bar.opaque {
+  background-color: rgba(30, 30, 46, 1);
+  transition: background-color 0.2s ease;
+}
+
+.resize {
+  background-color: rgba(137, 220, 235, 0.8);
+}
+
+.bar.opaque.resize {
+  background-color: rgba(137, 220, 235, 1);
+}
+
+.volume {
+  padding: 20px;
+}

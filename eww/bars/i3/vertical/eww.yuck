@@ -10,7 +10,7 @@
   :windowtype "dock"
   :focusable false
   (centerbox
-    :class 'opaque bar ${binding_state.change}'
+    :class 'opaque bar ${i3-binding_state.change}'
     :orientation 'v'
   (v-workspaces)
   (empty)
