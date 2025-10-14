@@ -1,6 +1,6 @@
 return {
-  { 
-    "mason-org/mason-lspconfig.nvim", 
+  {
+    "mason-org/mason-lspconfig.nvim",
     event = "VeryLazy",
     dependencies = {
       "mason-org/mason.nvim",
@@ -17,11 +17,11 @@ return {
       })
     end,
   },
-  { 
-    "saghen/blink.cmp", 
+  {
+    "saghen/blink.cmp",
     event = "VeryLazy",
     version = "1.*",
-    opts = { 
+    opts = {
       keymap = { preset = 'super-tab' },
 
       completion = {
@@ -30,7 +30,7 @@ return {
 
       signature = {
         enabled = true,
-        window = { 
+        window = {
           border = 'rounded'
         },
       },

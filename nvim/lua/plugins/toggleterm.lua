@@ -17,6 +17,7 @@ return {
     { "<C-w>k", "<C-\\><C-n><C-w>k",  desc = "Focus Up", mode = { "t" } },
     { "<C-w>l", "<C-\\><C-n><C-w>l",  desc = "Focus Down", mode = { "t" } },
     -- Terminal Applications
-    { "<leader>lt", "<CMD>TermExec cmd=lazydocker direction=float<CR>",  desc = "Open Lazydocker" }
+    { "<leader>ld", "<CMD>TermExec cmd=lazydocker direction=float<CR>",  desc = "Open Lazydocker" },
+    { "<leader>ls", "<CMD>TermExec cmd=lazysql direction=float<CR>",  desc = "Open Lazysql" }
   }
 }
