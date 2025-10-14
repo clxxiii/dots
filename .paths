@@ -1,20 +1,34 @@
+# set PATH so it includes user's private bins if they exist
+if [ -d "$HOME/bin" ] ; then
+  export PATH="$HOME/bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/bin" ] ; then
+  export PATH="$HOME/.local/bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/share/bin" ] ; then
+  export PATH=$PATH:$HOME/.local/share/bin
+fi
+
 # Add go language to path
 if [ -d "/usr/local/go/bin" ] ; then
   export PATH=$PATH:/usr/local/go/bin
 fi 
 
-if [ -d "$HOME/.local/share/bin" ] ; then
-export PATH=$PATH:$HOME/.local/share/bin
+# Add go language to path
+if [ -d "$HOME/.local/share/apache-maven-3.9.9/bin" ] ; then
+  export PATH=$PATH:$HOME/.local/share/apache-maven-3.9.9/bin
+fi 
+
+# Clojure Lang
+if [ -d "$HOME/.local/bin/clojure/bin" ] ; then
+  export PATH="$HOME/.local/bin/clojure/bin:$PATH"
 fi
+
 
 if [ -d "$HOME/.nvm" ] ; then
   export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 fi
-
-
-# # The next line enables shell command completion for gcloud.
-# if [ -f '/home/eli/.local/share/google-cloud-sdk/completion.zsh.inc' ]; then
-#   '/home/eli/.local/share/google-cloud-sdk/completion.zsh.inc'; 
-# fi

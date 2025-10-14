@@ -16,23 +16,8 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
-
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/.local/bin" ] ; then
-    PATH="$HOME/.local/bin:$PATH"
-fi
-
 . "$HOME/.paths"
 
-
-export GTK_THEME=Catppuccin-Mocha-Standard-Sky-Dark
-
 # Set defaults
-export BROWSER=librewolf
+export BROWSER=zen-browser
 export EDITOR=nvim
-
-. "$HOME/.cargo/env"
