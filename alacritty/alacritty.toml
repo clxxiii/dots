@@ -1,5 +1,5 @@
 general.import = [
-  "~/.config/alacritty/catppuccin-frappe.toml"
+  "~/.config/alacritty/catppuccin-macchiato.toml"
 ]
 
 [cursor]
@@ -40,10 +40,10 @@ program = "/bin/zsh"
 
 [window]
 decorations = "none"
-opacity = 0.85
+opacity = 0.6
 
 [window.dimensions]
-columns = 80
+columns = 86
 lines = 24
 
 [window.padding]
