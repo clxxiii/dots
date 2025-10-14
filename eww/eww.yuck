@@ -1,5 +1,8 @@
 ; (include 'bars/i3/eww.yuck')
 ; (include 'cards/eww.yuck')
+(include 'bars/hypr/eww.yuck')
+(include 'data/music.yuck')
+(include 'data/system.yuck')
 
 ; Placeholder widget for centerboxes
 (defwidget empty []

@@ -1,0 +1,7 @@
+(defpoll hyprland-workspaces
+  :interval '0.3s'
+  'hyprctl -j workspaces')
+
+(defpoll hyprland-active-workspace
+  :interval '0.3s'
+  'hyprctl -j activeworkspace')

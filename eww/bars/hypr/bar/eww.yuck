@@ -1,0 +1,106 @@
+(defwindow hyprbar
+  :monitor 0
+  :geometry (geometry :x "0px"
+                      :y "0px"
+                      :width "100%"
+                      :height "40px"
+                      :anchor "bottom center")
+  :stacking "fg"
+  :focusable false
+  :exclusive true
+  :hexpand false
+  (centerbox
+    (hyprworkspaces)
+    (empty)
+    (box
+      :space-evenly false
+      :spacing 10
+      :halign "end"
+      (cpu)
+      (brightness)
+      (battery)
+      (systray
+        :valign "center"
+        :spacing 5
+        :class "systray"
+        :icon-size 18
+        :space-evenly false
+        )
+      (time)
+      )
+  )
+)
+
+(defwidget cpu [] 
+  (box
+    :class "graphbox"
+    :valign "center"
+    (overlay
+      (label :text "   ${round(EWW_CPU.avg, 2)}%" )
+      (graph
+        :value {EWW_CPU.avg}
+        :time-range "60s"
+        )
+      )
+    )
+  )
+
+(defwidget battery [] 
+  (box
+    :class "battery"
+    :valign "center"
+    (label 
+      :class "icon"
+      :text {battery_icon}
+      )
+    (label 
+      :text {EWW_BATTERY["BAT0"].capacity}
+      )
+    )
+  )
+
+(defwidget brightness [] 
+  (box
+    :class "brightness"
+    :valign "center"
+    (label 
+      :class "icon"
+      :text " "
+      )
+    (label 
+      :text {brightness}
+      )
+    )
+  )
+
+(defwidget time [] 
+  (box
+    :orientation "v"
+    :valign "center"
+    :class "time"
+      (label :text {formattime(EWW_TIME, "%l:%M:%S %p")})
+    )
+  )
+
+(defwidget hyprworkspaces []
+  (box
+    :class "workspaces"
+    :valign "center"
+    :halign "start"
+    :space-evenly false
+      (label :visible false :text {hyprland-active-workspace} ) ; Keep hyprland-active-workspace variable loaded
+
+      (for ws in hyprland-workspaces
+        (eventbox 
+          :visible {ws.id > 0}
+          :cursor "pointer"
+          (button
+            :class "workspace ${ws.id == hyprland-active-workspace.id ? 'active' : ''}"
+            :onclick "hyprctl dispatch workspace ${ws.id}"
+            (label :text {ws.id})
+            )
+        )
+      )
+
+    )
+  )

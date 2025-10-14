@@ -1,0 +1,4 @@
+(include "bars/hypr/data.yuck")
+
+(include "bars/hypr/border/eww.yuck")
+(include "bars/hypr/bar/eww.yuck")

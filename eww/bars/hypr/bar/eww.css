@@ -1,0 +1,91 @@
+.workspaces {
+  margin-left: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 999px;
+}
+
+.workspace {
+  font-family: "Quicksand";
+  padding: 5px 15px;
+  font-weight: bold;
+  border-radius: 999px;
+}
+.workspace:hover {
+  color: #888;
+}
+
+.workspace.active {
+  color: #111;
+  background-color: rgb(116, 199, 236);
+  padding: 5px 20px;
+}
+
+.time {
+  padding: 5px 10px;
+  margin-right: 10px;
+  background-color: rgb(203, 166, 247);
+  font-family: "Iosevka Term";
+  font-weight: bold;
+  color: #111;
+  border-radius: 999px;
+}
+
+.battery {
+  padding: 5px 10px;
+  background-color: rgb(166, 227, 161);
+  font-family: "Iosevka Term";
+  font-weight: bold;
+  color: #111;
+  border-radius: 999px;
+}
+
+.brightness {
+  padding: 5px 10px;
+  background-color: rgb(249, 226, 175);
+  font-family: "Iosevka Term";
+  font-weight: bold;
+  color: #111;
+  border-radius: 999px;
+}
+
+.graphbox {
+  padding: 7px 10px;
+  font-family: "Jetbrains Mono";
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 999px;
+}
+.cpu {
+  color: #74c7ec;
+}
+
+/* System tray styling */
+.systray {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px 15px;
+  border-radius: 999px;
+}
+
+.background.popup {
+  background-color: #1e1e2e;
+  border: solid 2px rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.background.popup menuitem {
+  padding: 5px;
+  margin: 0px 2px;
+}
+
+.background.popup menuitem:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.background.popup menuitem:disabled {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.background.popup separator {
+  margin: 0px 5px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+}
