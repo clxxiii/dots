@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Path to your oh-my-zsh installation.
-export ZSH="/usr/share/oh-my-zsh"
+export ZSH="/home/eli/.oh-my-zsh"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -61,14 +61,14 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  docker
+	zsh-autosuggestions
+	zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
 
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 
 # User configuration
 
@@ -94,17 +94,22 @@ alias clip="xclip -selection clipboard"
 alias lg="lazygit"
 alias fuck="thefuck"
 alias ls="exa --icons"
+alias size="exa --icons -l --total-size --no-permissions --no-user --sort=size -r"
+# alias cat="batcat -p"
 
 
 function zsh-stats() { fc -l 1 | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl | head -n25 }
 
+# FZF Integration
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#313244,spinner:#f5e0dc,hl:#f38ba8 \
 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
 --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
 --preview '$HOME/.config/bat/preview {}'"
 
-eval "$(fzf --zsh)"
+# eval "$(fzf --zsh)"
+
+source "$HOME/.profile"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -115,6 +120,17 @@ export PATH=$PATH:~/.spicetify
 export NAP_HOME=~/.nap
 export NAP_CONFIG=~/.nap/config.yaml
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# bun completions
+[ -s "/home/eli/.bun/_bun" ] && source "/home/eli/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export __GLX_VENDOR_LIBRARY_NAME=nvidia
+export __NV_PRIME_RENDER_OFFLOAD=1
+
+# Turso
+export PATH="$HOME/.turso:$PATH"
+
+# Tauri Dev
+export WEBKIT_DISABLE_DMABUF_RENDERER=1
