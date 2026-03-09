@@ -1,0 +1,56 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "bindings": {
+      "ctrl-\\": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "space c t": "workspace::NewCenterTerminal",
+      "space l g": [
+        "task::Spawn",
+        { "reveal_target": "center", "task_name": "lazygit" }
+      ],
+      "space f w": "workspace::NewSearch",
+      "space f p": "projects::OpenRecent",
+      "space f f": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-w k": "workspace::ActivatePaneUp"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // "j k": ["workspace::SendKeystrokes", "escape"],
+      "alt-c": "pane::CloseActiveItem",
+      "alt-j": "editor::MoveLineDown",
+      "alt-k": "editor::MoveLineUp",
+      "shift-alt-j": "editor::AddSelectionBelow",
+      "shift-alt-k": "editor::AddSelectionAbove"
+    }
+  },
+  {
+    "context": "(ProjectPanel && not_editing)",
+    "bindings": {
+      "a": "project_panel::NewFile"
+    }
+  },
+  {
+    "context": "(ProjectPanel && not_editing)",
+    "bindings": {
+      "%": null
+    }
+  }
+]

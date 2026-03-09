@@ -33,6 +33,7 @@ link() {
   ln -s $DOTFILES_DIR/hypr ~/.config/hypr
   ln -s $DOTFILES_DIR/bat ~/.config/bat
   ln -s $DOTFILES_DIR/alacritty ~/.config/alacritty
+  ln -s $DOTFILES_DIR/zed ~/.config/zed
 
   ln -s $DOTFILES_DIR/.zshrc ~/.zshrc
   ln -s $DOTFILES_DIR/.tmux.conf ~/.tmux.conf
@@ -62,6 +63,7 @@ unlink() {
   rm -rf ~/.config/eww
   rm -rf ~/.config/hypr
   rm -rf ~/.config/bat
+  rm -rf ~/.config/zed
 
   rm -f ~/.zshrc
   rm -f ~/.zshenv

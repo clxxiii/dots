@@ -1,0 +1,157 @@
+{
+  // ╭─              ─╮
+  // │   Extensions   │
+  // ╰─              ─╯
+  "auto_install_extensions": {
+    "catppuccin": true,
+    "catppuccin-icons": true,
+    "catppuccin-blur": true,
+    "wakatime": true,
+  },
+
+  // ╭─             ─╮
+  // │  Colorscheme  │
+  // ╰─             ─╯
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte - No Italics",
+    "dark": "Catppuccin Frappé",
+  },
+  "icon_theme": {
+    "mode": "system",
+    "dark": "Catppuccin Frappé",
+    "light": "Catppuccin Latte",
+  },
+
+  // ╭─             ─╮
+  // │  Text Config  │
+  // ╰─             ─╯
+  "ui_font_family": "Product Sans",
+  "ui_font_fallbacks": [".ZedSans"],
+  "ui_font_size": 16.0,
+  "buffer_font_family": "Iosevka Term",
+  "buffer_font_fallbacks": ["JetBrainsMono Nerd Font Mono", ".ZedMono"],
+  "buffer_font_size": 13.0,
+  "buffer_font_weight": 500.0,
+  "buffer_line_height": {
+    "custom": 1.25,
+  },
+
+  // ╭─              ─╮
+  // │  Input & Feel  │
+  // ╰─              ─╯
+  "formatter": "prettier",
+  "hover_popover_delay": 200,
+  "tab_size": 2,
+  "use_on_type_format": false,
+  "vim_mode": true,
+
+  // ╭─              ─╮
+  // │     Layout     │
+  // ╰─              ─╯
+  "calls": {
+    "mute_on_join": true,
+    "share_on_join": false,
+  },
+  "collaboration_panel": {
+    "button": false,
+  },
+  "debugger": {
+    "dock": "left",
+  },
+  "git_panel": {
+    "button": false,
+  },
+  "minimap": {
+    "max_width_columns": 100,
+    "show": "always",
+    "thumb_border": "none",
+    "thumb": "always",
+  },
+  "outline_panel": {
+    "button": true,
+    "default_width": 200,
+    "dock": "right",
+  },
+  "project_panel": {
+    "dock": "left",
+    "entry_spacing": "standard",
+    "hide_root": true,
+  },
+  "relative_line_numbers": "enabled",
+  "search": {
+    "button": false,
+  },
+  "scrollbar": {
+    "show": "never",
+  },
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false,
+  },
+  "terminal": {
+    "button": false,
+    "font_family": "JetBrainsMono Nerd Font Mono",
+    "dock": "bottom",
+    "env": {
+      "EDITOR": "zed --wait",
+    },
+    "font_size": 12,
+  },
+  "title_bar": {
+    "show_project_items": true,
+    "show_branch_name": true,
+  },
+  "toolbar": {
+    "quick_actions": false,
+    "breadcrumbs": false,
+  },
+  "which_key": {
+    "enabled": true,
+  },
+  "wrap_guides": [100],
+
+  // ╭─              ─╮
+  // │    Behavior    │
+  // ╰─              ─╯
+  "diagnostics": {
+    "include_warnings": true,
+    "inline": {
+      "enabled": true,
+      "update_debounce_ms": 300,
+      "padding": 1,
+      "min_column": 0,
+      "max_severity": "warning",
+    },
+  },
+  "disable_ai": true,
+  "file_finder": {
+    "include_ignored": "all",
+  },
+  "file_scan_exclusions": [".env", ".git", "node_modules", ".env.*"],
+  "git": {
+    "blame": {
+      "show_avatar": false,
+    },
+    "inline_blame": {
+      "show_commit_summary": true,
+      "enabled": true,
+    },
+  },
+  "gutter": {
+    "min_line_number_digits": 4,
+  },
+  "tabs": {
+    "show_diagnostics": "all",
+    "file_icons": true,
+    "close_position": "left",
+  },
+  "sticky_scroll": {
+    "enabled": true,
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+}
