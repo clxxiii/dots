@@ -5,5 +5,5 @@ vim.cmd([[
   let g:neovide_hide_mouse_when_typing = v:true
   let g:neovide_cursor_vfx_mode = "pixiedust"
   let g:neovide_remember_window_size = v:true
-  let g:neovide_transparency = 0.8
+  let g:neovide_opacity = 0.8
 ]])

@@ -9,7 +9,7 @@ return {
 		{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
 		{ "<leader>fb", "<cmd>Telescope keymaps<cr>", desc = "Keymaps" },
 		{ "<leader>fr", "<cmd>Telescope oldfiles<cr>", desc = "Open Recent" },
-		{ "<leader>ft", "<cmd>Telescope live_grep<cr>", desc = "Search in File" },
+		{ "<leader>ft", "<cmd>Telescope live_grep<cr>", desc = "Search in Project" },
 		{ "<leader>fp", "<cmd>Telescope projects<cr>", desc = "Open Project" },
 	},
 	config = function()

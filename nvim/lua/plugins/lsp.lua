@@ -22,7 +22,11 @@ return {
     event = "VeryLazy",
     version = "1.*",
     opts = {
-      keymap = { preset = 'super-tab' },
+      keymap = {
+        preset = 'super-tab',
+
+        ['<C-w><C-a>'] = { 'show', 'show_documentation', 'hide_documentation' },
+      },
 
       completion = {
         menu = { border = 'rounded' },
