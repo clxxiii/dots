@@ -39,7 +39,6 @@ link() {
   ln -s $DOTFILES_DIR/.tmux.conf ~/.tmux.conf
   ln -s $DOTFILES_DIR/.zshenv ~/.zshenv
   ln -s $DOTFILES_DIR/.vimrc ~/.vimrc
-  ln -s $DOTFILES_DIR/.gitconfig ~/.gitconfig
   ln -s $DOTFILES_DIR/.p10k.zsh ~/.p10k.zsh
   ln -s $DOTFILES_DIR/.paths ~/.paths
   ln -s $DOTFILES_DIR/.profile ~/.profile
@@ -68,7 +67,6 @@ unlink() {
   rm -f ~/.zshrc
   rm -f ~/.zshenv
   rm -f ~/.vimrc
-  rm -f ~/.gitconfig
   rm -f ~/.tmux.conf
   rm -f ~/.alacritty.yml
   rm -f ~/.p10k.zsh
