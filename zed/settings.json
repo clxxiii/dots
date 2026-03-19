@@ -154,4 +154,12 @@
     "diagnostics": false,
     "metrics": false,
   },
+  // ╭─                 ─╮
+  // │     Languages     │
+  // ╰─                 ─╯
+  "languages": {
+    "Rust": {
+      "tab_size": 4
+    }
+  },
 }
