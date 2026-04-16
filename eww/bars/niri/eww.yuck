@@ -1,0 +1,3 @@
+(include "bars/niri/data.yuck")
+(include "bars/niri/bar.yuck")
+(include "bars/niri/panel.yuck")

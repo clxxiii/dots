@@ -1,0 +1,16 @@
+
+(deflisten niri-ws
+  :initial '[]'
+  `scripts/niri.sh workspaces`)
+
+(deflisten niri-focused
+  :initial '{}'
+  `scripts/niri.sh focused`)
+
+(deflisten niri-active
+  :initial '{}'
+  `scripts/niri.sh active`)
+
+(deflisten niri-hidden
+  :initial '{}'
+  `scripts/niri.sh hidden`)

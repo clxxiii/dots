@@ -1,0 +1,55 @@
+.bar {
+  /* background-color: #141b1e; */
+}
+
+.workspace {
+  min-width: 18px;
+  min-height: 18px;
+  font-size: 14px;
+  margin: 2px 0px;
+  border-radius: 999px;
+  background-color: rgba(255,255,255,0.25);
+  color: rgba(255,255,255,0.5);
+  transition: 0.2s ease;
+}
+.workspace.focused {
+  background-color: #8ccf7e;
+}
+.workspace.hidden {
+  background-color: rgba(0,0,0,0);
+}
+.workspace.active {
+  min-height: 48px;
+}
+
+.time {
+  font-family: 'IosevkaTerm';
+  font-weight: 800;
+  color: #dadada;
+  padding: 8px 0px;
+}
+
+/* System tray styling */
+
+.background.popup {
+  background-color: #141b1e;
+  border: solid 2px #232a2e;
+}
+
+.background.popup menuitem {
+  padding: 5px;
+  margin: 0px 2px;
+}
+
+.background.popup menuitem:hover {
+  background-color: #232a2e;
+}
+
+.background.popup menuitem:disabled {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.background.popup separator {
+  margin: 0px 5px;
+  border-bottom: solid 1px #232a2e;
+}

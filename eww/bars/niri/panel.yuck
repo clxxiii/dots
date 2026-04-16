@@ -1,0 +1,28 @@
+(defwindow niri-widget
+  :monitor 0
+  :geometry (geometry :x "4.1665%"
+                      :y "0px"
+                      :width "25%"
+                      :height "50%"
+                      :anchor "center right")
+  :stacking "bg"
+  :exclusive false
+  :focusable false
+  (box
+    :class "panel"
+    :orientation "v"
+    (time)
+    (systray
+      :space-evenly true
+      :halign "baseline"
+      :valign "center"
+      :spacing 5
+      :class "systray"
+      :icon-size 24
+      )
+    )
+)
+
+(defwidget time [] 
+  (label :text "hi")
+  )

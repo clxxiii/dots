@@ -1,0 +1,78 @@
+(defwindow niri-1
+  :monitor 0
+  :geometry (geometry :x "8px"
+                      :y "0px"
+                      :width "20px"
+                      :height "100%"
+                      :anchor "center left")
+  :stacking "fg"
+  :exclusive true
+  :focusable false
+  (bar :output "DP-3")
+)
+
+(defwindow niri-2
+  :monitor 1
+  :geometry (geometry :x "8px"
+                      :y "0px"
+                      :width "20px"
+                      :height "100%"
+                      :anchor "center left")
+  :stacking "fg"
+  :exclusive true
+  :focusable false
+  (bar :output "HDMI-A-1")
+)
+
+(defwidget bar [output]
+  (centerbox
+    :class "bar"
+    :halign "end"
+    :orientation 'v'
+    (empty)
+    (workspaces :output output)
+    (box
+      :orientation "v"
+      :space-evenly false
+      :valign "end"
+      (systray
+        :orientation "v"
+        :valign "end"
+        :spacing 5
+        :class "systray"
+        :icon-size 20
+        :space-evenly false
+        )
+      (box
+        :orientation "v"
+        :class "time"
+        (label :text {formattime(EWW_TIME, "%H")})
+        (label :text {formattime(EWW_TIME, "%M")})
+        )
+    )
+  )
+)
+
+(defwidget workspaces [output]
+  (box
+    :class "workspaces"
+    :orientation 'v'
+    :valign "start"
+    :halign "center"
+    :space-evenly false
+      (label :visible false :text {niri-focused} ) ; keep niri-active variable loaded
+      (label :visible false :text {niri-active} )  ; keep niri-active variable loaded
+      (label :visible false :text {niri-hidden} )  ; keep niri-active variable loaded
+
+      (for ws in niri-ws
+        (eventbox :cursor "pointer"
+          (button
+            :class "workspace ${niri-focused.id == ws.id ? 'focused' : ''} ${jq(niri-active, ".[] | select(. == ${ws.id})") == ws.id ? "active" : ""} ${jq(niri-hidden, ".[] | select(. == ${ws.id})") == ws.id ? "hidden" : ""}"
+            :onclick "niri msg action focus-workspace ${ws.idx}"
+            :visible {ws.output == output}
+            (label :text {jq(niri-hidden, ".[] | select(. == ${ws.id})") == ws.id ? "+" : ""})
+          )
+        )
+      )
+    )
+  )
