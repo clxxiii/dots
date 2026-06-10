@@ -8,8 +8,8 @@
 [
   {
     "bindings": {
-      "ctrl-\\": "workspace::ToggleBottomDock"
-    }
+      "ctrl-\\": "workspace::ToggleBottomDock",
+    },
   },
   {
     "context": "vim_mode == normal",
@@ -17,40 +17,35 @@
       "space c t": "workspace::NewCenterTerminal",
       "space l g": [
         "task::Spawn",
-        { "reveal_target": "center", "task_name": "lazygit" }
+        { "reveal_target": "center", "task_name": "lazygit" },
       ],
       "space f w": "workspace::NewSearch",
       "space f p": "projects::OpenRecent",
-      "space f f": "file_finder::Toggle"
-    }
+      "space f f": "file_finder::Toggle",
+    },
   },
   {
     "context": "Terminal",
     "bindings": {
-      "ctrl-w k": "workspace::ActivatePaneUp"
-    }
+      "ctrl-w k": "workspace::ActivatePaneUp",
+    },
   },
   {
     "context": "Editor",
     "bindings": {
-      // "j k": ["workspace::SendKeystrokes", "escape"],
       "alt-c": "pane::CloseActiveItem",
       "alt-j": "editor::MoveLineDown",
       "alt-k": "editor::MoveLineUp",
       "shift-alt-j": "editor::AddSelectionBelow",
-      "shift-alt-k": "editor::AddSelectionAbove"
-    }
+      "shift-alt-k": "editor::AddSelectionAbove",
+    },
   },
   {
     "context": "(ProjectPanel && not_editing)",
     "bindings": {
-      "a": "project_panel::NewFile"
-    }
+      "a": "project_panel::NewFile",
+      "r": "project_panel::Rename",
+      "%": null,
+    },
   },
-  {
-    "context": "(ProjectPanel && not_editing)",
-    "bindings": {
-      "%": null
-    }
-  }
 ]

@@ -2,6 +2,11 @@
   // ╭─              ─╮
   // │   Extensions   │
   // ╰─              ─╯
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
   "auto_install_extensions": {
     "catppuccin": true,
     "catppuccin-icons": true,
@@ -54,12 +59,14 @@
     "share_on_join": false,
   },
   "collaboration_panel": {
+    "dock": "left",
     "button": false,
   },
   "debugger": {
     "dock": "left",
   },
   "git_panel": {
+    "dock": "left",
     "button": false,
   },
   "minimap": {
@@ -159,7 +166,20 @@
   // ╰─                 ─╯
   "languages": {
     "Rust": {
-      "tab_size": 4
-    }
+      "tab_size": 4,
+      "formatter": "language_server",
+    },
+    "TypeScript": {
+      "language_servers": ["!vtsls", "!typescript-language-server", "deno"],
+    },
+  },
+  "lsp": {
+    "deno": {
+      "settings": {
+        "deno": {
+          "enable": true,
+        },
+      },
+    },
   },
 }
