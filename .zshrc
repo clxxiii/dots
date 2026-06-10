@@ -10,6 +10,12 @@ export ZSH="/home/eli/.oh-my-zsh"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
+#
+
+# History
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -87,11 +93,18 @@ source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# GPG as SSH configuration
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
+
 # Aliases
 alias cl="clear"
 alias md="mkdir"
 alias clip="xclip -selection clipboard"
 alias lg="lazygit"
+alias lzg="lazygit"
+alias lzd="lazydocker"
+alias lzs="lazysql"
 alias fuck="thefuck"
 alias ls="exa --icons"
 alias size="exa --icons -l --total-size --no-permissions --no-user --sort=size -r"
@@ -113,12 +126,6 @@ source "$HOME/.profile"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-# Path to spicetify
-export PATH=$PATH:~/.spicetify
-# nap settings
-#
-export NAP_HOME=~/.nap
-export NAP_CONFIG=~/.nap/config.yaml
 
 # bun completions
 [ -s "/home/eli/.bun/_bun" ] && source "/home/eli/.bun/_bun"
@@ -126,6 +133,8 @@ export NAP_CONFIG=~/.nap/config.yaml
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Force Dedicated GFX wherever possible
 export __GLX_VENDOR_LIBRARY_NAME=nvidia
 export __NV_PRIME_RENDER_OFFLOAD=1
 
@@ -134,3 +143,4 @@ export PATH="$HOME/.turso:$PATH"
 
 # Tauri Dev
 export WEBKIT_DISABLE_DMABUF_RENDERER=1
+

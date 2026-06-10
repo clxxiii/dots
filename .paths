@@ -26,6 +26,10 @@ if [ -d "$HOME/.local/bin/clojure/bin" ] ; then
   export PATH="$HOME/.local/bin/clojure/bin:$PATH"
 fi
 
+# Cargo bin
+if [ -d "$HOME/.cargo/bin" ] ; then
+  export PATH="$HOME/.cargo/bin:$PATH"
+fi
 
 if [ -d "$HOME/.nvm" ] ; then
   export NVM_DIR="$HOME/.nvm"
